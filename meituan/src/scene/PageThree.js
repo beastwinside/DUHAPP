@@ -4,10 +4,11 @@ import { Actions } from 'react-native-router-flux';
 
 export default class PageOne extends Component {
   render() {
-  const goToPageTwo = () => Actions.pageTwo({text: 'Hello World!'}); 
+ 
   return (
     <View style={{margin: 128}}>
-      <Text onPress={goToPageTwo}>This is PageOne!</Text>
+      <Text >这里是页面三
+      </Text>
     </View>
   )
 }
