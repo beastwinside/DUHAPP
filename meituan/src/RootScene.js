@@ -12,17 +12,26 @@ import PageTwo from './scene/PageTwo';
 import PageThree from './scene/PageThree';
 import TabBarItem from './widget/TabBarItem'
 
+
 class RootScene extends Component {
+ 
+
+
+
   render() {
     return (
-      <Router>
+      <Router
+      >
       <Scene 
+      hideNavBar
       tabs
       key='tabBar'
       initial
+      tabBarStyle={styles.tabBarStyle}
+    
       >
 
-      
+
       <Scene 
       hideNavBar
       key="pageOne" 
@@ -45,5 +54,16 @@ class RootScene extends Component {
       );
   }
 }
+
+const styles=StyleSheet.create({
+  tabBarStyle:{
+    backgroundColor:'red',
+  },
+
+
+
+
+
+});
 
 export default RootScene;

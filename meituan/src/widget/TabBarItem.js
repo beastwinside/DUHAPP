@@ -19,10 +19,14 @@ const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         alignItems: 'center',
+     
     },
     title: {
-        marginTop: 4,
-        fontSize: 12,
+       
+        fontSize: 20,
+         color:'#EFEDED',
+         
+
     },
     image: {
         marginTop: 4,
@@ -46,7 +50,7 @@ class TabBarItem extends Component {
     render() {
         let titleStyle = this.props.selected ? this.props.tabBarSelectedTitleStyle : this.props.tabBarUnselectedTitleStyle;
 
-        let imageStyle = this.props.selected ? this.props.tabBarSelectedImageStyle : this.props.tabBarUnselectedImageStyle;
+       
 
         let image = this.props.image;
         if (this.props.selectedImage != null) {
@@ -55,11 +59,7 @@ class TabBarItem extends Component {
 
         return (
             <View style={styles.container}>
-                <Image
-                    style={[styles.image, imageStyle]}
-                    source={image}
-                />
-
+              
                 <Text style={[styles.title, titleStyle]}>
                     {this.props.title}
                 </Text>
