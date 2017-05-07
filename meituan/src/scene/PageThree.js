@@ -20,15 +20,17 @@ import {
   }
   render() {
     return (
-      <View style={{flex: 1, paddingTop: 70}}>
+      <View style={{flex: 1, paddingTop: 55}}>
 
         <ListView 
           dataSource={this.state.dataSource}
-          renderRow={(rowData) => <Text
+          renderRow={(rowData) => <TouchableOpacity activeOpacity={0.6} ><Text
           	style={{width:400,
           			height:50,
-          			backgroundColor:'red',
-          			borderWidth:1,}}>{rowData}</Text>}
+          			backgroundColor:'#E7FFB1',
+          			borderBottomWidth:5,
+          			borderColor:'#009071',
+          			color:'black',}}>{rowData}</Text></TouchableOpacity>}
         />
       </View>
     );
