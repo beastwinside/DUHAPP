@@ -22,19 +22,24 @@ class RootScene extends Component {
       initial
       >
 
-      <Scene key="pageOne" 
+      
+      <Scene 
+      hideNavBar
+      key="pageOne" 
       component={PageOne} 
       title="首页"
       icon={TabBarItem}/>
-      <Scene key="pageTwo" 
+      <Scene 
+      key="pageTwo" 
       component={PageTwo} 
       title="订单" 
       icon={TabBarItem}/>
-      <Scene key="pageThree"
+      <Scene 
+      key="pageThree"
       component={PageThree}
       title="我的" 
       icon={TabBarItem}/>
-      
+
       </Scene>
       </Router>
       );
