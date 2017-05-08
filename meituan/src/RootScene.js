@@ -38,16 +38,22 @@ class RootScene extends Component {
       component={PageOne} 
       title="首页"
       icon={TabBarItem}/>
+
       <Scene 
       key="pageTwo" 
       component={PageTwo} 
       title="订单" 
       icon={TabBarItem}/>
-      <Scene 
+
+      <Scene
+      hideNavBar 
       key="pageThree"
       component={PageThree}
       title="我的" 
-      icon={TabBarItem}/>
+      icon={TabBarItem}
+      navigationBarStyle={styles.navigationBarStyle}
+      />
+
 
       </Scene>
       </Router>
@@ -58,6 +64,10 @@ class RootScene extends Component {
 const styles=StyleSheet.create({
   tabBarStyle:{
     backgroundColor:'red',
+  },
+
+  navigationBarStyle:{
+    backgroundColor:'#FFAE3B',
   },
 
 
