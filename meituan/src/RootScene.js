@@ -63,11 +63,14 @@ class RootScene extends Component {
 
 const styles=StyleSheet.create({
   tabBarStyle:{
-    backgroundColor:'red',
+    backgroundColor:'#FFFBA6',
+     borderTopWidth:0.6,
+     borderColor:'#272727',
   },
 
   navigationBarStyle:{
     backgroundColor:'#FFAE3B',
+
   },
 
 

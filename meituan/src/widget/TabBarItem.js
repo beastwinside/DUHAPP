@@ -17,14 +17,15 @@ import {
 
 const styles = StyleSheet.create({
     container: {
+       
         justifyContent: 'center',
         alignItems: 'center',
      
     },
     title: {
-       
+        
         fontSize: 20,
-         color:'#EFEDED',
+         color:'#1B1919',
          
 
     },
