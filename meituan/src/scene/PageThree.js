@@ -41,7 +41,7 @@ import {
 	 				marginTop:20,
 	 				alignSelf:'center',
 	 			}}
-	 			source={require('../img/mine/touxiang.jpg')} 
+	 			source={require('../img/mine/touxiang@2x.png')} 
 	 			/>
 	 			</TouchableOpacity>
 
@@ -117,7 +117,7 @@ import {
 	 					flex:0.9,
 	 				}}>
 	 				<Image style={style.listview_imagestyle}
-	 				source={require('../img/mine/touxiang.jpg')} 
+	 				source={require('../img/mine/touxiang@2x.png')} 
 	 				/>
 	 				</View>
 
