@@ -66,12 +66,8 @@ import {
 	 				alignItems:'center',
 	 			}}>	
 
-	 			<View style={{
-	 				height:80,
-	 				backgroundColor:'#32ACE9',
-	 				width:120,
-	 				
-	 			}}>	
+	 			<View style={[style.info_viewstyle,
+	 				{	backgroundColor:'#32ACE9',}]}>	
 	 			<Text style={{
 	 				fontSize:20,
 	 				
@@ -80,28 +76,17 @@ import {
 	 			}}>美团红包：   1亿张</Text>
 	 			</View>
 
-	 			<View style={{
-	 				height:80,
-	 				backgroundColor:'#ED1B45',
-	 				width:120,
-
-
-	 			}}>	
+	 			<View style={[style.info_viewstyle,
+	 				{backgroundColor:'#ed1b45',}]}>	
 	 			<Text style={{
 	 				fontSize:20,
-	 				
 	 				color:'#DADADA',
 	 			}}>余额：
 	 			1亿元</Text>
 	 			</View>
 
-	 			<View style={{
-	 				height:80,
-	 				backgroundColor:'#EAC735',
-	 				width:120,
-
-
-	 			}}>	
+	 			<View style={[style.info_viewstyle,
+	 				{	backgroundColor:'#eac735',}]}>	
 	 			<Text style={{
 	 				fontSize:20,
 	 				
@@ -121,7 +106,7 @@ import {
 	 	renderListview(ds){
 	 		return(<ListView  
 	 			style={{ 
-	 				borderTopWidth:2,
+	 				borderTopWidth:0.5,
 	 			}}
 	 			dataSource={ds}
 	 			renderRow={(rowData) => 
@@ -147,6 +132,15 @@ import {
 
 	 	}
 
+	 	renderspaceview(){
+	 		return(
+	 			<View style={{
+	 				height:10,
+	 			}}>
+	 			</View>
+	 			);
+	 	}
+
 
 
 
@@ -168,41 +162,12 @@ import {
 	 			{this.renderhead()}
 	 			{this.renderinfo()}
 	 			{this.renderListview(ds1)}
-	 			<View style={{
-	 				height:10,
-	 			}}>
-	 			</View>
+	 			{this.renderspaceview()}
 	 			{this.renderListview(ds2)}
-	 			<View style={{
-	 				height:10,
-	 			}}>
-	 			</View>
-
+	 			{this.renderspaceview()}
 	 			{this.renderListview(ds3)}
-	 			<View style={{
-	 				height:10,
-	 			}}>
-	 			</View>
+	 			{this.renderspaceview()}
 	 			{this.renderListview(ds4)}
-
-
-	 			
-
-
-	 			
-
-	 			
-
-
-
-
-
-
-
-
-
-
-
 	 			
 	 			</ScrollView>
 	 			);
@@ -229,9 +194,13 @@ import {
 
 	 	listview_viewstyle:{
 	 		flexDirection:'row',
-	 		borderBottomWidth:1,
-	 		borderColor:'#1E2020',
+	 		borderBottomWidth:0.5,
 	 		backgroundColor:'#FFFBA6',
+	 	},
+
+	 	info_viewstyle:{
+	 		height:80,
+	 		width:120,
 	 	},
 
 
