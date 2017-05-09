@@ -2,6 +2,27 @@ import React, { Component } from 'react';
 import {
 	View, Text, StyleSheet, StatusBar, ListView,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
+
+
+	var THUMB_URLS1 = [  
+	require('../img/mine/dx@2x.png'),  
+	require('../img/mine/dz@2x.png'),
+	require('../img/mine/fk@2x.png'),
+	require('../img/mine/hy@2x.png'),
+	require('../img/mine/pj@2x.png'),];
+
+	var THUMB_URLS2 = [  
+	require('../img/mine/qb@2x.png'),  
+	require('../img/mine/rz@2x.png'),
+	require('../img/mine/sc@2x.png'),];
+
+	var THUMB_URLS3 = [  
+	require('../img/mine/yj@2x.png'),  
+	require('../img/mine/jl@2x.png'),
+	require('../img/mine/hy@2x.png'),];
+
+
+
 	
 
 	class PageThree extends Component {
@@ -11,19 +32,27 @@ import {
 	 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 	 		this.state = {
 	 			dataSource1: ds.cloneWithRows([
-	 				'我的评价','我的好友','我的收藏','我的地址',
+	 				' 我的评价',' 我的好友',' 我的收藏',' 我的地址',
 	 				]),
 	 			dataSource2: ds.cloneWithRows([
-	 				'我的钱包',
+	 				' 我的钱包',' 邀请有奖',' 商家入驻',
 	 				]),
 	 			dataSource3: ds.cloneWithRows([
-	 				'邀请有奖','商家入驻',
+	 				' 答谢记录',' 帮助与反馈',' 客服中心',
 	 				]),
-	 			dataSource4: ds.cloneWithRows([
-	 				'答谢记录','帮助与反馈','客服中心'
-	 				]),
+	 			headLoading:false
 	 		};
 	 	}
+
+
+	 	 _combineData() {
+        this.setState({ headLoading: true })
+
+        setTimeout(() => {
+            this.setState({ headLoading: false })
+        }, 2000);
+    }
+
 
 
 	 	renderhead(){
@@ -60,7 +89,7 @@ import {
 	 		return(
 	 			<View style={{
 	 				height:120,
-	 				backgroundColor:'#EAEDEC',
+	 				backgroundColor:'#F4FAF5',
 	 				flexDirection:'row',
 	 				justifyContent:'space-around',
 	 				alignItems:'center',
@@ -68,69 +97,111 @@ import {
 
 	 			<View style={[style.info_viewstyle,
 	 				{	backgroundColor:'#32ACE9',}]}>	
-	 			<Text style={{
-	 				fontSize:20,
-	 				
+	 				<Text style={{
+	 					fontSize:20,
 
 
-	 			}}>美团红包：   1亿张</Text>
-	 			</View>
 
-	 			<View style={[style.info_viewstyle,
-	 				{backgroundColor:'#ed1b45',}]}>	
-	 			<Text style={{
-	 				fontSize:20,
-	 				color:'#DADADA',
-	 			}}>余额：
-	 			1亿元</Text>
-	 			</View>
+	 				}}>美团红包：   1亿张</Text>
+	 				</View>
 
-	 			<View style={[style.info_viewstyle,
-	 				{	backgroundColor:'#eac735',}]}>	
-	 			<Text style={{
-	 				fontSize:20,
-	 				
-	 				color:'#4C4B4B',
-	 			}}>商家代金券：0张</Text>
-	 			</View>
+	 				<View style={[style.info_viewstyle,
+	 					{backgroundColor:'#ed1b45',}]}>	
+	 					<Text style={{
+	 						fontSize:20,
+	 						color:'#DADADA',
+	 					}}>余额：
+	 					1亿元</Text>
+	 					</View>
+
+	 					<View style={[style.info_viewstyle,
+	 						{	backgroundColor:'#eac735',}]}>	
+	 						<Text style={{
+	 							fontSize:20,
+
+	 							color:'#4C4B4B',
+	 						}}>商家代金券：0张</Text>
+	 						</View>
 
 
-	 			</View>
-	 			);
+	 						</View>
+	 						);
 
 	 	}
 
 
+	 	
 
+	 	renderRow1(rowData: string,sectionID: number, rowID: number){
+	 		var imgSource=THUMB_URLS1[rowID]; 
+	 		return(
+	 			<TouchableOpacity activeOpacity={0.6}>
+	 			<View style={style.listview_viewstyle}>
 
-	 	renderListview(ds){
-	 		return(<ListView  
-	 			style={{ 
-	 				borderTopWidth:0.5,
-	 			}}
-	 			dataSource={ds}
-	 			renderRow={(rowData) => 
-	 				<TouchableOpacity activeOpacity={0.6}>
-	 				<View style={style.listview_viewstyle}>
-
-	 				<View style={{
-	 					flex:0.9,
-	 				}}>
-	 				<Image style={style.listview_imagestyle}
-	 				source={require('../img/mine/touxiang@2x.png')} 
-	 				/>
-	 				</View>
-
-	 				<Text
-	 				style={style.listview_textstyle}>{rowData}</Text>
-	 				</View>
-	 				</TouchableOpacity>
-	 			}
+	 			<View style={{
+	 				flex:0.9,
+	 			}}>
+	 			<Image style={style.listview_imagestyle}
+	 			source={imgSource} 
 	 			/>
+	 			</View>
+	 			<Text
+	 			style={style.listview_textstyle}>{rowData}</Text>
+
+	 			</View>
+
+
+	 			</TouchableOpacity>
+
 	 			);
-
-
 	 	}
+
+	 	renderRow2(rowData: string,sectionID: number, rowID: number){
+	 		var imgSource=THUMB_URLS2[rowID]; 
+	 		return(
+	 			<TouchableOpacity activeOpacity={0.6}>
+	 			<View style={style.listview_viewstyle}>
+
+	 			<View style={{
+	 				flex:0.9,
+	 			}}>
+	 			<Image style={style.listview_imagestyle}
+	 			source={imgSource} 
+	 			/>
+	 			</View>
+
+	 			<Text
+	 			style={style.listview_textstyle}>{rowData}</Text>
+	 			</View>
+	 			</TouchableOpacity>
+
+	 			);
+	 	}
+
+	 	renderRow3(rowData: string,sectionID: number, rowID: number){
+	 		var imgSource=THUMB_URLS3[rowID]; 
+	 		return(
+	 			<TouchableOpacity activeOpacity={0.6}>
+	 			<View style={style.listview_viewstyle}>
+	 			<View style={{
+	 				flex:0.9,
+	 			}}>
+	 			<Image style={style.listview_imagestyle}
+	 			source={imgSource} 
+	 			/>
+	 			</View>
+	 			<Text
+	 			style={style.listview_textstyle}>{rowData}</Text>
+	 			<Text>></Text>
+	 			</View>
+	 			</TouchableOpacity>
+
+	 			);
+	 	}
+
+
+
+
 
 	 	renderspaceview(){
 	 		return(
@@ -151,23 +222,66 @@ import {
 	 		const ds4=this.state.dataSource4;
 
 	 		return (
-	 			<ScrollView style={{ 
+	 			<ScrollView 
+	 			refreshControl={
+                        <RefreshControl
+                            refreshing={this.state.headLoading}
+                            onRefresh={() => this._combineData()}
+                            tintColor='gray'
+                        />
+                    }
+
+	 			style={{ 
 	 				backgroundColor:'#EDEFE8',
 	 				flex:1,
 	 			}}>
-	 			
-	 			
-
 
 	 			{this.renderhead()}
 	 			{this.renderinfo()}
-	 			{this.renderListview(ds1)}
+	 			
+
+	 			<ListView
+	 			style={{ 
+	 				borderTopWidth:0.5,
+	 			}}
+	 			dataSource={ds1}
+	 			renderRow={this.renderRow1}
+	 			/>
+
 	 			{this.renderspaceview()}
-	 			{this.renderListview(ds2)}
+	 			<ListView
+	 			style={{ 
+	 				borderTopWidth:0.5,
+	 			}}
+	 			dataSource={ds2}
+	 			renderRow={this.renderRow2}
+	 			/>
+
 	 			{this.renderspaceview()}
-	 			{this.renderListview(ds3)}
-	 			{this.renderspaceview()}
-	 			{this.renderListview(ds4)}
+	 			<ListView
+	 			style={{ 
+	 				borderTopWidth:0.5,
+	 			}}
+	 			dataSource={ds3}
+	 			renderRow={this.renderRow3}
+	 			/>
+
+
+	 			
+
+	 			<View style={{
+	 				height:80,
+	 			}}>
+	 			</View>
+
+
+	 			
+	 			
+
+
+	 			
+
+
 	 			
 	 			</ScrollView>
 	 			);
@@ -180,8 +294,9 @@ import {
 	 		paddingTop:10,
 	 		height:50,
 	 		flex:10,
-	 		marginLeft:5,
+	 		marginLeft:10,
 	 		fontSize:20,
+	 		color:'#242222',
 	 	},
 
 	 	listview_imagestyle:{
@@ -190,6 +305,7 @@ import {
 	 		width:30,
 	 		marginLeft:5,
 	 		borderRadius:15,
+	 		
 	 	},
 
 	 	listview_viewstyle:{
@@ -202,9 +318,6 @@ import {
 	 		height:80,
 	 		width:120,
 	 	},
-
-
-
 
 
 

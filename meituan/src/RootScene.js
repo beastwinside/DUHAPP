@@ -28,6 +28,7 @@ class RootScene extends Component {
       key='tabBar'
       initial
       tabBarStyle={styles.tabBarStyle}
+      
     
       >
 
