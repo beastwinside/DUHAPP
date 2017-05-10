@@ -45,13 +45,13 @@ import {
 	 	}
 
 
-	 	 _combineData() {
-        this.setState({ headLoading: true })
+	 	_combineData() {
+	 		this.setState({ headLoading: true })
 
-        setTimeout(() => {
-            this.setState({ headLoading: false })
-        }, 2000);
-    }
+	 		setTimeout(() => {
+	 			this.setState({ headLoading: false })
+	 		}, 4000);
+	 	}
 
 
 
@@ -200,6 +200,23 @@ import {
 	 	}
 
 
+	 	renderfooter(){
+	 		return(
+	 			<View style={{
+	 				height:60,
+	 				backgroundColor:'#403C3C',
+	 			}}>
+	 			<Text style={{
+	 				alignSelf:'center',
+	 				color:'#EAE800',
+	 				fontSize:25,
+	 			}}>
+	 			客服·电话：1010977
+	 			</Text></View>
+	 			);
+	 	}
+
+
 
 
 
@@ -208,6 +225,7 @@ import {
 	 			<View style={{
 	 				height:10,
 	 			}}>
+	 			<Text></Text>
 	 			</View>
 	 			);
 	 	}
@@ -224,12 +242,16 @@ import {
 	 		return (
 	 			<ScrollView 
 	 			refreshControl={
-                        <RefreshControl
-                            refreshing={this.state.headLoading}
-                            onRefresh={() => this._combineData()}
-                            tintColor='gray'
-                        />
-                    }
+	 				<RefreshControl
+	 				refreshing={this.state.headLoading}
+	 				onRefresh={() => this._combineData()}
+	 				tintColor="#F90C7A"
+	 				title="Loading..."
+	 				colors={['#ff0000','#00ff00','#0000ff']}
+	 				processBackgroundColor="#ffff00"
+
+	 				/>
+	 			}
 
 	 			style={{ 
 	 				backgroundColor:'#EDEFE8',
@@ -266,25 +288,37 @@ import {
 	 			renderRow={this.renderRow3}
 	 			/>
 
-
+	 			{this.renderspaceview()}
+	 			{this.renderfooter()}
 	 			
+
+	 			{this.renderspaceview()}
 
 	 			<View style={{
-	 				height:80,
+	 				height:40,
 	 			}}>
-	 			</View>
+	 			<Text style={{
+	 				alignSelf:'center',
+	 				color:'#292828'}}>
+	 				服务时间:9:00-23:00
+	 				</Text>
+	 				</View>
 
 
-	 			
-	 			
+	 				<View style={{
+	 					height:40,
+	 				}}>
+	 				</View>
 
 
-	 			
 
 
-	 			
-	 			</ScrollView>
-	 			);
+
+
+
+
+	 				</ScrollView>
+	 				);
 	 	}
 	 }
 

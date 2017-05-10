@@ -10,7 +10,8 @@ import {
 import PageOne from './scene/PageOne';
 import PageTwo from './scene/PageTwo';
 import PageThree from './scene/PageThree';
-import TabBarItem from './widget/TabBarItem'
+import TabBarItem from './widget/TabBarItem';
+import NOBACK from './widget/NOBACK';
 
 
 class RootScene extends Component {
@@ -28,8 +29,6 @@ class RootScene extends Component {
       key='tabBar'
       initial
       tabBarStyle={styles.tabBarStyle}
-      
-    
       >
 
 
@@ -56,7 +55,9 @@ class RootScene extends Component {
       />
 
 
+
       </Scene>
+       <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
       </Router>
       );
   }

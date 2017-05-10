@@ -3,3 +3,13 @@ react-native bundle --entry-file index.android.js --bundle-output ./android/app/
 
 图片目前尚未处理
 2017/5/9
+
+
+图片问题原来是png的关系，直接改后缀并不能把jpg变为png
+
+
+
+
+用并列的scene啦hack，rnrf的bug
+
+
