@@ -6,27 +6,60 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 
-import {
+ import {
     StyleSheet,
     View,
     Text,
     Image
 } from 'react-native';
 
+
+
+
+class TabBarItem extends Component {
+
+   
+
+    render() {
+        
+        let image = this.props.image;
+
+        return (
+            <View style={styles.container}>
+            <Image 
+            source={image}
+            style={{
+                height:25,
+                width:25,
+                borderRadius:12.5,
+                marginTop:10,
+            }}/>
+            <Text >
+            {this.props.title}
+            </Text>
+            </View>
+            );
+    }
+}
+
+export default TabBarItem;
+
+
 const styles = StyleSheet.create({
     container: {
-       
+
         justifyContent: 'center',
         alignItems: 'center',
-     
+
     },
     title: {
-        
-        fontSize: 20,
-         color:'#1B1919',
-         
+
+        fontSize: 15,
+        color:'#1B1919',
+        marginBottom:10,
+
 
     },
     image: {
@@ -35,39 +68,3 @@ const styles = StyleSheet.create({
         height: 25,
     }
 });
-
-
-class TabBarItem extends Component {
-
-    static propTypes = {
-        selected: React.PropTypes.bool,
-        title: React.PropTypes.string,
-    }
-
-    static defaultProps = {
-        selected: false,
-    }
-
-    render() {
-        let titleStyle = this.props.selected ? this.props.tabBarSelectedTitleStyle : this.props.tabBarUnselectedTitleStyle;
-
-       
-
-        let image = this.props.image;
-        if (this.props.selectedImage != null) {
-            image = this.props.selected ? this.props.selectedImage : this.props.image;
-        }
-
-        return (
-            <View style={styles.container}>
-              
-                <Text style={[styles.title, titleStyle]}>
-                    {this.props.title}
-                </Text>
-
-            </View>
-        );
-    }
-}
-
-export default TabBarItem;

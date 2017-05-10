@@ -37,13 +37,15 @@ class RootScene extends Component {
       key="pageOne" 
       component={PageOne} 
       title="首页"
-      icon={TabBarItem}/>
+      icon={TabBarItem}
+      image={require('./img/mine/shouye@2x.png')}/>
 
       <Scene 
       key="pageTwo" 
       component={PageTwo} 
       title="订单" 
-      icon={TabBarItem}/>
+      icon={TabBarItem}
+      image={require('./img/mine/dingdan@2x.png')}/>
 
       <Scene
       hideNavBar 
@@ -51,6 +53,7 @@ class RootScene extends Component {
       component={PageThree}
       title="我的" 
       icon={TabBarItem}
+      image={require('./img/mine/wode@2x.png')}
       navigationBarStyle={styles.navigationBarStyle}
       />
 

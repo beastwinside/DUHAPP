@@ -10,6 +10,13 @@ react-native bundle --entry-file index.android.js --bundle-output ./android/app/
 
 
 
-用并列的scene啦hack，rnrf的bug
+用并列的scene啦hack，rnrf的bug//今天在这浪费了3小时
+
+
+2017/5/11
+
+
+rnrf scene像组件传递图片属性失败，debug用了5小时，
+最后发现是rn版本与rnrf兼容问题，请记住这个教训。
 
 
