@@ -24,7 +24,7 @@ class TabBarItem extends Component {
 
     render() {
         
-        let image = this.props.image;
+        let image = this.props.imagee;
 
         return (
             <View style={styles.container}>

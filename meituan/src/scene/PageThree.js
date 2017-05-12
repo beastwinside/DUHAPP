@@ -50,7 +50,7 @@ import {
 
 	 		setTimeout(() => {
 	 			this.setState({ headLoading: false })
-	 		}, 4000);
+	 		}, 2500);
 	 	}
 
 
@@ -98,29 +98,85 @@ import {
 	 			<View style={[style.info_viewstyle,
 	 				{	backgroundColor:'#32ACE9',}]}>	
 	 				<Text style={{
-	 					fontSize:20,
+	 					fontSize:15,
+	 					alignSelf:'center',
+	 					marginTop:10,
+	 				}}>1亿张
+	 				</Text>
 
-
-
-	 				}}>美团红包：   1亿张</Text>
+	 				<View style={{
+	 					flexDirection:'row',
+	 					alignSelf:'center',
+	 				}}>
+	 				<Image style={{
+	 					height:25,
+	 					width:25,
+	 					borderRadius:12.5,
+	 				}}
+	 				source={require('../img/mine/dingdan@2x.png')}/> 
+	 				<Text style={{
+	 					fontSize:18,
+	 					alignSelf:'center',
+	 					color:'#2E2B2B',
+	 				}}>美团红包
+	 				</Text>
+	 				</View>
 	 				</View>
 
 	 				<View style={[style.info_viewstyle,
-	 					{backgroundColor:'#ed1b45',}]}>	
+	 					{backgroundColor:'#ed1b45',}]}>
 	 					<Text style={{
-	 						fontSize:20,
-	 						color:'#DADADA',
-	 					}}>余额：
-	 					1亿元</Text>
+	 						fontSize:15,
+	 						alignSelf:'center',
+	 						marginTop:10,
+	 					}}>1亿元
+	 					</Text>
+
+	 					<View style={{
+	 						flexDirection:'row',
+	 						alignSelf:'center',
+	 					}}>
+	 					<Image style={{
+	 						height:25,
+	 						width:25,
+	 						borderRadius:12.5,
+	 					}}
+	 					source={require('../img/mine/dingdan@2x.png')}/> 
+	 					<Text style={{
+	 						fontSize:18,
+	 						alignSelf:'center',
+	 						color:'#2E2B2B',
+	 					}}>余额
+	 					</Text>
+	 					</View>
 	 					</View>
 
 	 					<View style={[style.info_viewstyle,
-	 						{	backgroundColor:'#eac735',}]}>	
-	 						<Text style={{
-	 							fontSize:20,
+	 						{	backgroundColor:'#eac735',}]}>
 
-	 							color:'#4C4B4B',
-	 						}}>商家代金券：0张</Text>
+	 						<Text style={{
+	 							fontSize:15,
+	 							alignSelf:'center',
+	 							marginTop:10,
+	 						}}>0张
+	 						</Text>	
+
+	 						<View style={{
+	 							flexDirection:'row',
+	 							alignSelf:'center',
+	 						}}>
+	 						<Image style={{
+	 							height:25,
+	 							width:25,
+	 							borderRadius:12.5,
+	 						}}
+	 						source={require('../img/mine/dingdan@2x.png')}/> 
+	 						<Text style={{
+	 							fontSize:18,
+	 							alignSelf:'center',
+	 							color:'#2E2B2B',
+	 						}}>商家代金券</Text>
+	 						</View>
 	 						</View>
 
 
@@ -261,7 +317,6 @@ import {
 	 			{this.renderhead()}
 	 			{this.renderinfo()}
 	 			
-
 	 			<ListView
 	 			style={{ 
 	 				borderTopWidth:0.5,
@@ -269,7 +324,6 @@ import {
 	 			dataSource={ds1}
 	 			renderRow={this.renderRow1}
 	 			/>
-
 	 			{this.renderspaceview()}
 	 			<ListView
 	 			style={{ 

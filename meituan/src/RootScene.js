@@ -10,6 +10,7 @@ import {
 import PageOne from './scene/PageOne';
 import PageTwo from './scene/PageTwo';
 import PageThree from './scene/PageThree';
+import PageTest from './scene/PageTest';
 import TabBarItem from './widget/TabBarItem';
 import NOBACK from './widget/NOBACK';
 
@@ -21,10 +22,12 @@ class RootScene extends Component {
 
   render() {
     return (
+
+     
       <Router
       >
       <Scene 
-      hideNavBar
+      
       tabs
       key='tabBar'
       initial
@@ -38,14 +41,16 @@ class RootScene extends Component {
       component={PageOne} 
       title="首页"
       icon={TabBarItem}
-      image={require('./img/mine/shouye@2x.png')}/>
+      imagee={require('./img/mine/shouye@2x.png')}/>
 
       <Scene 
       key="pageTwo" 
       component={PageTwo} 
       title="订单" 
       icon={TabBarItem}
-      image={require('./img/mine/dingdan@2x.png')}/>
+      imagee={require('./img/mine/dingdan@2x.png')}
+  
+      />
 
       <Scene
       hideNavBar 
@@ -53,7 +58,7 @@ class RootScene extends Component {
       component={PageThree}
       title="我的" 
       icon={TabBarItem}
-      image={require('./img/mine/wode@2x.png')}
+      imagee={require('./img/mine/wode@2x.png')}
       navigationBarStyle={styles.navigationBarStyle}
       />
 
@@ -61,7 +66,19 @@ class RootScene extends Component {
 
       </Scene>
        <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
+
+       <Scene 
+      key="pageTest" 
+      component={PageTest} 
+      title="测试" 
+      icon={TabBarItem}
+
+   
+     
+      />
       </Router>
+
+    
       );
   }
 }
