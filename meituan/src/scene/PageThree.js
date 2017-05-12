@@ -74,6 +74,19 @@ import {
 	 			/>
 	 			</TouchableOpacity>
 
+
+	 			<Image style={{
+	 				height:30,
+	 				width:30,
+	 				borderRadius:15,
+	 				marginTop:20,
+	 				position:'absolute',
+	 				top:0,
+	 				right:15,
+	 			}}
+	 			source={require('../img/mine/topright@2x.png')} 
+	 			/>
+
 	 			<Text style={{
 	 				alignSelf:'center',
 	 				fontSize:20,
@@ -89,10 +102,12 @@ import {
 	 		return(
 	 			<View style={{
 	 				height:120,
-	 				backgroundColor:'#F4FAF5',
+	 				backgroundColor:'#72dcbd',
 	 				flexDirection:'row',
 	 				justifyContent:'space-around',
 	 				alignItems:'center',
+	 				borderTopWidth:1,
+	 				borderColor:'#838080',
 	 			}}>	
 
 	 			<View style={[style.info_viewstyle,
@@ -175,7 +190,7 @@ import {
 	 							fontSize:18,
 	 							alignSelf:'center',
 	 							color:'#2E2B2B',
-	 						}}>商家代金券</Text>
+	 						}}>代金券</Text>
 	 						</View>
 	 						</View>
 
@@ -260,11 +275,11 @@ import {
 	 		return(
 	 			<View style={{
 	 				height:60,
-	 				backgroundColor:'#403C3C',
+	 				backgroundColor:'#fffba6',
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'#EAE800',
+	 				color:'black',
 	 				fontSize:25,
 	 			}}>
 	 			客服·电话：1010977
@@ -310,7 +325,7 @@ import {
 	 			}
 
 	 			style={{ 
-	 				backgroundColor:'#EDEFE8',
+	 				backgroundColor:'#72dcbd',
 	 				flex:1,
 	 			}}>
 
@@ -400,11 +415,15 @@ import {
 	 		flexDirection:'row',
 	 		borderBottomWidth:0.5,
 	 		backgroundColor:'#FFFBA6',
+
 	 	},
 
 	 	info_viewstyle:{
 	 		height:80,
-	 		width:120,
+	 		width:100,
+	 		borderRadius:8,
+
+
 	 	},
 
 

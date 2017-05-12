@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, StatusBar,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
-	import PageOne from './PageOne';
+	import PageTest from './PageTest';
 	import PageThree from './PageThree';
 
 
@@ -14,7 +14,7 @@ import {View, Text, StyleSheet, StatusBar,
 			return (
 				
 				<View style={{
-					flexDirection:'row',
+					
 					height:60,
 					width:420,	
 					backgroundColor:'#0EF0B7',
@@ -25,8 +25,12 @@ import {View, Text, StyleSheet, StatusBar,
 					color:'#DF5709',
 					fontSize:30,
 					width:80,
-					marginLeft:170,
-					marginTop:10,
+					position:'absolute',
+					top:10,
+					marginLeft:125,
+				
+
+					
 				}}
 				>订单</Text>
 
@@ -36,8 +40,9 @@ import {View, Text, StyleSheet, StatusBar,
 					height:30,
 					width:50,
 					fontSize:18,
-					marginLeft:110,
-					marginTop:20,
+					position:'absolute',
+					right:10,
+					top:10,
 				}}
 				onPress={Actions.pageThree}
 				>编辑</Text>
@@ -78,8 +83,8 @@ import {View, Text, StyleSheet, StatusBar,
 					
 
 				}} >
-				<Text tabLabel="全部订单" >react</Text>
-				<Text tabLabel="待评价" >flow</Text>
+				<PageTest tabLabel="全部订单" />
+				<PageThree tabLabel="待评价" />
 				
 				</ScrollableTabView>
 				</View>
