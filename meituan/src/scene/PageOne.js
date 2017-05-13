@@ -7,12 +7,21 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 	export default class PageOne extends Component {
 		render() {
-			return (
 
-				<Swiper  showsButtons={true}>
+			let scw=Dimensions.get('window').width;
+			let sch=Dimensions.get('window').height;
+			return (
+				
+				<Swiper  
+				showsButtons={true}
+				height={200}
+				width={scw/2}
+				autoplay={true}
+				
+				>
 				<View style={{
 					backgroundColor:'red',
-					height:500,
+					
 
 				}}>
 				<Text style={{
@@ -23,7 +32,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				</View>
 				<View style={{
 					backgroundColor:'blue',
-					height:500,
+					
 				}}>
 				<Text style={{
 					color:'white',
@@ -33,7 +42,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				</View>
 				<View style={{
 					backgroundColor:'green',
-					height:500,
+					
 				}}>
 				<Text style={{
 					color:'white',
@@ -42,6 +51,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				}} >PPPPPPPPPage three</Text>
 				</View>
 				</Swiper>
+				
 
 				);
 
