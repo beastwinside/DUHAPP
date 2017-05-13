@@ -8,7 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	export default class PageOne extends Component {
 
 		renderhead(){
-			let scw=Dimensions.get('window').width;
+			
 
 			return(<Swiper  
 				showsButtons={false}
@@ -16,43 +16,118 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				width={scw}
 				autoplay={true}
 				dotColor='#E5EAE6'
-				activeDotColor='#ED500C'
+				activeDotColor='#DD0617'
 				autoplayTimeout={5}
-			
-
 				>
+
 				<View style={{
-					backgroundColor:'red',
+					borderRadius:scw,
 				}}>
+				<View style={
+					styles.headersearchbarcontainer
+				}>
+				<TouchableOpacity>
+				<Text style={styles.headersearchbar_text}>
+				浙江农林大学
+				</Text>
+				</TouchableOpacity>
+				</View>
 				<Image source={require('../img/home/m1.png')}
 
 				style={{
 					width:scw,
 					height:150,
+					borderBottomLeftRadius:scw*0.07,
+					borderBottomRightRadius:scw*0.07,
 				}}/>
 				
 				</View>
+
+
 				<View style={{
-					backgroundColor:'blue',
-					
+					borderBottomLeftRadius:scw,
 				}}>
+				<View style={
+					styles.headersearchbarcontainer
+				}>
+				<TouchableOpacity>
+				<Text style={styles.headersearchbar_text}>
+				浙江农林大学
+				</Text>
+				</TouchableOpacity>
+				</View>
 				<Image source={require('../img/home/m2.png')}
 
 				style={{
 					width:scw,
 					height:150,
+					borderBottomLeftRadius:scw*0.07,
+					borderBottomRightRadius:scw*0.07,
 				}}/>
 				</View>
-				<View style={{
-					backgroundColor:'green',
-				}}>
-				<Image source={require('../img/home/m3.png')}
 
+
+				<View style={{
+					borderRadius:scw,
+				}}>
+				<View style={
+					styles.headersearchbarcontainer
+				}>
+				<TouchableOpacity>
+				<Text style={styles.headersearchbar_text}>
+				浙江农林大学
+				</Text>
+				</TouchableOpacity>
+				</View>
+				<Image source={require('../img/home/m3.png')}
 				style={{
 					width:scw,
 					height:150,
+					borderBottomLeftRadius:scw*0.07,
+					borderBottomRightRadius:scw*0.07,
 				}}/>
 				</View>
+				</Swiper>);
+
+
+		}
+
+		rendermenu(){
+			return(
+				<Swiper  
+				showsButtons={false}
+				height={180}
+				width={scw}
+				autoplay={true}
+				dotColor='#E5EAE6'
+				activeDotColor='#DD0617'
+				autoplayTimeout={5}
+				>
+
+				<View style={styles.menucontainer}>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				
+				</View>
+
+				<View style={styles.menucontainer}>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				<View style={styles.menuitem}></View>
+				
+				</View>
+
 				</Swiper>);
 
 
@@ -68,6 +143,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<ScrollView>
 				{this.renderhead()}
+				{this.rendermenu()}
+
 				</ScrollView>				
 				
 
@@ -77,4 +154,51 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 	}
 
+	var scw=Dimensions.get('window').width;
+	const styles=StyleSheet.create(
+	{
+		headersearchbar_text:{
+			color:'white',
+			opacity:0.95,
+			fontSize:20,
+			marginLeft:15,
 
+		},
+
+		headersearchbarcontainer:{
+			height:30,
+			width:200,
+			marginTop:15,
+			marginLeft:15,
+			backgroundColor:'#262525',
+			opacity:0.8,
+			borderRadius:15,
+			position:'absolute',
+			zIndex:3,
+
+
+		},
+
+		menucontainer:{
+			justifyContent:'space-between',
+			alignItems:'center',
+			flexWrap:'wrap',
+			flexDirection:'row',
+			backgroundColor:'red',
+			height:170,
+
+		},
+
+
+		menuitem:{
+			height:80,
+			width:scw/4,
+			borderWidth:1,
+			backgroundColor:'yellow',
+
+		}
+
+
+
+
+	})

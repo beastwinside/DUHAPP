@@ -19,13 +19,8 @@
 
 
 class TabBarItem extends Component {
-
-   
-
-    render() {
-        
+    render() {  
         let image = this.props.imagee;
-
         return (
             <View style={styles.container}>
             <Image 
@@ -36,7 +31,7 @@ class TabBarItem extends Component {
                 borderRadius:12.5,
                 marginTop:10,
             }}/>
-            <Text >
+            <Text style={styles.title}>
             {this.props.title}
             </Text>
             </View>
@@ -57,7 +52,7 @@ const styles = StyleSheet.create({
     title: {
 
         fontSize: 15,
-        color:'#1B1919',
+        color:'#F4E8E8',
         marginBottom:10,
 
 
