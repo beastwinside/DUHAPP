@@ -6,51 +6,69 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	import Swiper from 'react-native-swiper';
 
 	export default class PageOne extends Component {
-		render() {
 
+		renderhead(){
 			let scw=Dimensions.get('window').width;
-			let sch=Dimensions.get('window').height;
-			return (
-				
-				<Swiper  
-				showsButtons={true}
-				height={200}
-				width={scw/2}
+
+			return(<Swiper  
+				showsButtons={false}
+				height={150}
+				width={scw}
 				autoplay={true}
-				
+				dotColor='#E5EAE6'
+				activeDotColor='#ED500C'
+				autoplayTimeout={5}
+			
+
 				>
 				<View style={{
 					backgroundColor:'red',
-					
-
 				}}>
-				<Text style={{
-					color:'white',
-					fontSize:40,
-					textAlign:'center',
-				}}>PPPPPPPPPage one</Text>
+				<Image source={require('../img/home/m1.png')}
+
+				style={{
+					width:scw,
+					height:150,
+				}}/>
+				
 				</View>
 				<View style={{
 					backgroundColor:'blue',
 					
 				}}>
-				<Text style={{
-					color:'white',
-					fontSize:40,
-					textAlign:'center',
-				}}>PPPPPPPPPage two</Text>
+				<Image source={require('../img/home/m2.png')}
+
+				style={{
+					width:scw,
+					height:150,
+				}}/>
 				</View>
 				<View style={{
 					backgroundColor:'green',
-					
 				}}>
-				<Text style={{
-					color:'white',
-					fontSize:40,
-					textAlign:'center',
-				}} >PPPPPPPPPage three</Text>
+				<Image source={require('../img/home/m3.png')}
+
+				style={{
+					width:scw,
+					height:150,
+				}}/>
 				</View>
-				</Swiper>
+				</Swiper>);
+
+
+		}
+
+
+
+
+		render() {
+
+			let scw=Dimensions.get('window').width;
+			let sch=Dimensions.get('window').height;
+			return (
+				<ScrollView>
+				{this.renderhead()}
+				</ScrollView>				
 				
 
 				);
