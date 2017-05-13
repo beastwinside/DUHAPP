@@ -312,6 +312,7 @@ import {
 
 	 		return (
 	 			<ScrollView 
+	 			
 	 			refreshControl={
 	 				<RefreshControl
 	 				refreshing={this.state.headLoading}

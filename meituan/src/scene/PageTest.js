@@ -16,7 +16,7 @@ import {
 						shopname:'小夫妻',
 						orderstatus:'订单完成',
 						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
+						ordername:'香菇滑稽饭',
 						ordernum:'1',
 						orderprice:'10',
 					},
