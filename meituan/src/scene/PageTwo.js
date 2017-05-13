@@ -64,7 +64,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				<View style={{
 					marginTop:55,
-					height:sch,
+					height:sch-130,
 					borderTopWidth:1,
 					borderColor:'#9C9C9C',
 					backgroundColor:'#0EF0B7',
@@ -82,7 +82,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				locked={false}
 				initialPage={0}
 				style={{
-					height:200,
+					
 					backgroundColor:"#1DD7AC",
 					
 
