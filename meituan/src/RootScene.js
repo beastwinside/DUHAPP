@@ -72,9 +72,6 @@ class RootScene extends Component {
       component={PageTest} 
       title="测试" 
       icon={TabBarItem}
-
-   
-     
       />
       </Router>
 

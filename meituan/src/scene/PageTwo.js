@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
-	import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
+	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
 	import PageTest from './PageTest';
 	import PageThree from './PageThree';
 
@@ -70,7 +70,7 @@ import {View, Text, StyleSheet, StatusBar,
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				
+				tabBarUnderlineStyle={{backgroundColor: '#FF0000'}}
 				tabBarBackgroundColor='#F0FDA9'
 				tabBarActiveTextColor='#201F20'
 				tabBarInactiveTextColor='#727272'
