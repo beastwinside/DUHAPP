@@ -21,58 +21,58 @@ import {
 						orderprice:'10',
 					},
 					{
-						shopname:'小夫妻',
+						shopname:'老夫妻',
 						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
+						shopimageurl:require('../img/order/laofuqi@2x.png'),
+						ordername:'黄焖鸡米饭',
 						ordernum:'1',
 						orderprice:'10',
 					},{
-						shopname:'小夫妻',
+						shopname:'大夫妻',
 						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
+						shopimageurl:require('../img/order/dafuqi@2x.png'),
+						ordername:'蛋炒饭',
 						ordernum:'1',
 						orderprice:'10',
 					},{
-						shopname:'小夫妻',
+						shopname:'中夫妻',
+						orderstatus:'订单取消',
+						shopimageurl:require('../img/order/zhongfuqi@2x.png'),
+						ordername:'热狗套餐',
+						ordernum:'1',
+						orderprice:'12',
+					},
+					{
+						shopname:'巨夫妻',
 						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
+						shopimageurl:require('../img/order/jufuqi@2x.png'),
+						ordername:'汉堡',
+						ordernum:'3',
+						orderprice:'10',
+					},
+					{
+						shopname:'少夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/shaofuqi@2x.png'),
+						ordername:'童子 鸡',
+						ordernum:'2',
+						orderprice:'11',
+					},
+					{
+						shopname:'多夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/duofuqi@2x.png'),
+						ordername:'米线',
 						ordernum:'1',
 						orderprice:'10',
 					},
 					{
-						shopname:'小夫妻',
+						shopname:'小小夫妻',
 						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
-						ordernum:'1',
-						orderprice:'10',
-					},
-					{
-						shopname:'小夫妻',
-						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
-						ordernum:'1',
-						orderprice:'10',
-					},
-					{
-						shopname:'小夫妻',
-						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
-						ordernum:'1',
-						orderprice:'10',
-					},
-					{
-						shopname:'小夫妻',
-						orderstatus:'订单完成',
-						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
-						ordername:'香菇滑稽套餐+热狗',
-						ordernum:'1',
-						orderprice:'10',
+						shopimageurl:require('../img/order/xiaoxiaofuqi@2x.png'),
+						ordername:'馒头',
+						ordernum:'15',
+						orderprice:'1',
 					},
 					])
 			};
@@ -151,14 +151,14 @@ import {
 					<Text
 					style={{
 						color:'black',
-						fontSize:15,
-						marginTop:10,
+						fontSize:18,
+						marginTop:25,
 						marginLeft:60,
 					}}
 					>{rowData.ordername}</Text>
 
 					<View	style={{
-						marginTop:10,
+						
 						position:'absolute',
 						right:0,
 						flexDirection:'column',
@@ -167,22 +167,25 @@ import {
 
 					<Text
 					style={{
-						color:'black',
-						fontSize:15,
+
+						color:'#696969',
+						fontSize:10,
 						textAlign:'right',
-						flex:1,
-						marginRight:5,
+						marginTop:15,
+						marginRight:15,
 					}}
 					>{'x'+rowData.ordernum}</Text>
 					<Text
 					style={{
+						
 						color:'black',
-						fontSize:15,
-						flex:1,
+						fontSize:12,
 						marginRight:5,
+						
 					}}
 					>{'共'+rowData.ordernum+'件商品 '+'实付'
-					+rowData.ordernum*rowData.orderprice+'元'}</Text>
+					+rowData.ordernum*rowData.orderprice+'元'}
+					</Text>
 
 
 					</View>
@@ -221,7 +224,7 @@ import {
 
 				/>
 
-				
+
 				
 
 
