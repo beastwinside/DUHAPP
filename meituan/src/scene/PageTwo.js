@@ -28,7 +28,7 @@ import {View, Text, StyleSheet, StatusBar,
 					position:'absolute',
 					top:10,
 					marginLeft:125,
-				
+
 
 					
 				}}
@@ -70,27 +70,29 @@ import {View, Text, StyleSheet, StatusBar,
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{backgroundColor: '#FF0000'}}
-				tabBarBackgroundColor='#F0FDA9'
-				tabBarActiveTextColor='#201F20'
-				tabBarInactiveTextColor='#727272'
-				tabBarTextStyle={{fontSize: 18}}
-				locked={false}
-				initialPage={0}
-				style={{
-					height:200,
-					backgroundColor:"#1DD7AC",
-					
+				tabBarUnderlineStyle={{
+					backgroundColor: '#201F20',
+					height:2,}}
+					tabBarBackgroundColor='#F0FDA9'
+					tabBarActiveTextColor='#201F20'
+					tabBarInactiveTextColor='#727272'
+					tabBarTextStyle={{fontSize: 18}}
+					locked={false}
+					initialPage={0}
+					style={{
+						height:200,
+						backgroundColor:"#1DD7AC",
 
-				}} >
-				<PageTest tabLabel="全部订单" />
-				<PageThree tabLabel="待评价" />
-				
-				</ScrollableTabView>
-				</View>
 
-				</View>
+					}} >
+					<PageTest tabLabel="全部订单" />
+					<PageThree tabLabel="待评价" />
 
-				)
+					</ScrollableTabView>
+					</View>
+
+					</View>
+
+					)
 		}
 	}
