@@ -42,6 +42,38 @@ import {
 						ordernum:'1',
 						orderprice:'10',
 					},
+					{
+						shopname:'小夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
+						ordername:'香菇滑稽套餐+热狗',
+						ordernum:'1',
+						orderprice:'10',
+					},
+					{
+						shopname:'小夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
+						ordername:'香菇滑稽套餐+热狗',
+						ordernum:'1',
+						orderprice:'10',
+					},
+					{
+						shopname:'小夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
+						ordername:'香菇滑稽套餐+热狗',
+						ordernum:'1',
+						orderprice:'10',
+					},
+					{
+						shopname:'小夫妻',
+						orderstatus:'订单完成',
+						shopimageurl:require('../img/order/xiaofuqi@2x.png'),
+						ordername:'香菇滑稽套餐+热狗',
+						ordernum:'1',
+						orderprice:'10',
+					},
 					])
 			};
 
@@ -52,22 +84,23 @@ import {
 
 		render() {
 			return (
+				
 				<View style={{
-					marginTop:55,
+					marginTop:52,
 				}}>
 				
 				<ListView 
-			
+
 				dataSource={this.state.dataSource}
 				renderRow={(rowData)=>
 					<View style={{
 						height:150,
-						backgroundColor:'#FFFBA6',
+						backgroundColor:'#F7F7F7',
 						marginBottom:10,
 					}}>
 					<View style={{
 						flex:0.8,
-						backgroundColor:'red',
+						backgroundColor:'#F7F7F7',
 						flexDirection:'row',
 					}}>
 
@@ -81,10 +114,11 @@ import {
 						borderRadius:25,
 					}}
 					source={rowData.shopimageurl}/>
+
 					</TouchableOpacity>
 					<Text
 					style={{
-						color:'white',
+						color:'black',
 						fontSize:20,
 						marginTop:10,
 						marginLeft:10,
@@ -93,7 +127,7 @@ import {
 
 					<Text
 					style={{
-						color:'white',
+						color:'black',
 						fontSize:15,
 						marginTop:10,
 						position:'absolute',
@@ -108,12 +142,15 @@ import {
 
 					<View style={{
 						flex:1,
-						backgroundColor:'green',
+						backgroundColor:'#F7F7F7',
+						borderTopWidth:1,
+						borderBottomWidth:1,
+						borderColor:'#898787',
 					}}>
 					<TouchableOpacity activeOpacity={0.6}>
-						<Text
+					<Text
 					style={{
-						color:'white',
+						color:'black',
 						fontSize:15,
 						marginTop:10,
 						marginLeft:60,
@@ -130,7 +167,7 @@ import {
 
 					<Text
 					style={{
-						color:'white',
+						color:'black',
 						fontSize:15,
 						textAlign:'right',
 						flex:1,
@@ -139,7 +176,7 @@ import {
 					>{'x'+rowData.ordernum}</Text>
 					<Text
 					style={{
-						color:'white',
+						color:'black',
 						fontSize:15,
 						flex:1,
 						marginRight:5,
@@ -154,19 +191,44 @@ import {
 
 
 
-					
+
 					<View style={{
 						flex:0.8,
 					}}>
-					
+					<View	style={{
+						marginTop:7,
+						position:'absolute',
+						right:10,
+						borderWidth:1,
+						height:30,
+						width:80,
+
+						
+					}}>
+					<TouchableOpacity activeOpacity={0.6}>
+					<Text style={{
+						fontSize:17,
+						color:'black',
+						textAlign:'center',
+					}}>再来一单</Text>
+					</TouchableOpacity>
+					</View>
+					</View>
 
 					</View>
-					
-					</View>
+
 				}
+
 				/>
 
+				
+				
+
+
 				</View>
+
+
+
 				)
 		}
 	}

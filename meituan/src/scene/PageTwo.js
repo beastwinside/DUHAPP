@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, StatusBar,
+import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
@@ -53,6 +53,8 @@ import {View, Text, StyleSheet, StatusBar,
 
 
 		render() {
+			let scw=Dimensions.get('window').width;
+			let sch=Dimensions.get('window').height;
 
 			return (
 				<View style={{
@@ -62,37 +64,43 @@ import {View, Text, StyleSheet, StatusBar,
 
 				<View style={{
 					marginTop:55,
-					height:800,
+					height:sch,
 					borderTopWidth:1,
-					borderColor:'#9C9C9C'
+					borderColor:'#9C9C9C',
+					backgroundColor:'#0EF0B7',
+
 
 				}}>
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{
-					backgroundColor: '#201F20',
-					height:2,}}
-					tabBarBackgroundColor='#F0FDA9'
-					tabBarActiveTextColor='#201F20'
-					tabBarInactiveTextColor='#727272'
-					tabBarTextStyle={{fontSize: 18}}
-					locked={false}
-					initialPage={0}
-					style={{
-						height:200,
-						backgroundColor:"#1DD7AC",
+				tabBarUnderlineStyle={{backgroundColor: '#FF0000'}}
+				tabBarBackgroundColor='#F0FDA9'
+				tabBarActiveTextColor='#201F20'
+				tabBarInactiveTextColor='#727272'
+				tabBarTextStyle={{fontSize: 18}}
+				locked={false}
+				initialPage={0}
+				style={{
+					height:200,
+					backgroundColor:"#1DD7AC",
+					
 
+				}} >
+				<PageTest tabLabel="全部订单" />
+				<Text tabLabel="待评价"
+				style={{
+					marginTop:100,
+					fontSize:49,
+					textAlign:'center',
+				}}>
+				暂无评价
+				</Text>			
+				</ScrollableTabView>
+				</View>
 
-					}} >
-					<PageTest tabLabel="全部订单" />
-					<PageThree tabLabel="待评价" />
+				</View>
 
-					</ScrollableTabView>
-					</View>
-
-					</View>
-
-					)
+				)
 		}
 	}

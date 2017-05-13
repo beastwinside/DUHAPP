@@ -375,7 +375,7 @@ import {
 
 
 	 				<View style={{
-	 					height:40,
+	 					height:60,
 	 				}}>
 	 				</View>
 
