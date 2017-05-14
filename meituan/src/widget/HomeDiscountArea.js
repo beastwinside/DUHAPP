@@ -12,8 +12,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				<TouchableOpacity>
 				<Image style={{
-					height:250,
-					marginLeft:5,
+					height:220,
+					marginLeft:10,
 				}}
 				
 				source={require('../img/home/discountarea/left.png')}/>
@@ -22,30 +22,30 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<View style={styles.rightview}>
 				<TouchableOpacity>
 				<Image style={{
-					width:scw*0.58*0.45,
-					height:120,
-					marginTop:25,
+					width:scw*0.58*0.35,
+					height:100,
+					marginTop:40,
 				}} source={require('../img/home/discountarea/r1.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
 				<Image style={{
-					width:scw*0.58*0.45,
-					height:120,
-					marginTop:25,
+					width:scw*0.58*0.35,
+					height:100,
+					marginTop:40,
 				}} source={require('../img/home/discountarea/r2.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
 				<Image style={{
-					width:scw*0.58*0.45,
-					height:120,
-					marginTop:25,
+					width:scw*0.58*0.35,
+					height:100,
+					marginTop:15,
 				}} source={require('../img/home/discountarea/r3.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
 				<Image style={{
-					width:scw*0.58*0.45,
-					height:120,
-					marginTop:25,
+					width:scw*0.58*0.35,
+					height:100,
+					marginTop:15,
 				}} source={require('../img/home/discountarea/r4.png')}/>
 				</TouchableOpacity>
 				</View>
