@@ -24,7 +24,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				headLoading:false,
 				dataSource:ds.cloneWithRows([
 				{
-					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					img:require('../img/shopinfo/alsk.png'),
 					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -36,7 +36,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					firstcustom:'新用户立减5元',
 				},
 				{
-					img:require('../img/home/shopinfo/真好吃龙虾.png'),
+					img:require('../img/shopinfo/zhclx.png'),
 					shopname:'真好吃龙虾',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -50,7 +50,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/巴西烤鱼.png'),
+					img:require('../img/shopinfo/bxky.png'),
 					shopname:'巴西烤鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -64,7 +64,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/精武鸭脖.png'),
+					img:require('../img/shopinfo/jwyb.png'),
 					shopname:'精武鸭脖',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -78,7 +78,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/碗留香黄焖鸡.png'),
+					img:require('../img/shopinfo/wlxhmj.png'),
 					shopname:'碗留香黄焖鸡',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -92,7 +92,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/李日天鱿鱼.png'),
+					img:require('../img/shopinfo/lrtyy.png'),
 					shopname:'李日天鱿鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -106,7 +106,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/巴西烤鱼.png'),
+					img:require('../img/shopinfo/bxky.png'),
 					shopname:'巴西烤鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -120,7 +120,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					img:require('../img/shopinfo/alsk.png'),
 					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -134,7 +134,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/精武鸭脖.png'),
+					img:require('../img/shopinfo/jwyb.png'),
 					shopname:'精武鸭脖',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -148,7 +148,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/真好吃龙虾.png'),
+					img:require('../img/shopinfo/zhclx.png'),
 					shopname:'真好吃龙虾',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -162,7 +162,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					img:require('../img/shopinfo/alsk.png'),
 					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
@@ -226,13 +226,13 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					<Image source={rowData.img} style={{height:60,margin:5,width:scw/4.5}}/>
 					</View>
 					<View style={{flex:3,backgroundColor:'#F0EEEE'}}>
-					<Text style={{flex:1,borderWidth:0.5,fontSize:18,color:'black',paddingTop:5,fontWeight:'bold',}}>
+					<Text style={{flex:1,borderWidth:0.5,fontSize:18,color:'black',paddingTop:5,fontWeight:'bold',backgroundColor:'#037E61'}}>
 					{rowData.shopname}</Text>
 					<Text style={{flex:1,borderWidth:0.5,color:'#FD4D00'}}>
 					★★★★★ 月售{rowData.yuexiaoliang} {rowData.time}分钟 {rowData.discount}m</Text>
-					<Text style={{flex:1,borderWidth:0.5}}>起送{rowData.qisongprice},配送{rowData.peisongprice},人均{rowData.renjun}</Text>
-					<Text style={{flex:1,borderWidth:0.5}}>{rowData.jian}</Text>
-					<Text style={{flex:1,borderWidth:0.5}}>{rowData.firstcustom}</Text>
+					<Text style={{flex:1,borderWidth:0.5,backgroundColor:'#EEC914'}}>起送{rowData.qisongprice},配送{rowData.peisongprice},人均{rowData.renjun}</Text>
+					<Text style={{flex:1,borderWidth:0.5,backgroundColor:'#F30B64'}}>{rowData.jian}</Text>
+					<Text style={{flex:1,borderWidth:0.5,backgroundColor:'#1E5A08'}}>{rowData.firstcustom}</Text>
 
 					</View>
 

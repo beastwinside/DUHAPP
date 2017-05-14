@@ -7,7 +7,7 @@ export default class HomeListHeader extends Component{
 		return(
 			<View style={styles.container}>
 			<Text style={styles.text1}>
-		    Nearby Delicacy
+		    附近美食
 			</Text>
 			<View style={{
 				width:scw,
