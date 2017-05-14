@@ -12,7 +12,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				<TouchableOpacity>
 				<Image style={{
-					height:220,
+					height:210,
+					width:scw*0.38,
 					marginLeft:10,
 				}}
 				
