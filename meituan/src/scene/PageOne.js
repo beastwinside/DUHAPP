@@ -8,6 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	import Homeheader from '../widget/Homeheader';
 	import HomeDiscountArea from '../widget/HomeDiscountArea';
 	import HomeScrollArea from  '../widget/HomeScrollArea';
+	import HomeQualityArea from  '../widget/HomeQualityArea';
 
 	export default class PageOne extends Component {
 
@@ -59,6 +60,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<Homemenu/>
 				<HomeDiscountArea/>
 				<HomeScrollArea/>
+				<HomeQualityArea/>
 				<View style={{
 					height:800,
 					backgroundColor:'#2e2b2b',

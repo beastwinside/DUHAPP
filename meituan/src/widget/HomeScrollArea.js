@@ -7,8 +7,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		render(){
 			return (
 				<ScrollView style={{
-					height:80,
-					backgroundColor:'#049495',
+					height:70,
+					backgroundColor:'#d01449',
 				}}
 				horizontal={true}
 				showsHorizontalScrollIndicator={false}
@@ -28,7 +28,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		const styles=StyleSheet.create(
 		{
 			scrollitem:{
-				marginTop:5,
+				
 				height:70,
 				width:140,
 				backgroundColor:'#1FE20E',
@@ -38,4 +38,3 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			},
 		})
 
-		
