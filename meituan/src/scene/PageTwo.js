@@ -27,7 +27,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					width:80,
 					position:'absolute',
 					top:10,
-					marginLeft:125,
+					marginLeft:Dimensions.get('window').width/2-30,
 
 
 					

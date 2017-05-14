@@ -85,10 +85,12 @@ const styles=StyleSheet.create({
     backgroundColor:'#000000',
      borderTopWidth:0.6,
      borderColor:'#272727',
+     opacity:0.7,
   },
 
   navigationBarStyle:{
     backgroundColor:'#FFAE3B',
+
 
   },
 

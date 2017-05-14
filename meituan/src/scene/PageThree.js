@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
 	View, Text, StyleSheet, StatusBar, ListView,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
-
+import Mineheader from '../widget/Mineheader';
+import Mineinfo from '../widget/Mineinfo';
+import Minefooter from '../widget/Minefooter';
 
 	var THUMB_URLS1 = [  
 	require('../img/mine/dx@2x.png'),  
@@ -55,151 +57,8 @@ import {
 
 
 
-	 	renderhead(){
-	 		return(
-	 			<View style={{
-	 				height:160,
-	 				backgroundColor:'#72DCBD',
-	 			}}>
 
-	 			<TouchableOpacity activeOpacity={0.6} >
-	 			<Image style={{
-	 				height:90,
-	 				width:90,
-	 				borderRadius:45,
-	 				marginTop:20,
-	 				alignSelf:'center',
-	 			}}
-	 			source={require('../img/mine/touxiang@2x.png')} 
-	 			/>
-	 			</TouchableOpacity>
-
-
-	 			<Image style={{
-	 				height:30,
-	 				width:30,
-	 				borderRadius:15,
-	 				marginTop:20,
-	 				position:'absolute',
-	 				top:0,
-	 				right:15,
-	 			}}
-	 			source={require('../img/mine/topright@2x.png')} 
-	 			/>
-
-	 			<Text style={{
-	 				alignSelf:'center',
-	 				fontSize:20,
-
-	 			}}>
-	 			NGs49753293>
-	 			</Text>
-	 			</View>
-	 			);
-	 	}
-
-	 	renderinfo(){
-	 		return(
-	 			<View style={{
-	 				height:120,
-	 				backgroundColor:'#72dcbd',
-	 				flexDirection:'row',
-	 				justifyContent:'space-around',
-	 				alignItems:'center',
-	 				borderTopWidth:1,
-	 				borderColor:'#838080',
-	 			}}>	
-
-	 			<View style={[style.info_viewstyle,
-	 				{	backgroundColor:'#32ACE9',}]}>	
-	 				<Text style={{
-	 					fontSize:15,
-	 					alignSelf:'center',
-	 					marginTop:10,
-	 				}}>1亿张
-	 				</Text>
-
-	 				<View style={{
-	 					flexDirection:'row',
-	 					alignSelf:'center',
-	 				}}>
-	 				<Image style={{
-	 					height:25,
-	 					width:25,
-	 					borderRadius:12.5,
-	 				}}
-	 				source={require('../img/mine/dingdan@2x.png')}/> 
-	 				<Text style={{
-	 					fontSize:18,
-	 					alignSelf:'center',
-	 					color:'#2E2B2B',
-	 				}}>美团红包
-	 				</Text>
-	 				</View>
-	 				</View>
-
-	 				<View style={[style.info_viewstyle,
-	 					{backgroundColor:'#ed1b45',}]}>
-	 					<Text style={{
-	 						fontSize:15,
-	 						alignSelf:'center',
-	 						marginTop:10,
-	 					}}>1亿元
-	 					</Text>
-
-	 					<View style={{
-	 						flexDirection:'row',
-	 						alignSelf:'center',
-	 					}}>
-	 					<Image style={{
-	 						height:25,
-	 						width:25,
-	 						borderRadius:12.5,
-	 					}}
-	 					source={require('../img/mine/dingdan@2x.png')}/> 
-	 					<Text style={{
-	 						fontSize:18,
-	 						alignSelf:'center',
-	 						color:'#2E2B2B',
-	 					}}>余额
-	 					</Text>
-	 					</View>
-	 					</View>
-
-	 					<View style={[style.info_viewstyle,
-	 						{	backgroundColor:'#eac735',}]}>
-
-	 						<Text style={{
-	 							fontSize:15,
-	 							alignSelf:'center',
-	 							marginTop:10,
-	 						}}>0张
-	 						</Text>	
-
-	 						<View style={{
-	 							flexDirection:'row',
-	 							alignSelf:'center',
-	 						}}>
-	 						<Image style={{
-	 							height:25,
-	 							width:25,
-	 							borderRadius:12.5,
-	 						}}
-	 						source={require('../img/mine/dingdan@2x.png')}/> 
-	 						<Text style={{
-	 							fontSize:18,
-	 							alignSelf:'center',
-	 							color:'#2E2B2B',
-	 						}}>代金券</Text>
-	 						</View>
-	 						</View>
-
-
-	 						</View>
-	 						);
-
-	 	}
-
+	 	
 
 	 	
 
@@ -271,21 +130,6 @@ import {
 	 	}
 
 
-	 	renderfooter(){
-	 		return(
-	 			<View style={{
-	 				height:60,
-	 				backgroundColor:'#fffba6',
-	 			}}>
-	 			<Text style={{
-	 				alignSelf:'center',
-	 				color:'black',
-	 				fontSize:25,
-	 			}}>
-	 			客服·电话：1010977
-	 			</Text></View>
-	 			);
-	 	}
 
 
 
@@ -330,9 +174,8 @@ import {
 	 				flex:1,
 	 			}}>
 
-	 			{this.renderhead()}
-	 			{this.renderinfo()}
-	 			
+	 			<Mineheader/>
+	 			<Mineinfo/>		
 	 			<ListView
 	 			style={{ 
 	 				borderTopWidth:0.5,
@@ -348,7 +191,6 @@ import {
 	 			dataSource={ds2}
 	 			renderRow={this.renderRow2}
 	 			/>
-
 	 			{this.renderspaceview()}
 	 			<ListView
 	 			style={{ 
@@ -357,13 +199,9 @@ import {
 	 			dataSource={ds3}
 	 			renderRow={this.renderRow3}
 	 			/>
-
 	 			{this.renderspaceview()}
-	 			{this.renderfooter()}
-	 			
-
+	 			<Minefooter/>	
 	 			{this.renderspaceview()}
-
 	 			<View style={{
 	 				height:40,
 	 			}}>
@@ -374,19 +212,10 @@ import {
 	 				</Text>
 	 				</View>
 
-
 	 				<View style={{
 	 					height:60,
 	 				}}>
 	 				</View>
-
-
-
-
-
-
-
-
 	 				</ScrollView>
 	 				);
 	 	}
