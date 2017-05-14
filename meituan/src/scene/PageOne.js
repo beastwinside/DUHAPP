@@ -23,8 +23,6 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			};
 		}
 
-
-
 		_combineData() {
 			this.setState({ headLoading: true })
 
@@ -34,9 +32,6 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		}
 
 		
-
-
-
 
 		render() {
 

@@ -12,7 +12,7 @@ export default class HomeListHeader extends Component{
 			<View style={{
 				width:scw,
 				height:30,
-			
+				backgroundColor:'#DBE7E8',
 				flexDirection:'row',
 				justifyContent:'space-around',
 			}}>
@@ -23,33 +23,37 @@ export default class HomeListHeader extends Component{
 				fontSize:15,
 				textAlign:'center',
 				marginTop:4,
+
 			}}>综合排序</Text>
 			</TouchableOpacity>
 			<TouchableOpacity>
 			<Text style={{
 				width:scw/5,
-				color:'#4D4C4C',
+				color:'#555252',
 				fontSize:15,
 				textAlign:'center',
 				marginTop:4,
+
 			}}>销量最高</Text>
 			</TouchableOpacity>
 			<TouchableOpacity>
 			<Text style={{
 				width:scw/5,
-				color:'#4D4C4C',
+				color:'#555252',
 				fontSize:15,
 				textAlign:'center',
 				marginTop:4,
+
 			}}>距离最近</Text>
 			</TouchableOpacity>
 			<TouchableOpacity>
 			<Text style={{
 				width:scw/5,
-				color:'#4D4C4C',
+				color:'#555252',
 				fontSize:15,
 				textAlign:'center',
 				marginTop:4,
+
 			}}>筛选</Text>
 			</TouchableOpacity>
 
@@ -76,7 +80,7 @@ const styles=StyleSheet.create(
 			fontSize:25,
 			textAlign:'center',
 			color:'#DBD1D1',
-			backgroundColor:'#3A3838',
+			backgroundColor:'#546474',
 			borderBottomWidth:1,
 			borderColor:'#0D0C0C',
 

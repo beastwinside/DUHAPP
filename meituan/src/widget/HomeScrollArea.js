@@ -8,7 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<ScrollView style={{
 					height:70,
-					backgroundColor:'#d01449',
+					backgroundColor:'#5c002f',
 				}}
 				horizontal={true}
 				showsHorizontalScrollIndicator={false}
@@ -32,7 +32,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				width:140,
 				backgroundColor:'#1FE20E',
 				marginLeft:10,
-				
+
 
 
 			},

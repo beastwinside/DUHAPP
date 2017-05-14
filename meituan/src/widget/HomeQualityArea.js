@@ -59,7 +59,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			imagecontainer:{
 				width:scw,
 				height:130,
-				backgroundColor:'#FBE587',
+				backgroundColor:'#018a9a',
 				flexDirection:'row',
 				justifyContent:'space-around',
 				alignItems:'center',
