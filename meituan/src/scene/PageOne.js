@@ -24,8 +24,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				headLoading:false,
 				dataSource:ds.cloneWithRows([
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -36,22 +36,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					firstcustom:'新用户立减5元',
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
-					yuexiaoliang:1381,
-					qisongprice:15,
-					peisongprice:0,
-					renjun:15,
-					time:47,
-					discount:405,
-					jian:'满5减1',
-					firstcustom:'新用户立减5元',
-
-
-				},
-				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/真好吃龙虾.png'),
+					shopname:'真好吃龙虾',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -64,8 +50,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/巴西烤鱼.png'),
+					shopname:'巴西烤鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -78,8 +64,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/精武鸭脖.png'),
+					shopname:'精武鸭脖',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -92,8 +78,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/碗留香黄焖鸡.png'),
+					shopname:'碗留香黄焖鸡',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -106,8 +92,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/李日天鱿鱼.png'),
+					shopname:'李日天鱿鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -120,8 +106,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/巴西烤鱼.png'),
+					shopname:'巴西烤鱼',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -134,8 +120,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -148,8 +134,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/精武鸭脖.png'),
+					shopname:'精武鸭脖',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -162,8 +148,22 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
-					img=require('../img/home/shopinfo/')
-					shopname:'小胖哥烧烤',
+					img:require('../img/home/shopinfo/真好吃龙虾.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/home/shopinfo/阿良烧烤.png'),
+					shopname:'阿良烧烤',
 					yuexiaoliang:1381,
 					qisongprice:15,
 					peisongprice:0,
@@ -220,11 +220,24 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				dataSource={this.state.dataSource}
 				renderRow={
 					(rowData)=>
+					<View style={styles.container}>
 					<View style={styles.listviewitem}>
-					<View style={{flex:1,backgroundColor:'#2E7190'}}></View>
-					<View style={{flex:3,backgroundColor:'#CD4F13'}}></View>
+					<View style={{flex:1,backgroundColor:'#2E7190'}}>
+					<Image source={rowData.img} style={{height:60,margin:5,width:scw/4.5}}/>
+					</View>
+					<View style={{flex:3,backgroundColor:'#F0EEEE'}}>
+					<Text style={{flex:1,borderWidth:0.5,fontSize:18,color:'black',paddingTop:5,fontWeight:'bold',}}>
+					{rowData.shopname}</Text>
+					<Text style={{flex:1,borderWidth:0.5,color:'#FD4D00'}}>
+					★★★★★ 月售{rowData.yuexiaoliang} {rowData.time}分钟 {rowData.discount}m</Text>
+					<Text style={{flex:1,borderWidth:0.5}}>起送{rowData.qisongprice},配送{rowData.peisongprice},人均{rowData.renjun}</Text>
+					<Text style={{flex:1,borderWidth:0.5}}>{rowData.jian}</Text>
+					<Text style={{flex:1,borderWidth:0.5}}>{rowData.firstcustom}</Text>
+
+					</View>
 
 
+					</View>
 					</View>
 
 
@@ -250,12 +263,20 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	let scw=Dimensions.get('window').width;
 	const styles=StyleSheet.create(
 	{
+		container:{
+			borderBottomWidth:1,
+			alignItems:'center',
+			justifyContent:'space-around',
+			backgroundColor:'#2e2b2b',
+		},
+
+
 		listviewitem:{
 			backgroundColor:'#897451',
 			height:160,
-			marginBottom:20,
+			
 			flexDirection:'row',
-		}
+		},
 		
 
 	})
