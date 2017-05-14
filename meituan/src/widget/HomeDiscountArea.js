@@ -7,7 +7,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		render(){
 			return(
 				<View style={styles.h_d_a_container}>
-				<Text style={styles.hdtext}>优惠专区</Text>
+				<Text style={styles.hdtext}>Discount</Text>
 				<View style={styles.leftview}>
 
 				<TouchableOpacity>

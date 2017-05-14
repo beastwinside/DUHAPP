@@ -8,25 +8,25 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<View style={styles.qcontainer}>
 				<Text style={styles.headertext}>
-				————品质专区————</Text>
+				Quality</Text>
 				<View style={styles.imagecontainer}>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/kfc.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>肯德基</Text>
+				<Text style={styles.ptxt}>KFC</Text>
 				</View>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/mdl.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>麦当劳</Text>
+				<Text style={styles.ptxt}>Mcdonald</Text>
 				</View>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/bsk.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>必胜客</Text>
+				<Text style={styles.ptxt}>Pizza hu</Text>
 				</View>
 
 

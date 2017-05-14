@@ -10,6 +10,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	import HomeScrollArea from  '../widget/HomeScrollArea';
 	import HomeQualityArea from  '../widget/HomeQualityArea';
 	import HomeListHeader from  '../widget/HomeListHeader';
+	
 
 
 
@@ -17,9 +18,165 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		constructor(props) {
 			super(props);
-			
+			const ds=new ListView.DataSource({
+				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state = {
 				headLoading:false,
+				dataSource:ds.cloneWithRows([
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				},
+				{
+					img=require('../img/home/shopinfo/')
+					shopname:'小胖哥烧烤',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'满5减1',
+					firstcustom:'新用户立减5元',
+
+
+				}
+
+				])
 			};
 		}
 
@@ -59,6 +216,24 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<HomeScrollArea/>
 				<HomeQualityArea/>
 				<HomeListHeader/>
+				<ListView
+				dataSource={this.state.dataSource}
+				renderRow={
+					(rowData)=>
+					<View style={styles.listviewitem}>
+					<View style={{flex:1,backgroundColor:'#2E7190'}}></View>
+					<View style={{flex:3,backgroundColor:'#CD4F13'}}></View>
+
+
+					</View>
+
+
+				}
+
+
+				/>
+
+				
 				<View style={{
 					height:800,
 					backgroundColor:'#2e2b2b',
@@ -75,6 +250,12 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	let scw=Dimensions.get('window').width;
 	const styles=StyleSheet.create(
 	{
+		listviewitem:{
+			backgroundColor:'#897451',
+			height:160,
+			marginBottom:20,
+			flexDirection:'row',
+		}
 		
 
 	})
