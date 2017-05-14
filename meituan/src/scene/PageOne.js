@@ -9,6 +9,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	import HomeDiscountArea from '../widget/HomeDiscountArea';
 	import HomeScrollArea from  '../widget/HomeScrollArea';
 	import HomeQualityArea from  '../widget/HomeQualityArea';
+	import HomeListHeader from  '../widget/HomeListHeader';
+
+
 
 	export default class PageOne extends Component {
 
@@ -52,7 +55,6 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					title="Loading..."
 					colors={['#ff0000','#00ff00','#0000ff']}
 					processBackgroundColor="#ffff00"
-
 					/>
 				}
 				>
@@ -61,6 +63,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<HomeDiscountArea/>
 				<HomeScrollArea/>
 				<HomeQualityArea/>
+				<HomeListHeader/>
 				<View style={{
 					height:800,
 					backgroundColor:'#2e2b2b',

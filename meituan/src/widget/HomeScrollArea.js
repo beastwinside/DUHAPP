@@ -14,7 +14,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				showsHorizontalScrollIndicator={false}
 				>
 
-				<Image style={styles.scrollitem} source={require('../img/home/s1.png')}/>
+				<Image style={[styles.scrollitem,{marginLeft:0,}]} source={require('../img/home/s1.png')}/>
 				<Image style={styles.scrollitem} source={require('../img/home/s2.png')}/>
 				<Image style={styles.scrollitem} source={require('../img/home/s3.png')}/>
 				<Image style={styles.scrollitem} source={require('../img/home/s2.png')}/>
@@ -28,11 +28,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		const styles=StyleSheet.create(
 		{
 			scrollitem:{
-				
 				height:70,
 				width:140,
 				backgroundColor:'#1FE20E',
 				marginLeft:10,
+				
 
 
 			},
