@@ -14,19 +14,19 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/kfc.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>品牌商家</Text>
+				<Text style={styles.ptxt}>肯德基</Text>
 				</View>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/mdl.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>品牌商家</Text>
+				<Text style={styles.ptxt}>麦当劳</Text>
 				</View>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
 				<Image style={styles.cc} source={require('../img/home/quality/bsk.png')}/>
 				</TouchableOpacity>
-				<Text style={styles.ptxt}>品牌商家</Text>
+				<Text style={styles.ptxt}>必胜客</Text>
 				</View>
 
 
