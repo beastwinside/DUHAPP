@@ -64,8 +64,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create(
 	{
 		h_d_a_container:{
-			height:400,
-			backgroundColor:'#2E2B2B',
+			height:315,
+			backgroundColor:'#2e2b2b',
 
 
 		},
