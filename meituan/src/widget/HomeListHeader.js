@@ -83,6 +83,7 @@ const styles=StyleSheet.create(
 			backgroundColor:'#546474',
 			borderBottomWidth:1,
 			borderColor:'#0D0C0C',
+			fontWeight:'bold',
 
 		},
 		

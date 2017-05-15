@@ -95,12 +95,12 @@ import {
 				renderRow={(rowData)=>
 					<View style={{
 						height:150,
-						backgroundColor:'#F7F7F7',
+						backgroundColor:'#212121',
 						marginBottom:10,
 					}}>
 					<View style={{
 						flex:0.8,
-						backgroundColor:'#F7F7F7',
+						backgroundColor:'#d4442a',
 						flexDirection:'row',
 					}}>
 
@@ -142,15 +142,15 @@ import {
 
 					<View style={{
 						flex:1,
-						backgroundColor:'#F7F7F7',
-						borderTopWidth:1,
-						borderBottomWidth:1,
-						borderColor:'#898787',
+						backgroundColor:'#212121',
+					
+						
+						
 					}}>
 					<TouchableOpacity activeOpacity={0.6}>
 					<Text
 					style={{
-						color:'black',
+						color:'#F6F3F3',
 						fontSize:18,
 						marginTop:25,
 						marginLeft:60,
@@ -168,7 +168,7 @@ import {
 					<Text
 					style={{
 
-						color:'#696969',
+						color:'#FFE2E2',
 						fontSize:10,
 						textAlign:'right',
 						marginTop:15,
@@ -178,7 +178,7 @@ import {
 					<Text
 					style={{
 						
-						color:'black',
+						color:'#EFDFDF',
 						fontSize:12,
 						marginRight:5,
 						
@@ -197,12 +197,14 @@ import {
 
 					<View style={{
 						flex:0.8,
+						backgroundColor:'#212121',
 					}}>
 					<View	style={{
 						marginTop:7,
 						position:'absolute',
 						right:10,
-						borderWidth:1,
+						borderColor:'#d4442a',
+						borderWidth:2,
 						height:30,
 						width:80,
 
@@ -211,7 +213,7 @@ import {
 					<TouchableOpacity activeOpacity={0.6}>
 					<Text style={{
 						fontSize:17,
-						color:'black',
+						color:'white',
 						textAlign:'center',
 					}}>再来一单</Text>
 					</TouchableOpacity>

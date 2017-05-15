@@ -54,6 +54,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				textAlign:'center',
 				color:'#FFFFFF',
 				backgroundColor:'black',
+				fontWeight:'bold',
 			},
 
 			imagecontainer:{
@@ -76,6 +77,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				height:scw/5,
 				width:scw/4.5,
 				borderRadius:scw/8.8,
+				borderWidth:2,
+				borderColor:'white',
 			},
 
 			ptxt:{

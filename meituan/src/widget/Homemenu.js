@@ -21,7 +21,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 
 				source={require('../img/home/menu/page1/page1@2x.png')}/>
@@ -31,7 +33,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page2@2x.png')}/>
 				</TouchableOpacity>
@@ -40,7 +44,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page3@2x.png')}/>
 				</TouchableOpacity>
@@ -49,7 +55,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page4@2x.png')}/>
 				</TouchableOpacity>
@@ -58,7 +66,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page5@2x.png')}/>
 				</TouchableOpacity>
@@ -67,7 +77,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page6@2x.png')}/>
 				</TouchableOpacity>
@@ -76,7 +88,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page7@2x.png')}/>
 				</TouchableOpacity>
@@ -85,7 +99,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page1/page8@2x.png')}/>
 				</TouchableOpacity>
@@ -98,7 +114,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page1@2x.png')}/>
 				</TouchableOpacity>
@@ -107,7 +125,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page2@2x.png')}/>
 				</TouchableOpacity>
@@ -116,7 +136,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page3@2x.png')}/>
 				</TouchableOpacity>
@@ -125,7 +147,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page4@2x.png')}/>
 				</TouchableOpacity>
@@ -134,7 +158,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page5@2x.png')}/>
 				</TouchableOpacity>
@@ -143,7 +169,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page6@2x.png')}/>
 				</TouchableOpacity>
@@ -152,7 +180,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page7@2x.png')}/>
 				</TouchableOpacity>
@@ -161,7 +191,9 @@ export default class Homemenu extends Component{
 				<TouchableOpacity>
 				<Image
 				style={{
-					borderRadius:10,
+						borderWidth:1,
+					borderColor:'#0090FF',
+					borderRadius:3
 				}} 
 				 source={require('../img/home/menu/page2/page8@2x.png')}/>
 				</TouchableOpacity>
@@ -193,7 +225,7 @@ let scw=Dimensions.get('window').width;
 			backgroundColor:'#2e2b2b',
 			alignItems:'center',
 			justifyContent:'center',
-		
+			
 
 		}
 

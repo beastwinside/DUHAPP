@@ -8,7 +8,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<ScrollView style={{
 					height:70,
-					backgroundColor:'#5c002f',
+					backgroundColor:'#56a764',
+					borderTopWidth:2,
+					borderColor:'white',
 				}}
 				horizontal={true}
 				showsHorizontalScrollIndicator={false}

@@ -13,37 +13,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		static renderTitle = () => {
 			return (
 				
-				<View style={{
-					
-					height:60,
-					width:420,	
-					backgroundColor:'#0EF0B7',
-				}}>
+				<View style={styles.headview}>
 
 				<Text
-				style={{
-					color:'#DF5709',
-					fontSize:30,
-					width:80,
-					position:'absolute',
-					top:10,
-					marginLeft:Dimensions.get('window').width/2-30,
-
-
-					
-				}}
+				style={styles.text1}
 				>订单</Text>
 
 				<Text
-				style={{
-					color:'#E48A56',
-					height:30,
-					width:50,
-					fontSize:18,
-					position:'absolute',
-					right:10,
-					top:10,
-				}}
+				style={styles.text2}
 				onPress={Actions.pageThree}
 				>编辑</Text>
 
@@ -58,34 +35,27 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 			return (
 				<View style={{
-					backgroundColor:'#0EF0B7',
+				
 				}}>
 				
 
 				<View style={{
-					marginTop:55,
-					height:sch-130,
-					borderTopWidth:1,
-					borderColor:'#9C9C9C',
-					backgroundColor:'#0EF0B7',
-
-
+					marginTop:53,
+					height:sch-124,
 				}}>
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{backgroundColor: '#FF0000'}}
-				tabBarBackgroundColor='#F0FDA9'
-				tabBarActiveTextColor='#201F20'
-				tabBarInactiveTextColor='#727272'
+				tabBarUnderlineStyle={{backgroundColor: '#0f5ca0'}}
+				tabBarBackgroundColor='#2b2e2e'
+				tabBarActiveTextColor='#FCF9F9'
+				tabBarInactiveTextColor='#E6E4E6'
 				tabBarTextStyle={{fontSize: 18}}
 				locked={false}
 				initialPage={0}
 				style={{
-					
-					backgroundColor:"#1DD7AC",
-					
-
+					backgroundColor:"#454444",
+				
 				}} >
 				<PageTest tabLabel="全部订单" />
 				<Text tabLabel="待评价"
@@ -104,3 +74,38 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				)
 		}
 	}
+
+
+	const styles=StyleSheet.create({
+		headview:{
+			height:60,
+			width:420,	
+			backgroundColor:'#2b2e2e',
+		},	
+
+		text1:{
+			
+			color:'#FFFFFF',
+			fontSize:30,
+			width:80,
+			position:'absolute',
+			top:10,
+			marginLeft:Dimensions.get('window').width/2-30,
+			fontWeight:'bold',
+		},
+		text2:{
+			color:'#DBDBDB',
+			height:30,
+			width:50,
+			fontSize:18,
+			position:'absolute',
+			right:10,
+			top:10,			
+		}
+
+
+
+
+
+
+	});

@@ -15,6 +15,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					height:210,
 					width:scw*0.38,
 					marginLeft:10,
+						borderWidth:2,
+					borderColor:'white',
 				}}
 				
 				source={require('../img/home/discountarea/left.png')}/>
@@ -26,6 +28,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					width:scw*0.58*0.35,
 					height:100,
 					marginTop:40,
+						borderWidth:2,
+					borderColor:'white',
 				}} source={require('../img/home/discountarea/r1.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
@@ -33,6 +37,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					width:scw*0.58*0.35,
 					height:100,
 					marginTop:40,
+					borderWidth:2,
+					borderColor:'white',
 				}} source={require('../img/home/discountarea/r2.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
@@ -40,6 +46,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					width:scw*0.58*0.35,
 					height:100,
 					marginTop:15,
+						borderWidth:2,
+					borderColor:'white',
 				}} source={require('../img/home/discountarea/r3.png')}/>
 				</TouchableOpacity>
 				<TouchableOpacity>
@@ -47,6 +55,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					width:scw*0.58*0.35,
 					height:100,
 					marginTop:15,
+						borderWidth:2,
+					borderColor:'white',
 				}} source={require('../img/home/discountarea/r4.png')}/>
 				</TouchableOpacity>
 				</View>
@@ -74,7 +84,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			fontSize:35,
 			textAlign:'center',
 			opacity:0.85,
-			backgroundColor:'#EC114F'
+			backgroundColor:'#EC114F',
+			fontWeight:'bold'
 		},
 
 		leftview:{
