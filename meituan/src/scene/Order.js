@@ -13,12 +13,12 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				
 				<View style={styles.headview}>
 
-				<Text
+				<Text 
 				style={styles.text1}
 				>订单</Text>
 				<Text
 				style={styles.text2}
-				onPress={Actions.Mine}
+			
 				>编辑</Text>
 
 				</View>
@@ -64,7 +64,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					textAlign:'center',
 					color:'white',
 				}}>
+				<Text  >
 				暂无评价
+				</Text>
 				</Text>			
 				</ScrollableTabView>
 				</View>

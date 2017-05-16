@@ -12,6 +12,7 @@ import Mine from './scene/Mine';
 import Allorder from './scene/Allorder';
 import TabBarItem from './widget/TabBarItem';
 import NOBACK from './widget/NOBACK';
+import Shop from './scene/Shop';
 
 
 class RootScene extends Component {
@@ -85,13 +86,8 @@ class RootScene extends Component {
 
       </Scene>
       <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
-
-      <Scene 
-      key="Allorder" 
-      component={Allorder} 
-      title="测试" 
-      icon={TabBarItem}
-      />
+      <Scene key='Shop'   component={Shop}  title='店铺' hideTabBar     />
+      
       </Router>
 
 

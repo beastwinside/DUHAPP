@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
+		import { Actions } from 'react-native-router-flux';
 	import Shopinfo from '../data/shopinfo.json';
 
 	//Image 的require参数不能为变量，无法存入json，暂时找不到好的存储图片方式
@@ -46,9 +47,12 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		renderRow1(rowData: string,sectionID: number, rowID: number){
 			var imgSource=Imgurl[rowID]; 
+			  const goToShop = () => Actions.Shop({text: rowData.shopname});
 			return(
-				<TouchableOpacity activeOpacity={0.9}>
-				<View style={styles.container}>
+				<TouchableOpacity activeOpacity={0.9} 
+				onPress={goToShop}
+				>
+				<View style={styles.container}  >
 				<View style={styles.listviewitem}>
 				<View style={{flex:1,backgroundColor:'#2E2b2b'}}>
 				<Image source={imgSource} style={{height:60,margin:5,width:scw/4.5}} />
@@ -60,7 +64,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<Text style={{color:'#CBC4C4'}}>月售{rowData.yuexiaoliang} {rowData.time}分钟 {rowData.discount}m</Text></Text>
 				<Text style={styles.listitemtext3}>起送{rowData.qisongprice},配送{rowData.peisongprice},人均{rowData.renjun}</Text>
 				<Text style={styles.listitemtext4}>{rowData.jian}</Text>
-				<Text style={styles.listitemtext5}>{rowData.firstcustom}</Text>
+				<Text  style={styles.listitemtext5}>{rowData.firstcustom}</Text>
 
 				</View>
 				</View>
@@ -75,9 +79,10 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 		render(){
+			
 			return(
-				<ScrollView>
-				<ListView
+				<ScrollView  >
+				<ListView 
 				dataSource={this.state.dataSource}
 
 				renderRow={this.renderRow1}

@@ -156,8 +156,8 @@ import {
 
 				}}>
 				<TouchableOpacity activeOpacity={0.6}>
-				<Text style={{
-
+				<Text 	
+				style={{
 					fontSize:17,
 					color:'#FFFFFF',
 					textAlign:'center',
@@ -196,3 +196,14 @@ import {
 				)
 		}
 	}
+
+	const styles=StyleSheet.create({
+
+		
+
+
+
+
+
+		
+	});

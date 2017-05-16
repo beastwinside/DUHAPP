@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
 	View, Text, StyleSheet, StatusBar, ListView,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
+	import {Actions} from 'react-native-router-flux';
 import Mineheader from '../widget/Mineheader';
 import Mineinfo from '../widget/Mineinfo';
 import Minefooter from '../widget/Minefooter';
@@ -75,7 +76,7 @@ import Minefooter from '../widget/Minefooter';
 	 			source={imgSource} 
 	 			/>
 	 			</View>
-	 			<Text
+	 			<Text 
 	 			style={style.listview_textstyle}>{rowData}</Text>
 
 	 			</View>
