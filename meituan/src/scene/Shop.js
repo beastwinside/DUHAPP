@@ -19,10 +19,10 @@ import {View, Text, StyleSheet, StatusBar, ListView,
 		}
 
 		render(){
-			let x=this.props.text;
+			let shopname=this.props.shopname;
 			return(
 				<View style={{height:300,backgroundColor:'green'}}>
-				<Text style={{color:'black',fontSize:80,}}>{x}</Text>
+				<Text style={{color:'black',fontSize:80,}}>{shopname}</Text>
 				</View>
 				);
 

@@ -47,7 +47,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		renderRow1(rowData: string,sectionID: number, rowID: number){
 			var imgSource=Imgurl[rowID]; 
-			  const goToShop = () => Actions.Shop({text: rowData.shopname});
+			  const goToShop = () => Actions.Shop({shopname: rowData.shopname});
 			return(
 				<TouchableOpacity activeOpacity={0.9} 
 				onPress={goToShop}
