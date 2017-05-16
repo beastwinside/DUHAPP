@@ -92,7 +92,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				}}>
 				暂无评价
 				</Text>	
-				<Shopshangjia tabLabel="商家" />
+				<Shopshangjia tabLabel="商家"  shopinfo={shopinfo}/>
 
 			
 
