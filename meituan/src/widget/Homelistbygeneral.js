@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 		import { Actions } from 'react-native-router-flux';
+		
 	import Shopinfo from '../data/shopinfo.json';
 
 	//Image 的require参数不能为变量，无法存入json，暂时找不到好的存储图片方式
