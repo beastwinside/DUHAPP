@@ -1,0 +1,251 @@
+{
+	"shopdata":[
+
+		{
+			"img":"../img/shopinfo/alsk.png",
+			"shopname":"阿良烧烤",
+			"yuexiaoliang":1381,
+			"qisongprice":15,
+			"peisongprice":0,
+			"renjun":15,
+			"time":47,
+			"discount":405,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元"
+		},
+		{
+			"img":"../img/shopinfo/zhclx.png",
+			"shopname":"绝味龙虾",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/bxky.png",
+			"shopname":"巴西烤鱼",
+			"yuexiaoliang":234,
+			"qisongprice":16,
+			"peisongprice":20,
+			"renjun":32,
+			"time":44,
+			"discount":555,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/jwyb.png",
+			"shopname":"精武鸭脖",
+			"yuexiaoliang":12,
+			"qisongprice":3,
+			"peisongprice":2,
+			"renjun":10,
+			"time":23,
+			"discount":200,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/wlxhmj.png",
+			"shopname":"碗留香黄焖鸡",
+			"yuexiaoliang":131,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":10,
+			"time":67,
+			"discount":445,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/lrtyy.png",
+			"shopname":"甜辣鱿鱼",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/alsk.png",
+			"shopname":"阿良烧烤",
+			"yuexiaoliang":1381,
+			"qisongprice":15,
+			"peisongprice":0,
+			"renjun":15,
+			"time":47,
+			"discount":405,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元"
+		},
+		{
+			"img":"../img/shopinfo/zhclx.png",
+			"shopname":"绝味龙虾",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/bxky.png",
+			"shopname":"巴西烤鱼",
+			"yuexiaoliang":234,
+			"qisongprice":16,
+			"peisongprice":20,
+			"renjun":32,
+			"time":44,
+			"discount":555,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/jwyb.png",
+			"shopname":"精武鸭脖",
+			"yuexiaoliang":12,
+			"qisongprice":3,
+			"peisongprice":2,
+			"renjun":10,
+			"time":23,
+			"discount":200,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/wlxhmj.png",
+			"shopname":"碗留香黄焖鸡",
+			"yuexiaoliang":131,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":10,
+			"time":67,
+			"discount":445,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/lrtyy.png",
+			"shopname":"甜辣鱿鱼",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/alsk.png",
+			"shopname":"阿良烧烤",
+			"yuexiaoliang":1381,
+			"qisongprice":15,
+			"peisongprice":0,
+			"renjun":15,
+			"time":47,
+			"discount":405,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元"
+		},
+		{
+			"img":"../img/shopinfo/zhclx.png",
+			"shopname":"绝味龙虾",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/bxky.png",
+			"shopname":"巴西烤鱼",
+			"yuexiaoliang":234,
+			"qisongprice":16,
+			"peisongprice":20,
+			"renjun":32,
+			"time":44,
+			"discount":555,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/jwyb.png",
+			"shopname":"精武鸭脖",
+			"yuexiaoliang":12,
+			"qisongprice":3,
+			"peisongprice":2,
+			"renjun":10,
+			"time":23,
+			"discount":200,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/wlxhmj.png",
+			"shopname":"碗留香黄焖鸡",
+			"yuexiaoliang":131,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":10,
+			"time":67,
+			"discount":445,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+		{
+			"img":"../img/shopinfo/lrtyy.png",
+			"shopname":"甜辣鱿鱼",
+			"yuexiaoliang":231,
+			"qisongprice":12,
+			"peisongprice":12,
+			"renjun":18,
+			"time":33,
+			"discount":657,
+			"jian":"■满5减1",
+			"firstcustom":"♦新用户立减5元",
+
+
+		},
+	]
+}
