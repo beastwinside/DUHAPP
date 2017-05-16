@@ -27,7 +27,7 @@ import Minefooter from '../widget/Minefooter';
 
 	
 
-	class PageThree extends Component {
+	class Mine extends Component {
 	 	//初始化模拟数据
 	 	constructor(props) {
 	 		super(props);
@@ -268,4 +268,4 @@ import Minefooter from '../widget/Minefooter';
 
 
 
-	 export default PageThree;
+	 export default Mine;

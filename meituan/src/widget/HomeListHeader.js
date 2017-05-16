@@ -9,55 +9,7 @@ export default class HomeListHeader extends Component{
 			<Text style={styles.text1}>
 		    附近美食
 			</Text>
-			<View style={{
-				width:scw,
-				height:30,
-				backgroundColor:'#DBE7E8',
-				flexDirection:'row',
-				justifyContent:'space-around',
-			}}>
-			<TouchableOpacity>
-			<Text style={{
-				width:scw/5,
-				color:'#000000',
-				fontSize:15,
-				textAlign:'center',
-				marginTop:4,
-
-			}}>综合排序</Text>
-			</TouchableOpacity>
-			<TouchableOpacity>
-			<Text style={{
-				width:scw/5,
-				color:'#555252',
-				fontSize:15,
-				textAlign:'center',
-				marginTop:4,
-
-			}}>销量最高</Text>
-			</TouchableOpacity>
-			<TouchableOpacity>
-			<Text style={{
-				width:scw/5,
-				color:'#555252',
-				fontSize:15,
-				textAlign:'center',
-				marginTop:4,
-
-			}}>距离最近</Text>
-			</TouchableOpacity>
-			<TouchableOpacity>
-			<Text style={{
-				width:scw/5,
-				color:'#555252',
-				fontSize:15,
-				textAlign:'center',
-				marginTop:4,
-
-			}}>筛选</Text>
-			</TouchableOpacity>
-
-			</View>
+			
 			</View>
 
 
@@ -72,7 +24,7 @@ const styles=StyleSheet.create(
 		container:{
 			marginTop:10,
 			backgroundColor:'#EAEAEA',
-			height:62,
+			height:30,
 			width:scw,
 		},
 
@@ -81,8 +33,7 @@ const styles=StyleSheet.create(
 			textAlign:'center',
 			color:'#DBD1D1',
 			backgroundColor:'#546474',
-			borderBottomWidth:1,
-			borderColor:'#0D0C0C',
+		
 			fontWeight:'bold',
 
 		},

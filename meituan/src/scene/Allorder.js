@@ -18,7 +18,7 @@ import {
 		require('../img/order/xiaoxiaofuqi@2x.png')
 		);
 
-	export default class PageTest extends Component {
+	export default class Allorder extends Component {
 		constructor(props){
 			super(props);
 			const ds=new ListView.DataSource({

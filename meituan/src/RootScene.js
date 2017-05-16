@@ -6,10 +6,10 @@ import {
 } from 'react-native';
 
 
-import PageOne from './scene/PageOne';
-import PageTwo from './scene/PageTwo';
-import PageThree from './scene/PageThree';
-import PageTest from './scene/PageTest';
+import Home from './scene/Home';
+import Order from './scene/Order';
+import Mine from './scene/Mine';
+import Allorder from './scene/Allorder';
 import TabBarItem from './widget/TabBarItem';
 import NOBACK from './widget/NOBACK';
 
@@ -46,8 +46,8 @@ class RootScene extends Component {
 
       <Scene 
       hideNavBar
-      key="pageOne" 
-      component={PageOne} 
+      key="Home" 
+      component={Home} 
       title="首页"
       icon={TabBarItem}
       imagee={require('./img/tabbar/pfb_tabbar_homepage_selected@2x.png')}
@@ -56,8 +56,8 @@ class RootScene extends Component {
       unselecttext={styles.unselecttext_style}/>
 
       <Scene 
-      key="pageTwo" 
-      component={PageTwo} 
+      key="Order" 
+      component={Order} 
       title="订单" 
       icon={TabBarItem}
       imagee={require('./img/tabbar/pfb_tabbar_order_selected@2x.png')}
@@ -69,8 +69,8 @@ class RootScene extends Component {
 
       <Scene
       hideNavBar 
-      key="pageThree"
-      component={PageThree}
+      key="Mine"
+      component={Mine}
       title="我的" 
       icon={TabBarItem}
       imagee={require('./img/tabbar/pfb_tabbar_mine_selected@2x.png')}
@@ -87,8 +87,8 @@ class RootScene extends Component {
       <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
 
       <Scene 
-      key="pageTest" 
-      component={PageTest} 
+      key="Allorder" 
+      component={Allorder} 
       title="测试" 
       icon={TabBarItem}
       />

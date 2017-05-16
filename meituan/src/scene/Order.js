@@ -3,13 +3,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
-	import PageTest from './PageTest';
-	import PageThree from './PageThree';
+	import AllOrder from './Allorder';
+	import Mine from './Mine';
 
 
-
-	export default class PageTwo extends Component {
-
+	export default class Order extends Component {
 		static renderTitle = () => {
 			return (
 				
@@ -18,10 +16,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<Text
 				style={styles.text1}
 				>订单</Text>
-
 				<Text
 				style={styles.text2}
-				onPress={Actions.pageThree}
+				onPress={Actions.Mine}
 				>编辑</Text>
 
 				</View>
@@ -59,7 +56,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					borderColor:'#009b85',
 				
 				}} >
-				<PageTest tabLabel="全部订单" />
+				<AllOrder tabLabel="全部订单" />
 				<Text tabLabel="待评价"
 				style={{
 					marginTop:100,
