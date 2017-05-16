@@ -6,21 +6,23 @@ import Swiper from 'react-native-swiper';
 export default class Mineinfo extends Component{
 	render(){
 		return(<View style={{
-	 				height:120,
-	 				backgroundColor:'#72dcbd',
+	 				height:80,
+	 				backgroundColor:'#2b2e2e',
 	 				flexDirection:'row',
 	 				justifyContent:'space-around',
 	 				alignItems:'center',
-	 				borderTopWidth:1,
-	 				borderColor:'#838080',
+	 				borderBottomWidth:5,
+	 				borderColor:'white',
+	 				
 	 			}}>	
 
 	 			<View style={[style.info_viewstyle,
-	 				{	backgroundColor:'#32ACE9',}]}>	
+	 				{	}]}>	
 	 				<Text style={{
 	 					fontSize:15,
 	 					alignSelf:'center',
 	 					marginTop:10,
+	 					color:'white',
 	 				}}>1亿张
 	 				</Text>
 
@@ -29,26 +31,29 @@ export default class Mineinfo extends Component{
 	 					alignSelf:'center',
 	 				}}>
 	 				<Image style={{
-	 					height:25,
+	 					marginTop:5,
+	 					marginRight:3,
+	 					height:15,
 	 					width:25,
-	 					borderRadius:12.5,
+	 					
 	 				}}
-	 				source={require('../img/mine/dingdan@2x.png')}/> 
+	 				source={require('../img/mine/blue.png')}/> 
 	 				<Text style={{
 	 					fontSize:18,
 	 					alignSelf:'center',
-	 					color:'#2E2B2B',
+	 					color:'white',
 	 				}}>美团红包
 	 				</Text>
 	 				</View>
 	 				</View>
 
 	 				<View style={[style.info_viewstyle,
-	 					{backgroundColor:'#ed1b45',}]}>
+	 					{}]}>
 	 					<Text style={{
 	 						fontSize:15,
 	 						alignSelf:'center',
 	 						marginTop:10,
+	 						color:'white',
 	 					}}>1亿元
 	 					</Text>
 
@@ -57,27 +62,30 @@ export default class Mineinfo extends Component{
 	 						alignSelf:'center',
 	 					}}>
 	 					<Image style={{
-	 						height:25,
+	 						marginTop:5,
+	 						marginRight:3,
+	 						height:15,
 	 						width:25,
-	 						borderRadius:12.5,
+	 						
 	 					}}
-	 					source={require('../img/mine/dingdan@2x.png')}/> 
+	 					source={require('../img/mine/red.png')}/> 
 	 					<Text style={{
 	 						fontSize:18,
 	 						alignSelf:'center',
-	 						color:'#2E2B2B',
+	 						color:'white',
 	 					}}>余额
 	 					</Text>
 	 					</View>
 	 					</View>
 
 	 					<View style={[style.info_viewstyle,
-	 						{	backgroundColor:'#eac735',}]}>
+	 						{	}]}>
 
 	 						<Text style={{
 	 							fontSize:15,
 	 							alignSelf:'center',
 	 							marginTop:10,
+	 							color:'white',
 	 						}}>0张
 	 						</Text>	
 
@@ -86,15 +94,17 @@ export default class Mineinfo extends Component{
 	 							alignSelf:'center',
 	 						}}>
 	 						<Image style={{
-	 							height:25,
+	 							marginTop:5,
+	 							marginRight:3,
+	 							height:15,
 	 							width:25,
-	 							borderRadius:12.5,
+	 							
 	 						}}
-	 						source={require('../img/mine/dingdan@2x.png')}/> 
+	 						source={require('../img/mine/yellow.png')}/> 
 	 						<Text style={{
 	 							fontSize:18,
 	 							alignSelf:'center',
-	 							color:'#2E2B2B',
+	 							color:'white',
 	 						}}>代金券</Text>
 	 						</View>
 	 						</View>
@@ -114,8 +124,8 @@ export default class Mineinfo extends Component{
 	 	
 
 	 	info_viewstyle:{
-	 		height:80,
-	 		width:100,
+	 		height:60,
+	 		width:120,
 	 		borderRadius:8,
 
 

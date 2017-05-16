@@ -7,7 +7,7 @@ export default class Mineheader extends Component{
 	render(){
 		return(<View style={{
 	 				height:160,
-	 				backgroundColor:'#72DCBD',
+	 				backgroundColor:'#009b85',
 	 			}}>
 
 	 			<TouchableOpacity activeOpacity={0.6} >
@@ -38,6 +38,7 @@ export default class Mineheader extends Component{
 	 			<Text style={{
 	 				alignSelf:'center',
 	 				fontSize:20,
+	 				color:'#252424',
 
 	 			}}>
 	 			NGs49753293>

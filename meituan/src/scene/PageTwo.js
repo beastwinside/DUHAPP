@@ -54,7 +54,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				locked={false}
 				initialPage={0}
 				style={{
+					borderTopWidth:5,
 					backgroundColor:"#454444",
+					borderColor:'#009b85',
 				
 				}} >
 				<PageTest tabLabel="全部订单" />
@@ -63,6 +65,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					marginTop:100,
 					fontSize:49,
 					textAlign:'center',
+					color:'white',
 				}}>
 				暂无评价
 				</Text>			
@@ -81,6 +84,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			height:60,
 			width:420,	
 			backgroundColor:'#2b2e2e',
+			
+			borderColor:'white',
 		},	
 
 		text1:{

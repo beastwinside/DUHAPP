@@ -96,11 +96,12 @@ import {
 					<View style={{
 						height:150,
 						backgroundColor:'#212121',
-						marginBottom:10,
+						borderBottomWidth:1.5,
+						borderColor:'white',
 					}}>
 					<View style={{
 						flex:0.8,
-						backgroundColor:'#d4442a',
+						backgroundColor:'#2b2e2e',
 						flexDirection:'row',
 					}}>
 
@@ -118,7 +119,7 @@ import {
 					</TouchableOpacity>
 					<Text
 					style={{
-						color:'black',
+						color:'#E6E5E5',
 						fontSize:20,
 						marginTop:10,
 						marginLeft:10,
@@ -127,7 +128,7 @@ import {
 
 					<Text
 					style={{
-						color:'black',
+						color:'#BCBCBC',
 						fontSize:15,
 						marginTop:10,
 						position:'absolute',
@@ -142,7 +143,7 @@ import {
 
 					<View style={{
 						flex:1,
-						backgroundColor:'#212121',
+						backgroundColor:'#2b2e2e',
 					
 						
 						
@@ -150,10 +151,11 @@ import {
 					<TouchableOpacity activeOpacity={0.6}>
 					<Text
 					style={{
-						color:'#F6F3F3',
+						color:'#FFFFFF',
 						fontSize:18,
 						marginTop:25,
 						marginLeft:60,
+						fontWeight:'bold',
 					}}
 					>{rowData.ordername}</Text>
 
@@ -168,7 +170,7 @@ import {
 					<Text
 					style={{
 
-						color:'#FFE2E2',
+						color:'#FFFFFF',
 						fontSize:10,
 						textAlign:'right',
 						marginTop:15,
@@ -178,7 +180,7 @@ import {
 					<Text
 					style={{
 						
-						color:'#EFDFDF',
+						color:'#FFFFFF',
 						fontSize:12,
 						marginRight:5,
 						
@@ -197,23 +199,25 @@ import {
 
 					<View style={{
 						flex:0.8,
-						backgroundColor:'#212121',
+						backgroundColor:'#2b2e2e',
 					}}>
 					<View	style={{
 						marginTop:7,
 						position:'absolute',
 						right:10,
 						borderColor:'#d4442a',
-						borderWidth:2,
+						borderWidth:1,
 						height:30,
 						width:80,
+						backgroundColor:'#d4442a',
 
 						
 					}}>
 					<TouchableOpacity activeOpacity={0.6}>
 					<Text style={{
+
 						fontSize:17,
-						color:'white',
+						color:'#FFFFFF',
 						textAlign:'center',
 					}}>再来一单</Text>
 					</TouchableOpacity>

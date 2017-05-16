@@ -7,12 +7,14 @@ export default class Minefooter extends Component{
 	render(){
 		return(
 	 			<View style={{
+	 				borderBottomWidth:3,
+	 				
 	 				height:60,
-	 				backgroundColor:'#fffba6',
+	 				backgroundColor:'#2b2e2e',
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'black',
+	 				color:'#FCFCFC',
 	 				fontSize:25,
 	 			}}>
 	 			客服·电话：1010977

@@ -92,6 +92,20 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				},
 				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:231,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:18,
+					time:33,
+					discount:657,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
 					img:require('../img/shopinfo/lrtyy.png'),
 					shopname:'李日天鱿鱼',
 					yuexiaoliang:234,
@@ -172,9 +186,337 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					discount:666,
 					jian:'■满5减1',
 					firstcustom:'♦新用户立减5元',
+				},
+					{
+					img:require('../img/shopinfo/wlxhmj.png'),
+					shopname:'碗留香黄焖鸡',
+					yuexiaoliang:131,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:10,
+					time:67,
+					discount:445,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
 
 
-				}
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:231,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:18,
+					time:33,
+					discount:657,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/lrtyy.png'),
+					shopname:'李日天鱿鱼',
+					yuexiaoliang:234,
+					qisongprice:4,
+					peisongprice:2,
+					renjun:12,
+					time:42,
+					discount:231,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/bxky.png'),
+					shopname:'巴西烤鱼',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:81,
+					qisongprice:5,
+					peisongprice:30,
+					renjun:5,
+					time:4,
+					discount:40,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/jwyb.png'),
+					shopname:'精武鸭脖',
+					yuexiaoliang:121,
+					qisongprice:44,
+					peisongprice:2,
+					renjun:33,
+					time:57,
+					discount:556,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:777,
+					qisongprice:11,
+					peisongprice:55,
+					renjun:23,
+					time:42,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:2381,
+					qisongprice:20,
+					peisongprice:10,
+					renjun:23,
+					time:20 ,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+				},
+					{
+					img:require('../img/shopinfo/wlxhmj.png'),
+					shopname:'碗留香黄焖鸡',
+					yuexiaoliang:131,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:10,
+					time:67,
+					discount:445,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:231,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:18,
+					time:33,
+					discount:657,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/lrtyy.png'),
+					shopname:'李日天鱿鱼',
+					yuexiaoliang:234,
+					qisongprice:4,
+					peisongprice:2,
+					renjun:12,
+					time:42,
+					discount:231,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/bxky.png'),
+					shopname:'巴西烤鱼',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:81,
+					qisongprice:5,
+					peisongprice:30,
+					renjun:5,
+					time:4,
+					discount:40,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/jwyb.png'),
+					shopname:'精武鸭脖',
+					yuexiaoliang:121,
+					qisongprice:44,
+					peisongprice:2,
+					renjun:33,
+					time:57,
+					discount:556,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:777,
+					qisongprice:11,
+					peisongprice:55,
+					renjun:23,
+					time:42,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:2381,
+					qisongprice:20,
+					peisongprice:10,
+					renjun:23,
+					time:20 ,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+				},
+					{
+					img:require('../img/shopinfo/wlxhmj.png'),
+					shopname:'碗留香黄焖鸡',
+					yuexiaoliang:131,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:10,
+					time:67,
+					discount:445,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:231,
+					qisongprice:12,
+					peisongprice:12,
+					renjun:18,
+					time:33,
+					discount:657,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/lrtyy.png'),
+					shopname:'李日天鱿鱼',
+					yuexiaoliang:234,
+					qisongprice:4,
+					peisongprice:2,
+					renjun:12,
+					time:42,
+					discount:231,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/bxky.png'),
+					shopname:'巴西烤鱼',
+					yuexiaoliang:1381,
+					qisongprice:15,
+					peisongprice:0,
+					renjun:15,
+					time:47,
+					discount:405,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:81,
+					qisongprice:5,
+					peisongprice:30,
+					renjun:5,
+					time:4,
+					discount:40,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/jwyb.png'),
+					shopname:'精武鸭脖',
+					yuexiaoliang:121,
+					qisongprice:44,
+					peisongprice:2,
+					renjun:33,
+					time:57,
+					discount:556,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/zhclx.png'),
+					shopname:'真好吃龙虾',
+					yuexiaoliang:777,
+					qisongprice:11,
+					peisongprice:55,
+					renjun:23,
+					time:42,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+
+
+				},
+				{
+					img:require('../img/shopinfo/alsk.png'),
+					shopname:'阿良烧烤',
+					yuexiaoliang:2381,
+					qisongprice:20,
+					peisongprice:10,
+					renjun:23,
+					time:20 ,
+					discount:666,
+					jian:'■满5减1',
+					firstcustom:'♦新用户立减5元',
+				},
 
 				])
 			};
@@ -249,7 +591,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				
 				<View style={{
-					height:800,
+					height:100,
 					backgroundColor:'#2e2b2b',
 				}}></View>
 				</ScrollView>				
@@ -265,11 +607,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create(
 	{
 		container:{
-			borderBottomWidth:0.5,
+			borderBottomWidth:2,
 			alignItems:'center',
 			justifyContent:'space-around',
 			backgroundColor:'#2e2b2b',
-			borderColor:'white',
+			borderColor:'#009b85',
 		},
 
 

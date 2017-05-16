@@ -138,7 +138,8 @@ import Minefooter from '../widget/Minefooter';
 	 	renderspaceview(){
 	 		return(
 	 			<View style={{
-	 				height:10,
+	 				height:3,
+	 				backgroundColor:'#797575',
 	 			}}>
 	 			<Text></Text>
 	 			</View>
@@ -170,7 +171,7 @@ import Minefooter from '../widget/Minefooter';
 	 			}
 
 	 			style={{ 
-	 				backgroundColor:'#72dcbd',
+	 				backgroundColor:'#2b2e2e',
 	 				flex:1,
 	 			}}>
 
@@ -207,13 +208,14 @@ import Minefooter from '../widget/Minefooter';
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'#292828'}}>
+	 				color:'#FFFFFF'}}>
 	 				服务时间:9:00-23:00
 	 				</Text>
 	 				</View>
 
 	 				<View style={{
-	 					height:60,
+	 					height:50,
+	 					backgroundColor:'black',
 	 				}}>
 	 				</View>
 	 				</ScrollView>
@@ -229,7 +231,7 @@ import Minefooter from '../widget/Minefooter';
 	 		flex:10,
 	 		marginLeft:10,
 	 		fontSize:20,
-	 		color:'#242222',
+	 		color:'#FFFFFF',
 	 	},
 
 	 	listview_imagestyle:{
@@ -243,8 +245,9 @@ import Minefooter from '../widget/Minefooter';
 
 	 	listview_viewstyle:{
 	 		flexDirection:'row',
-	 		borderBottomWidth:0.5,
-	 		backgroundColor:'#FFFBA6',
+	 		borderBottomWidth:1,
+	 		borderColor:'#FFFFFF',
+	 		backgroundColor:'#2b2e2e',
 
 	 	},
 
