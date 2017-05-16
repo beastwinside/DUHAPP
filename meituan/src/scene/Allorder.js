@@ -61,7 +61,7 @@ import {
 				</TouchableOpacity>
 				<Text
 				style={{
-					color:'#E6E5E5',
+					color:'#04E5FC',
 					fontSize:20,
 					marginTop:10,
 					marginLeft:10,
@@ -70,7 +70,7 @@ import {
 
 				<Text
 				style={{
-					color:'#BCBCBC',
+					color:'#F0A000',
 					fontSize:15,
 					marginTop:10,
 					position:'absolute',
@@ -113,12 +113,12 @@ import {
 				style={{
 
 					color:'#FFFFFF',
-					fontSize:10,
+					fontSize:14,
 					textAlign:'right',
 					marginTop:15,
 					marginRight:15,
 				}}
-				>{'x'+rowData.ordernum}</Text>
+				>X{rowData.ordernum}</Text>
 				<Text
 				style={{
 

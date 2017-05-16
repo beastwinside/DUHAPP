@@ -231,7 +231,7 @@ import Minefooter from '../widget/Minefooter';
 	 		flex:10,
 	 		marginLeft:10,
 	 		fontSize:20,
-	 		color:'#FFFFFF',
+	 		color:'#00DEE0',
 	 	},
 
 	 	listview_imagestyle:{

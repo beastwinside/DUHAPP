@@ -10,21 +10,21 @@
 						"orderprice":10,
 					},
 					{
-						"shopname":"老夫妻",
+						"shopname":"碗留香",
 						"orderstatus":"订单完成",
 						"shopimageurl":"../img/order/laofuqi@2x.png",
 						"ordername":"黄焖鸡米饭",
 						"ordernum":1,
 						"orderprice":10,
 					},{
-						"shopname":"大夫妻",
+						"shopname":"桂林米粉",
 						"orderstatus":"订单完成",
 						"shopimageurl":"../img/order/dafuqi@2x.png",
 						"ordername":"蛋炒饭",
 						"ordernum":1,
 						"orderprice":"10",
 					},{
-						"shopname":"中夫妻",
+						"shopname":"嵊州小吃",
 						"orderstatus":"订单取消",
 						"shopimageurl":"../img/order/zhongfuqi@2x.png",
 						"ordername":"热狗套餐",
@@ -32,7 +32,7 @@
 						"orderprice":12,
 					},
 					{
-						"shopname":"巨夫妻",
+						"shopname":"欧莱汉堡",
 						"orderstatus":"订单完成",
 						"shopimageurl":"../img/order/jufuqi@2x.png",
 						"ordername":"汉堡",
@@ -40,7 +40,7 @@
 						"orderprice":10,
 					},
 					{
-						"shopname":"少夫妻",
+						"shopname":"叫花鸡",
 						"orderstatus":"订单完成",
 						"shopimageurl":"../img/order/shaofuqi@2x.png",
 						"ordername":"童子鸡",
@@ -48,7 +48,7 @@
 						"orderprice":11,
 					},
 					{
-						"shopname":"多夫妻",
+						"shopname":"过桥米线",
 						"orderstatus":"订单完成",
 						"shopimageurl":"../img/order/duofuqi@2x.png",
 						"ordername":"米线",

@@ -14,7 +14,7 @@ export default class Minefooter extends Component{
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'#FCFCFC',
+	 				color:'#F7A207',
 	 				fontSize:25,
 	 			}}>
 	 			客服·电话：1010977
