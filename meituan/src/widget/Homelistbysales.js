@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import Shopinfo from '../data/shopinfobysales.json';
+		import { Actions } from 'react-native-router-flux';
 
 	//Image 的require参数不能为变量，无法存入json，暂时找不到好的存储图片方式
 	var Imgurl = new Array();
@@ -46,9 +47,13 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		renderRow1(rowData: string,sectionID: number, rowID: number){
 			var imgSource=Imgurl[rowID]; 
+			// Actions传值要先用const，不然每次render重复赋值
+			  const goToShop = () => Actions.Shop({shopinfo: rowData,img:imgSource});
 			return(
-				<TouchableOpacity activeOpacity={0.9}>
-				<View style={styles.container}>
+				<TouchableOpacity activeOpacity={0.9} 
+				onPress={goToShop}
+				>
+				<View style={styles.container}  >
 				<View style={styles.listviewitem}>
 				<View style={{flex:1,backgroundColor:'#2E2b2b'}}>
 				<Image source={imgSource} style={{height:60,margin:5,width:scw/4.5}} />
@@ -57,10 +62,10 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<View style ={{flex:3,backgroundColor:'#2e2b2b'}}>
 				<Text style={styles.listitemtext1}>{rowData.shopname}</Text>
 				<Text style={styles.listitemtext2}>★★★★★ 
-				<Text style={{color:'#CBC4C4'}}>月售<Text style={{color:'#FF0505',fontSize:20,}}>{rowData.yuexiaoliang}</Text> {rowData.time}分钟 {rowData.discount}m</Text></Text>
+				<Text style={{color:'#CBC4C4'}}>月售{rowData.yuexiaoliang} {rowData.time}分钟 {rowData.discount}m</Text></Text>
 				<Text style={styles.listitemtext3}>起送{rowData.qisongprice},配送{rowData.peisongprice},人均{rowData.renjun}</Text>
 				<Text style={styles.listitemtext4}>{rowData.jian}</Text>
-				<Text style={styles.listitemtext5}>{rowData.firstcustom}</Text>
+				<Text  style={styles.listitemtext5}>{rowData.firstcustom}</Text>
 
 				</View>
 				</View>
@@ -69,7 +74,6 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				);
 		}
-
 
 
 

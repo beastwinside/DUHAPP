@@ -5,6 +5,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 	import { Actions } from 'react-native-router-flux';
 	import AllOrder from './Allorder';
 	import Shopshangjia from '../widget/Shopshangjia';
+	import Shopdiancan from '../widget/Shopdiancan';
 
 
 	export default class Shop extends Component{
@@ -56,39 +57,38 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<Image style={styles.header2img} source={img}/>
 				<Text style={styles.headershopname}>{shopinfo.shopname}</Text>
 				<Text style={styles.headershopstate}>正常营业，欢迎光临★★★</Text>
-				<Text style={styles.headerfooter}>新用户立减5元，首次使用银行卡支付最高...</Text>
+				<Text style={styles.headerfooter}>新用户立减5元,银行卡首单最高减少...</Text>
 				<View style={styles.headerright}>
 				<TouchableOpacity>
-				<Text style={{fontSize:40,color:'white',textAlign:'center'}}>☆</Text>
-				<Text style={{fontSize:15,color:'white',textAlign:'center',}}>收藏</Text>
+				<Text style={{fontSize:30,color:'white',textAlign:'center'}}>☆</Text>
+				<Text style={{fontSize:12,color:'white',textAlign:'center',}}>收藏</Text>
 				</TouchableOpacity>
 				</View>
 				</View>
 				
-				<View style={{height:sch-160,backgroundColor:'red',}}>
+				<View style={{height:sch-140,}}>
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
 				tabBarUnderlineStyle={{backgroundColor: 'transparent'}}
-				tabBarBackgroundColor='#FFFFFF'
+				tabBarBackgroundColor='#f3f1a5'
 				tabBarActiveTextColor='#050505'
-				tabBarInactiveTextColor='#4B4A4A'
+				tabBarInactiveTextColor='#656565'
 				tabBarTextStyle={{fontSize: 18}}
 				locked={false}
 				initialPage={0}
-				style={{
-					borderTopWidth:5,
-					backgroundColor:"#454444",
-					borderColor:'#009b85',
-				
-				}} >
-				<AllOrder tabLabel="全部订单" />
+				 >
+				<Shopdiancan tabLabel="点菜" shopinfo={shopinfo} />
+
 				<Text tabLabel="评价"
 				style={{
-					marginTop:100,
+					marginTop:50,
 					fontSize:49,
 					textAlign:'center',
-					color:'white',
+					color:'black',
+					height:900,
+						backgroundColor:'#FCFBD5',
+
 				}}>
 				暂无评价
 				</Text>	
@@ -140,23 +140,23 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			color:'white',
 		},
 		header2:{
-			height:100,
+			height:60,
 			backgroundColor:'#4bbe97',
 		},
 
 		header2img:{
-			height:70,
-			width:70,
+			height:60,
+			width:60,
 			position:'absolute',
-			left:15,
-			top:5,
-			borderRadius:35,
+			
+			
+			borderRadius:30,
 		},
 
 		headershopname:{
 			position:'absolute',
-			top:18,
-			left:100,
+			top:0,
+			left:65,
 			fontSize:25,
 			color:'#2E2E2E',
 			fontWeight:'bold',
@@ -164,18 +164,18 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		},
 		headershopstate:{
 			position:'absolute',
-			top:55,
-			left:100,
-			fontSize:15,
+			top:30,
+			left:65,
+			fontSize:11,
 			color:'#181818',
 
 		},
 		headerright:{
 			position:'absolute',
-			top:15,
+			top:0,
 			right:10,
 			width:40,
-			height:80,
+			height:60,
 			borderLeftWidth:1,
 			borderColor:'white',
 			
@@ -183,8 +183,9 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		headerfooter:{
 			position:'absolute',
 			bottom:0,
-			left:15,
+			left:65,
 			color:'#FFFFFF',
+			fontSize:9,
 
 
 		},
