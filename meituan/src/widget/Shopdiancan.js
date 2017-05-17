@@ -46,14 +46,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		_renderRow(rowData: string,sectionID: number, rowID: number)
 		{
-				var imgSource=imgurl[rowID]; 
+			var imgSource=imgurl[rowID]; 
 			return(
 
-				<View>
-				<Image source={imgSource} />
-				<Text>{rowData.foodname}</Text>
-				<Text>{rowData.foodprice}</Text>
-				<Text>{rowData.foodxiaoliang}</Text>
+				<View style={styles.listitmcontainer}>
+				<Image source={imgSource} style={styles.listitemimage}/>
+				<Text style={styles.listfoodname}>{rowData.foodname}</Text>
+				<Text style={styles.listfoodxiaoliang}>月销量{rowData.foodxiaoliang}份</Text>
+				<Text style={styles.listfoodprice}>￥{rowData.foodprice}</Text>
 				</View>
 
 
@@ -76,6 +76,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				dataSource={this.state.dataSource}
 				renderRow={this._renderRow}
 				/>
+				<Text>已经到底部了</Text>
 				</View>	
 				);
 
@@ -83,7 +84,52 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 	}
 
+	let scw=Dimensions.get('window').width;
+	const styles=StyleSheet.create({
 
+		listitmcontainer:{
+			height:200,
+			width:scw,
+			backgroundColor:'#2b2e2e',
+			marginBottom:2,
+
+		},
+
+		listitemimage:{
+			height:100,
+			width:140,
+			marginTop:10,
+			marginLeft:10,
+			borderWidth:3,
+			borderColor:'white',
+		},
+		listfoodname:{
+			position:'absolute',
+			left:150,
+			fontSize:30,
+			color:'#0ADFE6',
+			top:10,
+		},
+	
+		listfoodxiaoliang:{
+			
+			position:'absolute',
+			left:150,
+			fontSize:20,
+			color:'white',
+			top:60,
+		},
+	listfoodprice:{
+			position:'absolute',
+			left:150,
+			fontSize:30,
+			color:'#F23636',
+			top:90,
+
+		},
+
+
+	});
 
 
 

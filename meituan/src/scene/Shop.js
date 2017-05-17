@@ -70,10 +70,10 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{backgroundColor: 'transparent'}}
-				tabBarBackgroundColor='#f3f1a5'
-				tabBarActiveTextColor='#050505'
-				tabBarInactiveTextColor='#656565'
+				tabBarUnderlineStyle={{backgroundColor: '#2b2e2e'}}
+				tabBarBackgroundColor='#2b2e2e'
+				tabBarActiveTextColor='#FEFEFE'
+				tabBarInactiveTextColor='#9D9D9D'
 				tabBarTextStyle={{fontSize: 18}}
 				locked={false}
 				initialPage={0}
@@ -85,9 +85,9 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 					marginTop:50,
 					fontSize:49,
 					textAlign:'center',
-					color:'black',
+					color:'white',
 					height:900,
-						backgroundColor:'#FCFBD5',
+						backgroundColor:'#2b2e2e',
 
 				}}>
 				暂无评价
@@ -141,7 +141,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		},
 		header2:{
 			height:60,
-			backgroundColor:'#4bbe97',
+			backgroundColor:'#171919',
 		},
 
 		header2img:{
@@ -158,7 +158,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			top:0,
 			left:65,
 			fontSize:25,
-			color:'#2E2E2E',
+			color:'white',
 			fontWeight:'bold',
 
 		},
@@ -167,7 +167,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			top:30,
 			left:65,
 			fontSize:11,
-			color:'#181818',
+			color:'white',
 
 		},
 		headerright:{
