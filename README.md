@@ -26,7 +26,11 @@
 ####    4 打开meituan app即可见效果。
 
 ##     基本功能演示截图
-![Alt text](./screenshot/1.png)
-![Alt text](./screenshot/2.png)
-![Alt text](./screenshot/3.png)
-![Alt text](./screenshot/4.png)
+![Alt text](./meituan/screenshot/1.png)
+![Alt text](./meituan/screenshot/2.png)
+![Alt text](./meituan/screenshot/3.png)
+![Alt text](./meituan/screenshot/4.png)
+![Alt text](./meituan/screenshot/5.png)
+![Alt text](./meituan/screenshot/6.png)
+![Alt text](./meituan/screenshot/7.png)
+![Alt text](./meituan/screenshot/8.png)
