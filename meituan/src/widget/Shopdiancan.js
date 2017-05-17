@@ -54,6 +54,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<Text style={styles.listfoodname}>{rowData.foodname}</Text>
 				<Text style={styles.listfoodxiaoliang}>月销量{rowData.foodxiaoliang}份</Text>
 				<Text style={styles.listfoodprice}>￥{rowData.foodprice}</Text>
+				<View style={styles.addbut}>
+				<TouchableOpacity>
+				<Text style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>+</Text>
+				</TouchableOpacity>
+				</View>
 				</View>
 
 
@@ -76,7 +81,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				dataSource={this.state.dataSource}
 				renderRow={this._renderRow}
 				/>
-				<Text>已经到底部了</Text>
+				
 				</View>	
 				);
 
@@ -88,7 +93,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create({
 
 		listitmcontainer:{
-			height:200,
+			height:150,
 			width:scw,
 			backgroundColor:'#2b2e2e',
 			marginBottom:2,
@@ -110,23 +115,34 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			color:'#0ADFE6',
 			top:10,
 		},
-	
+
 		listfoodxiaoliang:{
 			
 			position:'absolute',
 			left:150,
-			fontSize:20,
+			fontSize:15,
 			color:'white',
 			top:60,
 		},
-	listfoodprice:{
+		listfoodprice:{
 			position:'absolute',
 			left:150,
-			fontSize:30,
+			fontSize:20,
 			color:'#F23636',
 			top:90,
 
 		},
+		addbut:{
+			height:30,
+			width:30,
+			position:'absolute',
+			bottom:20,
+			right:20,
+			backgroundColor:'#FB8B04',
+			borderRadius:15,
+
+
+		}
 
 
 	});

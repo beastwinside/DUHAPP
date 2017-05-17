@@ -14,9 +14,10 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			return (
 				<View >
 				<TouchableOpacity onPress={Actions.pop}>
-				<Image  style={{height:30,width:50,}}
+				<Image  style={{height:20,width:30,}}
 				source={require('../img/back.png')}/>
 				</TouchableOpacity>
+				<Text >返回</Text>
 				</View>
 				);
 		}
@@ -26,6 +27,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<View style={styles.headercontainer} >
 				
 				<View style={styles.headertextcontainer}>
+			
 				<TouchableOpacity>
 				<Text style={styles.headertext}> 拼单</Text>
 				</TouchableOpacity>
@@ -60,8 +62,8 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<Text style={styles.headerfooter}>新用户立减5元,银行卡首单最高减少...</Text>
 				<View style={styles.headerright}>
 				<TouchableOpacity>
-				<Text style={{fontSize:30,color:'white',textAlign:'center'}}>☆</Text>
-				<Text style={{fontSize:12,color:'white',textAlign:'center',}}>收藏</Text>
+				<Text style={{fontSize:30,color:'black',textAlign:'center'}}>☆</Text>
+				<Text style={{fontSize:12,color:'black',textAlign:'center',}}>收藏</Text>
 				</TouchableOpacity>
 				</View>
 				</View>
@@ -137,11 +139,12 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		headertext:{
 			fontSize:20,
 			textAlign:'right',
-			color:'white',
+			backgroundColor:'#FF8304',
+			color:'#0B0B0B',
 		},
 		header2:{
 			height:60,
-			backgroundColor:'#171919',
+			backgroundColor:'#FF7201',
 		},
 
 		header2img:{
@@ -158,7 +161,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			top:0,
 			left:65,
 			fontSize:25,
-			color:'white',
+			color:'#030202',
 			fontWeight:'bold',
 
 		},
@@ -167,7 +170,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			top:30,
 			left:65,
 			fontSize:11,
-			color:'white',
+			color:'#030202',
 
 		},
 		headerright:{
