@@ -20,7 +20,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity><Text style={{marginLeft:15,marginRight:15,color:'#0A80F4',fontSize:18,marginBottom:4,borderBottomWidth:1,}}>{this.props.shopinfo.jian}</Text></TouchableOpacity>
 				<TouchableOpacity><Text style={{marginLeft:15,marginRight:15,color:'#F72A2A',fontSize:18,marginBottom:4,borderBottomWidth:1,}}>{this.props.shopinfo.firstcustom}</Text></TouchableOpacity>	
 				<TouchableOpacity><Text style={{marginLeft:15,marginRight:15,color:'#1C1818',fontSize:18,marginBottom:4,borderBottomWidth:1,}}>该商家支持在线支付</Text></TouchableOpacity>
-				<TouchableOpacity><Text style={{marginLeft:15,marginRight:15,color:'#1C1818',fontSize:18,marginBottom:4,borderBottomWidth:1,}}>查看食品安全档案</Text></TouchableOpacity>
+				<TouchableOpacity><Text style={{marginLeft:15,marginRight:15,color:'#1C1818',fontSize:18,marginBottom:4,borderBottomWidth:1,}}></Text></TouchableOpacity>
 				<TouchableOpacity><Text style={{color:'#3FCB75',fontSize:25,marginBottom:4,borderBottomWidth:1,textAlign:'center'}}>举报商家</Text></TouchableOpacity>
 					
 

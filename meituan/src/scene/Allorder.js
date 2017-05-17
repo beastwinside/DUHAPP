@@ -26,9 +26,6 @@ import {
 			this.state={
 				dataSource:ds.cloneWithRows(Orderdata.orderinfo)
 			};
-
-
-
 		}
 
 
