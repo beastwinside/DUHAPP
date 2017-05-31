@@ -77,6 +77,24 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					backgroundColor:'#FCFBD5',
 				}}>
 
+				<View style={{
+					height:60,
+					width:scw,
+					position:'absolute',
+					zIndex:6,
+					bottom:30,
+					backgroundColor:'red',
+
+				}}>
+				<Text style={{
+					color:'white',
+					fontSize:30,
+					paddingLeft:30,
+
+				}}>购物车：0元</Text>
+
+				</View>
+
 				<ListView 
 				dataSource={this.state.dataSource}
 				renderRow={this._renderRow}
