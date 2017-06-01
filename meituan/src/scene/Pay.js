@@ -233,7 +233,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
    				color:'white',
    				fontSize:13,
    			}}>
-   			待支付￥{this.props.zongjiaa}|优惠尼玛的逼
+   			待支付￥{this.props.zongjiaa}|优惠无
    			</Text>
 
    		
