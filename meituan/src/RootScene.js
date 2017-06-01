@@ -86,7 +86,7 @@ class RootScene extends Component {
 
 
       </Scene>
-      <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
+      
       <Scene key='Shop'   component={Shop}  title='店铺' hideTabBar     />
       <Scene key='Shopdiancan' component={Shopdiancan} title='sd' hideTabBar  />
       
