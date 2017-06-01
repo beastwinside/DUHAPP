@@ -30,7 +30,18 @@ import {
 
 
 		_renderRow(rowData: string,sectionID: number, rowID: number)
-		{	var imgSource=imgurl[rowID]; 
+		{	
+			 const goToPay= () => {
+			 
+			 	Actions.Pay({
+			 		shopname:rowData.shopname,
+			 		foodname:rowData.ordername,
+			 		zongjiaa:rowData.ordernum*rowData.orderprice,
+			 		numa:rowData.ordernum,
+
+			 	});
+			 }
+			var imgSource=imgurl[rowID]; 
 			return(
 				<View style={{
 					height:150,
@@ -153,7 +164,8 @@ import {
 
 				}}>
 				<TouchableOpacity activeOpacity={0.6}>
-				<Text 	
+				<Text
+				onPress={goToPay}
 				style={{
 					fontSize:17,
 					color:'#FFFFFF',

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import Fooddata from '../data/food.json';
+		import { Actions } from 'react-native-router-flux';
 
 
 	var imgurl=new Array();
@@ -44,6 +45,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				shopcart_price:0,
 				num:0,
 				foodinfo:{name1:'',},
+				
 
 			};
 
@@ -154,6 +156,17 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 		render(){
+			let shopinfo=this.props.shopinfo;
+			 const goToPay= () => {
+			 	if(this.state.num!=0)
+			 	Actions.Pay({
+			 		shopname:shopinfo.shopname,
+			 		foodname:this.state.foodinfo.name1,
+			 		zongjiaa:this.state.shopcart_price,
+			 		numa:this.state.num,
+
+			 	});
+			 }
 
 
 			return(
@@ -177,11 +190,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				onPress={this.add}
 				 style={{
 					color:'white',
-					fontSize:16,
+					fontSize:14,
 					paddingLeft:20,
 
-				}}>购物车：总计{this.state.shopcart_price}元
-				{this.state.foodinfo.name1}*{this.state.num}份
+				}}>购物车：总计<Text style={{color:'#E4F002',fontSize:16,}}>
+				{this.state.shopcart_price}</Text>元,
+				{this.state.foodinfo.name1}*
+				<Text style={{color:'#E4F002',fontSize:16,}}>{this.state.num}
+				</Text>份
 				</Text>
 
 				
@@ -190,16 +206,16 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					position:'absolute',
 					right:0,
 					height:48,
-					width:100,
-					backgroundColor:'#308D41',
+					width:70,
+					backgroundColor:'#11B7E4',
 					
 				}}>
 				<TouchableOpacity>
 				<Text 
-				
+				onPress={goToPay}
 				style={{
-					color:'white',
-					fontSize:24,
+					color:'#1A1616',
+					fontSize:18,
 					textAlign:'center',
 				}}>
 				去结算
@@ -225,13 +241,18 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		}
 
+
+
+
+
 	}
 
 	let scw=Dimensions.get('window').width;
+
 	const styles=StyleSheet.create({
 
 		listitmcontainer:{
-			height:100,
+			height:90,
 			width:scw,
 			backgroundColor:'#2b2e2e',
 			marginBottom:2,
@@ -239,8 +260,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		},
 
 		listitemimage:{
-			height:67,
-			width:84,
+			height:60,
+			width:74,
 			marginTop:10,
 			marginLeft:10,
 			borderWidth:3,
@@ -266,27 +287,27 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			position:'absolute',
 			left:100,
 			fontSize:13,
-			color:'#F23636',
+			color:'#FB8B04',
 			top:60,
 
 		},
 		addbut:{
 			height:25,
-			width:25,
+			width:40,
 			position:'absolute',
 			bottom:40,
-			right:20,
+			right:10,
 			backgroundColor:'#FB8B04',
-			borderRadius:15,
+			borderRadius:5,
 		},
 		subtractbut:{
 			height:25,
-			width:25,
+			width:40,
 			position:'absolute',
 			bottom:40,
-			right:60,
+			right:80,
 			backgroundColor:'#FB8B04',
-			borderRadius:15,
+			borderRadius:5,
 		},
 
 		

@@ -23,7 +23,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		}
 
 		static renderTitle =()=>{
-			
+			const goToShops = () => Actions.Shopdiancan({num:1});
 
 			return(
 				<View style={styles.headercontainer} >
@@ -32,7 +32,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			
 				<TouchableOpacity>
 				<Text 
-			
+				onPress={goToShops}
 				style={styles.headertext}> 拼单</Text>
 				</TouchableOpacity>
 				</View>
