@@ -42,7 +42,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			this.state={
 				dataSource:ds.cloneWithRows(Fooddata.fooddata),
 				shopcart_price:0,
-				numxx:6,
+				num:0,
+				foodinfo:{name1:'',},
 
 			};
 
@@ -59,18 +60,45 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		{	
 			var imgSource=imgurl[rowID]; 
 		const addprice = () =>{
+			if(this.state.num!=0)
+			{
+				if(this.state.foodinfo.name1==rowData.foodname){
 			this.setState({
 			shopcart_price:this.state.shopcart_price+rowData.foodprice,
-				numxx:3,
+			foodinfo:{name1:rowData.foodname},
+			num:this.state.num+1,
 		});
+			}
+			else ;
+			}
+
+			else 
+				this.setState({
+			shopcart_price:this.state.shopcart_price+rowData.foodprice,
+			foodinfo:{name1:rowData.foodname},
+			num:this.state.num+1,
+		});
+		
 		
 
 
 	};
 		const subtractprice = () =>{
 			var x=this.state.shopcart_price-rowData.foodprice;
-			if(x>=0)
-			this.setState({shopcart_price:x,});
+			if(this.state.num>0&&this.state.foodinfo.name1==rowData.foodname)
+			{
+				this.setState({
+				shopcart_price:x,
+				num:this.state.num-1,
+			});
+			if(this.state.num==1)
+			{	
+				this.setState({
+				foodinfo:{name1:''},
+			});
+				}
+
+	}
 		else ;
 
 
@@ -99,17 +127,6 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				</TouchableOpacity>
 				</View>
 
-
-				<View
-				style={styles.num}  >
-				
-			
-				<Text 
-				style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>
-					0
-				</Text>
-			
-				</View>
 
 
 
@@ -143,7 +160,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<View style={{
 					marginTop:52,
 					backgroundColor:'#FCFBD5',
-					display:'none',
+
 				}}>
 
 				<View style={{
@@ -160,10 +177,12 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				onPress={this.add}
 				 style={{
 					color:'white',
-					fontSize:20,
+					fontSize:16,
 					paddingLeft:20,
 
-				}}>购物车：{this.state.shopcart_price}元</Text>
+				}}>购物车：总计{this.state.shopcart_price}元
+				{this.state.foodinfo.name1}*{this.state.num}份
+				</Text>
 
 				
 				
@@ -265,21 +284,12 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			width:25,
 			position:'absolute',
 			bottom:40,
-			right:80,
+			right:60,
 			backgroundColor:'#FB8B04',
 			borderRadius:15,
 		},
 
-			num:{
-			height:25,
-			width:25,
-			position:'absolute',
-			bottom:40,
-			right:50,
-			backgroundColor:'#FB8B04',
-			borderRadius:15,
-		},
-
+		
 
 	});
 
