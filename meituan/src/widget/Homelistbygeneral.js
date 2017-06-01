@@ -50,6 +50,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			var imgSource=Imgurl[rowID]; 
 			// Actions传值要先用const，不然每次render重复赋值
 			  const goToShop = () => Actions.Shop({shopinfo: rowData,img:imgSource});
+		
+
 			return(
 				<TouchableOpacity activeOpacity={0.9} 
 				onPress={goToShop}

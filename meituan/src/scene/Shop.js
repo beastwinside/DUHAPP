@@ -17,19 +17,23 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<Image  style={{height:20,width:30,}}
 				source={require('../img/back.png')}/>
 				</TouchableOpacity>
-				<Text >返回</Text>
+				<Text style={{color:'white',}}>返回</Text>
 				</View>
 				);
 		}
 
 		static renderTitle =()=>{
+			const goToShops = () => Actions.Shopdiancan({num:1});
+
 			return(
 				<View style={styles.headercontainer} >
 				
 				<View style={styles.headertextcontainer}>
 			
 				<TouchableOpacity>
-				<Text style={styles.headertext}> 拼单</Text>
+				<Text 
+				onPress={goToShops}
+				style={styles.headertext}> 拼单</Text>
 				</TouchableOpacity>
 				</View>
 
@@ -77,7 +81,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				tabBarActiveTextColor='#FEFEFE'
 				tabBarInactiveTextColor='#9D9D9D'
 				tabBarTextStyle={{fontSize: 18}}
-				locked={false}
+				locked={true}
 				initialPage={0}
 				 >
 				<Shopdiancan tabLabel="点菜" shopinfo={shopinfo} />
@@ -121,7 +125,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 	let sch=Dimensions.get('window').height;
 	const styles=StyleSheet.create({
 		headercontainer:{
-			backgroundColor:'#4bbe97',
+			backgroundColor:'#B92323',
 			height:60,
 			justifyContent:'center',
 			

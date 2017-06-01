@@ -40,26 +40,93 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state={
-				dataSource:ds.cloneWithRows(Fooddata.fooddata)
+				dataSource:ds.cloneWithRows(Fooddata.fooddata),
+				shopcart_price:0,
+				numxx:6,
+
 			};
+
+		
+			this._renderRow= this._renderRow.bind(this);
+				
+
+
 		}
 
+	
+
 		_renderRow(rowData: string,sectionID: number, rowID: number)
-		{
+		{	
 			var imgSource=imgurl[rowID]; 
+		const addprice = () =>{
+			this.setState({
+			shopcart_price:this.state.shopcart_price+rowData.foodprice,
+				numxx:3,
+		});
+		
+
+
+	};
+		const subtractprice = () =>{
+			var x=this.state.shopcart_price-rowData.foodprice;
+			if(x>=0)
+			this.setState({shopcart_price:x,});
+		else ;
+
+
+		}
+
+
 			return(
 
-				<View style={styles.listitmcontainer}>
-				<Image source={imgSource} style={styles.listitemimage}/>
+				
+				<View 
+				
+				style={styles.listitmcontainer}>
+				<Image
+					
+				 source={imgSource} style={styles.listitemimage}/>
 				<Text style={styles.listfoodname}>{rowData.foodname}</Text>
 				<Text style={styles.listfoodxiaoliang}>月销量{rowData.foodxiaoliang}份</Text>
 				<Text style={styles.listfoodprice}>￥{rowData.foodprice}</Text>
-				<View style={styles.addbut}>
-				<TouchableOpacity>
-				<Text style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>+</Text>
+
+				<View
+				style={styles.subtractbut}  >
+				<TouchableOpacity 
+				onPress={subtractprice}>
+				<Text 
+				style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>-</Text>
 				</TouchableOpacity>
 				</View>
+
+
+				<View
+				style={styles.num}  >
+				
+			
+				<Text 
+				style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>
+					0
+				</Text>
+			
 				</View>
+
+
+
+
+
+				<View
+				style={styles.addbut}  >
+				<TouchableOpacity 
+				onPress={addprice}>
+				<Text 
+				style={{color:'black',fontSize:20,textAlign:'center',fontWeight:'bold'}}>+</Text>
+				</TouchableOpacity>
+				</View>
+
+
+				</View>
+				
 
 
 				);
@@ -71,27 +138,59 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		render(){
 
+
 			return(
 				<View style={{
 					marginTop:52,
 					backgroundColor:'#FCFBD5',
+					display:'none',
 				}}>
 
 				<View style={{
-					height:60,
+					height:36,
 					width:scw,
 					position:'absolute',
 					zIndex:6,
-					bottom:30,
-					backgroundColor:'red',
+					bottom:0,
+					backgroundColor:'#F70A57',
+					opacity:0.9,
 
 				}}>
-				<Text style={{
+				<Text
+				onPress={this.add}
+				 style={{
 					color:'white',
-					fontSize:30,
-					paddingLeft:30,
+					fontSize:20,
+					paddingLeft:20,
 
-				}}>购物车：0元</Text>
+				}}>购物车：{this.state.shopcart_price}元</Text>
+
+				
+				
+				<View style={{
+					position:'absolute',
+					right:0,
+					height:48,
+					width:100,
+					backgroundColor:'#308D41',
+					
+				}}>
+				<TouchableOpacity>
+				<Text 
+				
+				style={{
+					color:'white',
+					fontSize:24,
+					textAlign:'center',
+				}}>
+				去结算
+				</Text>
+				</TouchableOpacity>
+				</View>
+
+
+				
+
 
 				</View>
 
@@ -99,6 +198,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				dataSource={this.state.dataSource}
 				renderRow={this._renderRow}
 				/>
+
+
 				
 				</View>	
 				);
@@ -111,7 +212,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create({
 
 		listitmcontainer:{
-			height:150,
+			height:100,
 			width:scw,
 			backgroundColor:'#2b2e2e',
 			marginBottom:2,
@@ -119,8 +220,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		},
 
 		listitemimage:{
-			height:100,
-			width:140,
+			height:67,
+			width:84,
 			marginTop:10,
 			marginLeft:10,
 			borderWidth:3,
@@ -128,8 +229,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		},
 		listfoodname:{
 			position:'absolute',
-			left:150,
-			fontSize:30,
+			left:100,
+			fontSize:20,
 			color:'#0ADFE6',
 			top:10,
 		},
@@ -137,30 +238,47 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		listfoodxiaoliang:{
 			
 			position:'absolute',
-			left:150,
-			fontSize:15,
+			left:100,
+			fontSize:10,
 			color:'white',
-			top:60,
+			top:40,
 		},
 		listfoodprice:{
 			position:'absolute',
-			left:150,
-			fontSize:20,
+			left:100,
+			fontSize:13,
 			color:'#F23636',
-			top:90,
+			top:60,
 
 		},
 		addbut:{
-			height:30,
-			width:30,
+			height:25,
+			width:25,
 			position:'absolute',
-			bottom:20,
+			bottom:40,
 			right:20,
 			backgroundColor:'#FB8B04',
 			borderRadius:15,
+		},
+		subtractbut:{
+			height:25,
+			width:25,
+			position:'absolute',
+			bottom:40,
+			right:80,
+			backgroundColor:'#FB8B04',
+			borderRadius:15,
+		},
 
-
-		}
+			num:{
+			height:25,
+			width:25,
+			position:'absolute',
+			bottom:40,
+			right:50,
+			backgroundColor:'#FB8B04',
+			borderRadius:15,
+		},
 
 
 	});
