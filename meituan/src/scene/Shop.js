@@ -8,7 +8,13 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 	import Shopdiancan from '../widget/Shopdiancan';
 
 
+
+
 	export default class Shop extends Component{
+
+
+
+
 		//重写back按钮
 		static renderBackButton = () => {
 			return (
@@ -29,7 +35,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<View style={styles.headercontainer} >
 				
 				<View style={styles.headertextcontainer}>
-			
+
 				<TouchableOpacity>
 				<Text 
 				onPress={goToShops}
@@ -56,6 +62,8 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		render(){
 			let shopinfo=this.props.shopinfo;
 			let img=this.props.img;
+		
+
 			return(
 				<View>
 				{this.renderhead()}
@@ -83,7 +91,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				tabBarTextStyle={{fontSize: 18}}
 				locked={true}
 				initialPage={0}
-				 >
+				>
 				<Shopdiancan tabLabel="点菜" shopinfo={shopinfo} />
 
 				<Text tabLabel="评价"
@@ -93,21 +101,21 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 					textAlign:'center',
 					color:'white',
 					height:900,
-						backgroundColor:'#2b2e2e',
+					backgroundColor:'#2b2e2e',
 
 				}}>
 				暂无评价
 				</Text>	
 				<Shopshangjia tabLabel="商家"  shopinfo={shopinfo}/>
 
-			
+
 
 
 				</ScrollableTabView>
 
 				</View>
 
-		
+
 
 
 

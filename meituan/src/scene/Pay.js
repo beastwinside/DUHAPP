@@ -9,6 +9,17 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 
    	render(){
 
+          const goToAllorder= () => {
+            Actions.noback({
+               shopname:this.props.shopname,
+               foodname:this.props.foodname,
+               num:this.props.numa,
+               zongjia:this.props.zongjiaa
+               });
+
+         
+          };
+
    		var myDate = new Date();
         var hour=myDate.getHours();
         var minute= myDate.getMinutes()+15;   
@@ -247,7 +258,9 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
    				
    			}}>
    			<TouchableOpacity>
-   			<Text style={{
+   			<Text 
+            onPress={goToAllorder}
+            style={{
    				color:'#FFFFFF',
    				textAlign:'center',
    			}}>去支付

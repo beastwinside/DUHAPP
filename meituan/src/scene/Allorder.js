@@ -15,8 +15,19 @@ import {
 		require('../img/order/jufuqi@2x.png'),
 		require('../img/order/shaofuqi@2x.png'),
 		require('../img/order/duofuqi@2x.png'),
-		require('../img/order/xiaoxiaofuqi@2x.png')
+		require('../img/order/xiaoxiaofuqi@2x.png'),
+		require('../img/order/jufuqi@2x.png'),
+		require('../img/order/shaofuqi@2x.png'),
+		require('../img/order/duofuqi@2x.png'),
+		require('../img/order/xiaoxiaofuqi@2x.png'),
 		);
+
+
+
+	
+	let test=1;
+
+
 
 	export default class Allorder extends Component {
 		constructor(props){
@@ -24,23 +35,33 @@ import {
 			const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state={
-				dataSource:ds.cloneWithRows(Orderdata.orderinfo)
+				dataSource:ds.cloneWithRows(Orderdata.orderinfo),
+				headLoading:false,
+
 			};
+		}
+
+			_combineData() {
+			this.setState({ headLoading: true })
+
+			setTimeout(() => {
+				this.setState({ headLoading: false })
+			}, 2500);
 		}
 
 
 		_renderRow(rowData: string,sectionID: number, rowID: number)
 		{	
-			 const goToPay= () => {
-			 
-			 	Actions.Pay({
-			 		shopname:rowData.shopname,
-			 		foodname:rowData.ordername,
-			 		zongjiaa:rowData.ordernum*rowData.orderprice,
-			 		numa:rowData.ordernum,
+			const goToPay= () => {
 
-			 	});
-			 }
+				Actions.Pay({
+					shopname:rowData.shopname,
+					foodname:rowData.ordername,
+					zongjiaa:rowData.ordernum*rowData.orderprice,
+					numa:rowData.ordernum,
+
+				});
+			}
 			var imgSource=imgurl[rowID]; 
 			return(
 				<View style={{
@@ -48,7 +69,9 @@ import {
 					backgroundColor:'#212121',
 					borderBottomWidth:1.5,
 					borderColor:'white',
-				}}>
+				}}
+
+				>
 				<View style={{
 					flex:0.8,
 					backgroundColor:'#2b2e2e',
@@ -181,11 +204,25 @@ import {
 
 
 		render() {
+			if(this.props.num>=1){
+			Orderdata.orderinfo.unshift(
+				{
+						"shopname":this.props.shopname,
+						"orderstatus":"订单完成",
+						"shopimageurl":"../img/order/xiaofuqi@2x.png",
+						"ordername":this.props.foodname,
+						"ordernum":this.props.num,
+						"orderprice":this.props.zongjia,
+					}
+
+				);}
 			return (
 				
 				<View style={{
 					marginTop:52,
-				}}>
+				}}
+
+				>
 				
 				<ListView 
 

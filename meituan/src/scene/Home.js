@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
-	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
+	ListView,Image, TouchableOpacity, ScrollView, RefreshControl,TextInput} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
 	import Swiper from 'react-native-swiper';
@@ -35,13 +35,16 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 			setTimeout(() => {
 				this.setState({ headLoading: false })
-			}, 2500);
+			}, 1500);
 		}
 
 
 
 
 		render() {
+		
+
+	
 
 			let scw=Dimensions.get('window').width;
 			let sch=Dimensions.get('window').height;
@@ -61,6 +64,26 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					/>
 				}
 				>
+
+
+				<TextInput style={{
+					height:30,
+					position:'absolute',
+					backgroundColor:'#FFFFFF',
+					top:50,
+					width:scw*0.4,
+					left:20,
+					zIndex:10,
+					opacity:0.8,
+				}} />
+
+
+
+				
+
+
+
+
 				<Homeheader/>
 				<Homemenu/>
 				<HomeDiscountArea/>

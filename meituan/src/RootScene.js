@@ -11,8 +11,10 @@ import Order from './scene/Order';
 import Mine from './scene/Mine';
 import Allorder from './scene/Allorder';
 import Pay from './scene/Pay';
+import Welcome from './scene/Welcome';
 import TabBarItem from './widget/TabBarItem';
 import NOBACK from './widget/NOBACK';
+
 import Shop from './scene/Shop';
   import Shopdiancan from './widget/Shopdiancan';
 
@@ -28,26 +30,20 @@ class RootScene extends Component {
 
 
       <Router
-      onSelect={el => {
-        const { sceneKey, statusBarStyle } = el.props
-        if (statusBarStyle) {
-          StatusBar.setBarStyle(statusBarStyle, false)
-        } else {
-          StatusBar.setBarStyle('default', false)
-        }
-        Actions[sceneKey]()
-      }}
+        
       >
       <Scene 
 
       tabs
       key='tabBar'
-      initial
+      type='replace'
       tabBarStyle={styles.tabBarStyle}
       >
 
 
       <Scene 
+
+     
       hideNavBar
       key="Home" 
       component={Home} 
@@ -59,6 +55,7 @@ class RootScene extends Component {
       unselecttext={styles.unselecttext_style}/>
 
       <Scene 
+
       key="Order" 
       component={Order} 
       title="订单" 
@@ -87,11 +84,14 @@ class RootScene extends Component {
 
 
       </Scene>
-      <Scene key='noback' component={NOBACK} title='加载中' hideTabBar  />
+      <Scene key='noback' component={NOBACK} title='加载中' hideTabBar type='replace' 
+     />
+      <Scene key='Welcome' component={Welcome} title='加载中' hideTabBar  hideNavBar  
+      initial/>
       <Scene key='Shop'   component={Shop}  title='店铺' hideTabBar     />
       <Scene key='Shopdiancan' component={Shopdiancan} title='sd' hideTabBar  />
-      <Scene key='Pay' component={Pay} title='订单配送至' hideTabBar  />
-      
+      <Scene key='Pay'  component={Pay} title='订单配送至' hideTabBar  />
+       <Scene key='Allorder' type='replace' component={Allorder} title='所有订单' hideTabBar  />
       </Router>
 
 
