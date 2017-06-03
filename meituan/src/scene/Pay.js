@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
+import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
 	import { Actions } from 'react-native-router-flux';
@@ -7,15 +7,50 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 
    export default class Pay extends Component{
 
+      constructor(props) {
+         super(props);
+        
+         this.state = {
+           shuliang:this.props.numa,
+           zongprice:this.props.zongjiaa,
+         };
+      }
+
+
    	render(){
+         const addprice = () =>{
+         this.setState({
+         shuliang:this.state.shuliang+1,
+          zongprice:this.props.zongjiaa/this.props.numa*(this.state.shuliang+1),
+         })
+ 
+   };
+
+    const subtractprice = () =>{
+      if(this.state.shuliang>0)
+      {
+         this.setState({
+         shuliang:this.state.shuliang-1,
+         zongprice:this.props.zongjiaa/this.props.numa*(this.state.shuliang-1),
+         })}
+         else Alert.alert('???','你他妈是傻逼？');
+ 
+   };
+
+
+
 
           const goToAllorder= () => {
+            if(this.state.shuliang>0)
+            {
             Actions.noback({
                shopname:this.props.shopname,
                foodname:this.props.foodname,
-               num:this.props.numa,
-               zongjia:this.props.zongjiaa
-               });
+               num:this.state.shuliang,
+               zongjia:this.state.zongprice,
+               });}
+
+            else Alert.alert('???','您选了什么？');
 
          
           };
@@ -144,9 +179,60 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
    				
    			}}>
    			
-   				数量：{this.props.numa}
+   				数量：
    			</Text>
-   			</TouchableOpacity>
+            </TouchableOpacity>
+
+            <Text 
+            onPress={addprice}
+            style={{
+               position:'absolute',
+               right:10,
+               top:0,
+               height:30,
+               width:30,
+               backgroundColor:'#FF7100',
+                 borderRadius:10,
+                 fontSize:20,
+                 textAlign:'center',
+
+            }}> 
+            +
+            </Text>
+
+
+               <Text style={{
+               position:'absolute',
+               right:45,
+               top:0,
+               height:30,
+               width:30,
+               backgroundColor:'#FF7100',
+                 borderRadius:10,
+                 fontSize:20,
+                 textAlign:'center',
+
+            }}> 
+            {this.state.shuliang}
+            </Text>
+
+             <Text 
+             onPress={subtractprice}
+             style={{
+               position:'absolute',
+               right:80,
+               top:0,
+               height:30,
+               width:30,
+               backgroundColor:'#FF7100',
+               borderRadius:10,
+               fontSize:20,
+                 textAlign:'center',
+
+            }}> 
+            -
+            </Text>
+   			
    			</View>
 
 
@@ -165,9 +251,24 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
    				fontSize:18,
    				
    			}}>
-   			总价：{this.props.zongjiaa}
+   			总价：
    			</Text>
    			</TouchableOpacity>
+
+             <Text style={{
+               position:'absolute',
+               right:15,
+               top:0,
+               height:30,
+               width:80,
+               backgroundColor:'#FF7100',
+                 borderRadius:10,
+                 fontSize:20,
+                 textAlign:'center',
+
+            }}> 
+            {this.state.zongprice}￥
+            </Text>
    			</View>
 
 
@@ -243,8 +344,17 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
    				paddingTop:5,
    				color:'white',
    				fontSize:13,
+               paddingLeft:20,
    			}}>
-   			待支付￥{this.props.zongjiaa}|优惠无
+   			待支付￥
+            <Text style={{
+               color:'red',
+               fontSize:20,
+
+            }}>
+            {this.state.zongprice+3}
+            </Text>
+            |优惠是没有的
    			</Text>
 
    		

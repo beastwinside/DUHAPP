@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
+import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import Fooddata from '../data/food.json';
 		import { Actions } from 'react-native-router-flux';
@@ -71,7 +71,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			num:this.state.num+1,
 		});
 			}
-			else ;
+			else Alert.alert('抱歉','本软件一次只能选择一个食物');
 			}
 
 			else 
@@ -93,6 +93,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				shopcart_price:x,
 				num:this.state.num-1,
 			});
+
 			if(this.state.num==1)
 			{	
 				this.setState({
@@ -101,7 +102,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				}
 
 	}
-		else ;
+		else  Alert.alert('抱歉','本软件一次只能选择一个食物'); ;
 
 
 		}
@@ -159,13 +160,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			let shopinfo=this.props.shopinfo;
 			 const goToPay= () => {
 			 	if(this.state.num!=0)
-			 	Actions.Pay({
+			 	{Actions.Pay({
 			 		shopname:shopinfo.shopname,
 			 		foodname:this.state.foodinfo.name1,
 			 		zongjiaa:this.state.shopcart_price,
 			 		numa:this.state.num,
 
-			 	});
+			 	});}
+			 else Alert.alert('抱歉','您的购物车为空')
 			 }
 
 

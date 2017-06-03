@@ -77,6 +77,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 			let scw=Dimensions.get('window').width;
 			let sch=Dimensions.get('window').height;
+			var dddd=false;
 			return (
 				<ScrollView 
 				style={{
@@ -111,7 +112,8 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 				maxLength={10}
 				onChangeText={(text) => this.setState({text})}
 				onSubmitEditing={search}
-				     
+				
+
 
 				/>
 
