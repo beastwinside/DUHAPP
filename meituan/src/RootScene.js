@@ -14,7 +14,7 @@ import Pay from './scene/Pay';
 import Welcome from './scene/Welcome';
 import TabBarItem from './widget/TabBarItem';
 import NOBACK from './widget/NOBACK';
-
+import Login from './scene/Login';
 import Shop from './scene/Shop';
   import Shopdiancan from './widget/Shopdiancan';
 
@@ -36,14 +36,14 @@ class RootScene extends Component {
 
       tabs
       key='tabBar'
-      type='replace'
+      type='reset'
       tabBarStyle={styles.tabBarStyle}
       >
 
 
       <Scene 
 
-     
+
       hideNavBar
       key="Home" 
       component={Home} 
@@ -88,6 +88,8 @@ class RootScene extends Component {
      />
       <Scene key='Welcome' component={Welcome} title='加载中' hideTabBar  hideNavBar  
       initial/>
+      <Scene key='Login' component={Login} title='登陆界面' hideTabBar  hideNavBar  
+     />
       <Scene key='Shop'   component={Shop}  title='店铺' hideTabBar     />
       <Scene key='Shopdiancan' component={Shopdiancan} title='sd' hideTabBar  />
       <Scene key='Pay'  component={Pay} title='订单配送至' hideTabBar  />

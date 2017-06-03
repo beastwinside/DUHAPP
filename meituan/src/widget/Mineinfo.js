@@ -4,6 +4,22 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 import Swiper from 'react-native-swiper';
 
 export default class Mineinfo extends Component{
+
+	constructor(props) {
+	 		super(props);
+	 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+	 		this.state = {
+	 			hongbao:'未登录',
+	 			yue:'未登录',
+	 			daijinquan:'未登录',
+	 			
+	 			
+	 		};
+	 	}
+
+
+
+
 	render(){
 		return(<View style={{
 	 				height:80,
@@ -23,7 +39,7 @@ export default class Mineinfo extends Component{
 	 					alignSelf:'center',
 	 					marginTop:10,
 	 					color:'white',
-	 				}}>1亿张
+	 				}}>{this.state.hongbao}
 	 				</Text>
 
 	 				<View style={{
@@ -54,7 +70,7 @@ export default class Mineinfo extends Component{
 	 						alignSelf:'center',
 	 						marginTop:10,
 	 						color:'white',
-	 					}}>1亿元
+	 					}}>{this.state.yue}
 	 					</Text>
 
 	 					<View style={{
@@ -86,7 +102,7 @@ export default class Mineinfo extends Component{
 	 							alignSelf:'center',
 	 							marginTop:10,
 	 							color:'white',
-	 						}}>0张
+	 						}}>{this.state.daijinquan}
 	 						</Text>	
 
 	 						<View style={{

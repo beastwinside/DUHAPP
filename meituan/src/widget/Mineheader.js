@@ -2,16 +2,48 @@ import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 import Swiper from 'react-native-swiper';
+import { Actions } from 'react-native-router-flux';
 
+
+let test=1;
 export default class Mineheader extends Component{
+
+		constructor(props) {
+	 		super(props);
+	 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+	 		this.state = {
+	 			id:'未登录',
+	 			
+	 		};
+	 	}
+
+
+
+
+
 	render(){
+		const login=()=>{
+			if(this.state.id=='未登录')
+			{Actions.Login()}
+		else ;
+
+		}
+
+		test--;
+		alert(test);
+
+
 		return(<View style={{
 	 				height:160,
 	 				backgroundColor:'#009b85',
 	 			}}>
 
-	 			<TouchableOpacity activeOpacity={0.6} >
-	 			<Image style={{
+	 			<TouchableOpacity 
+	 				onPress={login}
+	 			activeOpacity={0.6} >
+	 			<Image
+	 		
+	 			 style={{
 	 				height:90,
 	 				width:90,
 	 				borderRadius:45,
@@ -35,13 +67,15 @@ export default class Mineheader extends Component{
 	 			source={require('../img/mine/topright@2x.png')} 
 	 			/>
 
-	 			<Text style={{
+	 			<Text 
+	 			onPress={login}
+	 			style={{
 	 				alignSelf:'center',
 	 				fontSize:20,
 	 				color:'#252424',
 
 	 			}}>
-	 			NGs49753293>
+	 			{this.state.id}
 	 			</Text>
 	 			</View>);
 

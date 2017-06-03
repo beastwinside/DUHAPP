@@ -176,7 +176,7 @@ import Minefooter from '../widget/Minefooter';
 	 				flex:1,
 	 			}}>
 
-	 			<Mineheader/>
+	 			<Mineheader />
 	 			<Mineinfo/>		
 	 			<ListView
 	 			style={{ 
