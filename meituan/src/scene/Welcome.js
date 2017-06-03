@@ -1,7 +1,9 @@
 import React,{Component} from 'react';
-import {Text,View} from 'react-native';
+import {Text,View,Dimensions,Image } from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 
+let scw=Dimensions.get('window').width;
+let sch=Dimensions.get('window').height;
 class Welcome extends Component{
 
 	render(){
@@ -12,14 +14,15 @@ class Welcome extends Component{
 
 		return(
 
-			<Text onPress={goMain}
+			<Image 
 			style={{
-				top:300,
-				color:'red',
-				fontSize:30,
-			}}>
-			欢迎来到美团
-			</Text>
+				height:sch,
+				width:scw
+			}}
+
+			source={require('../img/welcome.png')} />
+			
+			
 		);
 	}
 }

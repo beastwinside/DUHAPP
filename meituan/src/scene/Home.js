@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
+import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl,TextInput} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
@@ -14,10 +14,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	import Homelistbysales from  '../widget/Homelistbysales';
 	import Homelistbydiscount from  '../widget/Homelistbydiscount';
 
-	
+	var shangjiaarray=new Array('阿良烧烤','绝味龙虾','巴西烤鱼',
+		'精武鸭脖','碗留香黄焖鸡','甜辣鱿鱼','acc');
 
 
-
+	var Imgurl=require('../img/shopinfo/alsk.png');
 
 	export default class Home extends Component {
 
@@ -26,6 +27,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 			this.state = {
 				headLoading:false,
+				text:'',
 
 			};
 		}
@@ -42,9 +44,36 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 		render() {
-		
+			const search=()=>{
+				let temp=0;
+				for(let i=0;i<=shangjiaarray.length;i++)
+				{
+					if(shangjiaarray[i]==this.state.text)
+						{Actions.Shop({
+							shopinfo: {
+								"img":"../img/shopinfo/alsk.png",
+								"shopname":this.state.text,
+								"yuexiaoliang":1381,
+								"qisongprice":15,
+								"peisongprice":0,
+								"renjun":15,
+								"time":47,
+								"discount":405,
+								"jian":"■满5减1",
+								"firstcustom":"♦新用户立减5元",
+								"phone":1342361056,
+							},
+							img:Imgurl
+						});temp++}
+					else ;
+				}
+				if(temp==0)
+					{Alert.alert('我很抱歉','未找到该商家');}
 
-	
+
+			};
+
+
 
 			let scw=Dimensions.get('window').width;
 			let sch=Dimensions.get('window').height;
@@ -67,15 +96,24 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 				<TextInput style={{
-					height:30,
+					height:40,
+					borderWidth: 1,
 					position:'absolute',
 					backgroundColor:'#FFFFFF',
 					top:50,
-					width:scw*0.4,
+					width:scw*0.45,
 					left:20,
 					zIndex:10,
 					opacity:0.8,
-				}} />
+				}} 
+				underlineColorAndroid="transparent"
+				placeholder="搜索商家"
+				maxLength={10}
+				onChangeText={(text) => this.setState({text})}
+				onSubmitEditing={search}
+				     
+
+				/>
 
 
 
