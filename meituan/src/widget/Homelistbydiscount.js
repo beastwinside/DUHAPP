@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
+import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,Alert,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
-	import Shopinfo from '../data/shopinfobydiscount.json';
+	// import Shopinfo from '../data/shopinfobydiscount.json';
 		import { Actions } from 'react-native-router-flux';
 
 	//Image 的require参数不能为变量，无法存入json，暂时找不到好的存储图片方式
@@ -37,7 +37,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state = {
-				dataSource:ds.cloneWithRows(Shopinfo.shopdata)
+				dataSource:ds.cloneWithRows([])
 			};
 		}
 
@@ -77,6 +77,40 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 
+			setsource(){
+		var request = new XMLHttpRequest();
+		request.onreadystatechange = (e) => {
+			if (request.readyState !== 4) {
+				return;
+			}
+
+			if (request.status === 200) {
+				{console.log('success', request.responseText);
+				   var obj =  JSON.parse(request.responseText); 
+
+				   const ds=new ListView.DataSource({
+				rowHasChanged:(r1,r2)=>r1!=r2});
+				   this.setState({
+				   	dataSource:ds.cloneWithRows(obj.shopdata)
+
+
+				   });
+				
+			}
+
+			} else {
+				console.warn('error');
+				Alert.alert('未联网','无法获取数据');
+			}
+		};
+
+		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/shopinfobydiscount.json');
+		request.send();
+	}
+
+
+	 componentWillMount()
+	 {this.setsource();}
 
 
 		render(){

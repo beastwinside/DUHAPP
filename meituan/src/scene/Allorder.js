@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-	View, Text, StyleSheet, StatusBar, ListView,
+	View, Text, StyleSheet, StatusBar, ListView,Alert,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
 	import Orderdata from '../data/orderdata.json';
@@ -35,7 +35,7 @@ import {
 			const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state={
-				dataSource:ds.cloneWithRows(Orderdata.orderinfo),
+				dataSource:ds.cloneWithRows([]),
 				headLoading:false,
 
 			};
@@ -48,6 +48,44 @@ import {
 				this.setState({ headLoading: false })
 			}, 2500);
 		}
+
+
+			setsource(){
+		var request = new XMLHttpRequest();
+		request.onreadystatechange = (e) => {
+			if (request.readyState !== 4) {
+				return;
+			}
+
+			if (request.status === 200) {
+				{console.log('success', request.responseText);
+				   var obj =  JSON.parse(request.responseText); 
+
+				   const ds=new ListView.DataSource({
+				rowHasChanged:(r1,r2)=>r1!=r2});
+				   this.setState({
+				   	dataSource:ds.cloneWithRows(obj.orderinfo)
+
+
+				   });
+				
+			}
+
+			} else {
+				console.warn('error');
+				Alert.alert('未联网','无法获取数据');
+			}
+		};
+
+		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/orderdata.json');
+		request.send();
+	}
+
+
+
+	 componentWillMount()
+	 {this.setsource();}
+
 
 
 		_renderRow(rowData: string,sectionID: number, rowID: number)
@@ -218,10 +256,21 @@ import {
 				);}
 			return (
 				
-				<View style={{
+				<ScrollView
+				style={{
 					marginTop:52,
 				}}
 
+					refreshControl={
+					<RefreshControl
+					refreshing={this.state.headLoading}
+					onRefresh={() => this.setsource()}
+					tintColor="#F90C7A"
+					title="Loading..."
+					colors={['#ff0000','#00ff00','#0000ff']}
+					processBackgroundColor="#ffff00"
+					/>
+				}
 				>
 				
 				<ListView 
@@ -235,7 +284,7 @@ import {
 				
 
 
-				</View>
+				</ScrollView>
 
 
 

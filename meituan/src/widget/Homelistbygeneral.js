@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
-	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
+	ListView,Image, TouchableOpacity, ScrollView, RefreshControl,Alert} from 'react-native';
 		import { Actions } from 'react-native-router-flux';
 		
 	import Shopinfo from '../data/shopinfo.json';
@@ -29,6 +29,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		);
 
 
+	 console.disableYellowBox = true;
 	export default class Homelistbygeneral extends Component {
 
 
@@ -38,7 +39,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
 			this.state = {
-				dataSource:ds.cloneWithRows(Shopinfo.shopdata)
+				dataSource:ds.cloneWithRows([
+
+		])
 			};
 		}
 
@@ -79,10 +82,44 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		}
 
 
+			setsource(){
+		var request = new XMLHttpRequest();
+		request.onreadystatechange = (e) => {
+			if (request.readyState !== 4) {
+				return;
+			}
 
+			if (request.status === 200) {
+				{console.log('success', request.responseText);
+				   var obj =  JSON.parse(request.responseText); 
+
+				   const ds=new ListView.DataSource({
+				rowHasChanged:(r1,r2)=>r1!=r2});
+				   this.setState({
+				   	dataSource:ds.cloneWithRows(obj.shopdata)
+
+
+				   });
+				
+			}
+
+			} else {
+				console.warn('error');
+				Alert.alert('未联网','无法获取数据');
+			}
+		};
+
+		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/shopinfo.json');
+		request.send();
+	}
+
+
+	 componentWillMount()
+	 {this.setsource();}
 
 
 		render(){
+			
 			
 			return(
 				<ScrollView  >

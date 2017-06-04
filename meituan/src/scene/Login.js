@@ -5,6 +5,9 @@ import { Actions } from 'react-native-router-flux';
 class Login extends Component{
 
 
+
+
+
 	render(){
 
 		var request = new XMLHttpRequest();

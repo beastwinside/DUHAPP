@@ -12,7 +12,7 @@ export default class Mineinfo extends Component{
 	 			hongbao:'未登录',
 	 			yue:'未登录',
 	 			daijinquan:'未登录',
-	 			
+	 			id:'未登录'
 	 			
 	 		};
 	 	}
