@@ -77,6 +77,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 			setsource(){
+			
 		var request = new XMLHttpRequest();
 		request.onreadystatechange = (e) => {
 			if (request.readyState !== 4) {
@@ -94,6 +95,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 				   });
+				   
 				
 			}
 
@@ -105,6 +107,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/shopinfobydiscount.json');
 		request.send();
+		
+
 	}
 
 

@@ -146,6 +146,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 			borderWidth:1,
 			borderColor:'white',
 			
+			
 		},
 
 		headertext:{

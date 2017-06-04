@@ -43,7 +43,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
           const goToAllorder= () => {
             if(this.state.shuliang>0)
             {
-            Actions.noback({
+            Actions.Xiandan({
                shopname:this.props.shopname,
                foodname:this.props.foodname,
                num:this.state.shuliang,

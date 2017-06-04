@@ -20,7 +20,7 @@ class Login extends Component{
 				{console.log('success', request.responseText);
 				   var obj =  JSON.parse(request.responseText); 
 
-				alert(obj);
+				
 			}
 
 			} else {

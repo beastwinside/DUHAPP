@@ -186,8 +186,8 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					position:'absolute',
 					zIndex:6,
 					bottom:0,
-					backgroundColor:'#F70A57',
-					opacity:0.9,
+					backgroundColor:'#ff7210',
+					
 
 				}}>
 				<Text
@@ -197,10 +197,11 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					fontSize:14,
 					paddingLeft:20,
 
-				}}>购物车：总计<Text style={{color:'#E4F002',fontSize:16,}}>
+				}}>
+				<Text style={{fontSize:18,color:'#000000',fontWeight:'bolder'}}>购物车</Text>：总计<Text style={{color:'#1E1E1D',fontSize:16,}}>
 				{this.state.shopcart_price}</Text>元,
 				{this.state.foodinfo.name1}*
-				<Text style={{color:'#E4F002',fontSize:16,}}>{this.state.num}
+				<Text style={{color:'#1E1E1D',fontSize:16,}}>{this.state.num}
 				</Text>份
 				</Text>
 
@@ -211,14 +212,15 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					right:0,
 					height:48,
 					width:70,
-					backgroundColor:'#11B7E4',
+					backgroundColor:'#02B8E9',
+					opacity:1,
 					
 				}}>
 				<TouchableOpacity>
 				<Text 
 				onPress={goToPay}
 				style={{
-					color:'#1A1616',
+					color:'#090909',
 					fontSize:18,
 					textAlign:'center',
 				}}>

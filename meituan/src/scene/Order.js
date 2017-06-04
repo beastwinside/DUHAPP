@@ -43,15 +43,15 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{backgroundColor: '#0f5ca0'}}
-				tabBarBackgroundColor='#2b2e2e'
+				tabBarUnderlineStyle={{backgroundColor: '#F1F2F2'}}
+				tabBarBackgroundColor='#009b85'
 				tabBarActiveTextColor='#FCF9F9'
 				tabBarInactiveTextColor='#E6E4E6'
-				tabBarTextStyle={{fontSize: 18}}
+				tabBarTextStyle={{fontSize: 17}}
 				locked={false}
 				initialPage={0}
 				style={{
-					borderTopWidth:5,
+					borderTopWidth:1,
 					backgroundColor:"#454444",
 					borderColor:'#009b85',
 				
@@ -60,7 +60,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<Text tabLabel="待评价"
 				style={{
 					marginTop:100,
-					fontSize:49,
+					fontSize:30,
 					textAlign:'center',
 					color:'white',
 				}}>
@@ -82,15 +82,15 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		headview:{
 			height:60,
 			width:420,	
-			backgroundColor:'#2b2e2e',
+			backgroundColor:'#009b85',
 			
 			borderColor:'white',
 		},	
 
 		text1:{
 			
-			color:'#FFFFFF',
-			fontSize:30,
+			color:'#212121',
+			fontSize:24,
 			width:80,
 			position:'absolute',
 			top:10,
@@ -98,7 +98,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			fontWeight:'bold',
 		},
 		text2:{
-			color:'#DBDBDB',
+			color:'#212121',
 			height:30,
 			width:50,
 			fontSize:18,

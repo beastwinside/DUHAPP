@@ -80,13 +80,11 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			var dddd=false;
 			return (
 				<ScrollView 
-				style={{
-					backgroundColor:'#2b2e2e',
-				}}
+				
 				refreshControl={
 					<RefreshControl
 					refreshing={this.state.headLoading}
-					onRefresh={() => alert('刷新结束')}
+					
 					tintColor="#F90C7A"
 					title="Loading..."
 					colors={['#ff0000','#00ff00','#0000ff']}
@@ -136,7 +134,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 				<ScrollableTabView 
 
 
-				tabBarUnderlineStyle={{backgroundColor: '#2b2e2e'}}
+				tabBarUnderlineStyle={{backgroundColor: '#FFA500'}}
 				tabBarBackgroundColor='#2b2e2e'
 				tabBarActiveTextColor='#D65606'
 				tabBarInactiveTextColor='#E6E4E6'
@@ -144,10 +142,10 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 				locked={true}
 				initialPage={0}
 				style={{
-					borderTopWidth:5,
-					backgroundColor:"#454444",
+					
+					backgroundColor:"#FFF6F6",
 					borderColor:'#009b85',
-					height:3000,
+					height:2930,
 
 				}} >
 
@@ -159,7 +157,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 				<View style={{
 					height:50,
-					backgroundColor:'#2e2b2b',
+					backgroundColor:'#F9F6F6',
 				}}></View>
 				</ScrollView>				
 
@@ -177,7 +175,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			borderBottomWidth:2,
 			alignItems:'center',
 			justifyContent:'space-around',
-			backgroundColor:'#2e2b2b',
+			backgroundColor:'#C6C6C6',
 			borderColor:'#009b85',
 		},
 

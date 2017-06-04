@@ -13,7 +13,7 @@ import Allorder from './scene/Allorder';
 import Pay from './scene/Pay';
 import Welcome from './scene/Welcome';
 import TabBarItem from './widget/TabBarItem';
-import NOBACK from './widget/NOBACK';
+import Xiadan from './widget/Xiadan';
 import Login from './scene/Login';
 import Shop from './scene/Shop';
   import Shopdiancan from './widget/Shopdiancan';
@@ -84,7 +84,7 @@ class RootScene extends Component {
 
 
       </Scene>
-      <Scene key='noback' component={NOBACK} title='加载中' hideTabBar type='replace' 
+      <Scene key='Xiadan' component={Xiadan} title='支付订单' hideTabBar type='replace' 
      />
       <Scene key='Welcome' component={Welcome} title='加载中' hideTabBar  hideNavBar  
       initial/>

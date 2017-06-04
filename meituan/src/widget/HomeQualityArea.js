@@ -8,7 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<View style={styles.qcontainer}>
 				<Text style={styles.headertext}>
-				Quality</Text>
+				—品质专区—</Text>
 				<View style={styles.imagecontainer}>
 				<View style={styles.iamgeitem} >
 				<TouchableOpacity>
@@ -42,7 +42,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		const styles=StyleSheet.create(
 		{
 			qcontainer:{
-				marginTop:10,
+				
 				height:160,
 				width:scw,
 				backgroundColor:'#D2D1D1',
@@ -52,8 +52,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				width:scw,
 				fontSize:25,
 				textAlign:'center',
-				color:'#FFFFFF',
-				backgroundColor:'black',
+				color:'#222020',
+				backgroundColor:'#018a9a',
 				fontWeight:'bold',
 			},
 

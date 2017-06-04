@@ -26,7 +26,9 @@ import {
 
 	
 	let test=1;
-
+	let temp=0;
+	var obj={};
+	
 
 
 	export default class Allorder extends Component {
@@ -51,6 +53,8 @@ import {
 
 
 			setsource(){
+					
+				if(temp==0){
 		var request = new XMLHttpRequest();
 		request.onreadystatechange = (e) => {
 			if (request.readyState !== 4) {
@@ -59,7 +63,7 @@ import {
 
 			if (request.status === 200) {
 				{console.log('success', request.responseText);
-				   var obj =  JSON.parse(request.responseText); 
+				    obj =  JSON.parse(request.responseText); 
 
 				   const ds=new ListView.DataSource({
 				rowHasChanged:(r1,r2)=>r1!=r2});
@@ -68,6 +72,8 @@ import {
 
 
 				   });
+				   temp++;
+
 				
 			}
 
@@ -80,11 +86,26 @@ import {
 		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/orderdata.json');
 		request.send();
 	}
+	else;
+	}
 
 
 
 	 componentWillMount()
-	 {this.setsource();}
+	 {
+	 	if(temp==0)
+	 	{this.setsource();}
+	 	else 
+	 		{const ds=new ListView.DataSource({
+				rowHasChanged:(r1,r2)=>r1!=r2});
+	 		this.setState({
+	 				dataSource:ds.cloneWithRows(obj.orderinfo),
+
+	 		});}
+	}
+
+
+
 
 
 
@@ -103,17 +124,19 @@ import {
 			var imgSource=imgurl[rowID]; 
 			return(
 				<View style={{
-					height:150,
-					backgroundColor:'#212121',
+					height:120,
+					backgroundColor:'#FBFAE6',
 					borderBottomWidth:1.5,
-					borderColor:'white',
+					borderColor:'#ADABAB',
 				}}
 
 				>
 				<View style={{
 					flex:0.8,
-					backgroundColor:'#2b2e2e',
+					backgroundColor:'#FBFAE6',
 					flexDirection:'row',
+					borderBottomWidth:1,
+					borderColor:'#D1D1D1',
 				}}>
 
 				<TouchableOpacity activeOpacity={0.6}>
@@ -121,8 +144,8 @@ import {
 				style={{
 					marginLeft:10,
 					marginTop:5,
-					height:40,
-					width:40,
+					height:32,
+					width:32,
 					borderRadius:25,
 				}}
 				source={imgSource}/>
@@ -130,17 +153,18 @@ import {
 				</TouchableOpacity>
 				<Text
 				style={{
-					color:'#04E5FC',
-					fontSize:20,
+					color:'#CE046A',
+					fontSize:16,
 					marginTop:10,
 					marginLeft:10,
+					fontWeight:'bolder',
 				}}
 				>{rowData.shopname}</Text>
 
 				<Text
 				style={{
-					color:'#F0A000',
-					fontSize:15,
+					color:'#F7104D',
+					fontSize:12,
 					marginTop:10,
 					position:'absolute',
 					right:5,
@@ -153,18 +177,17 @@ import {
 
 
 				<View style={{
-					flex:1,
-					backgroundColor:'#2b2e2e',
-
+					flex:1.1,
+					backgroundColor:'#FBFAE6',
 
 
 				}}>
 				<TouchableOpacity activeOpacity={0.6}>
 				<Text
 				style={{
-					color:'#FFFFFF',
-					fontSize:18,
-					marginTop:25,
+					color:'#222222',
+					fontSize:13,
+					marginTop:15,
 					marginLeft:60,
 					fontWeight:'bold',
 				}}
@@ -181,17 +204,17 @@ import {
 				<Text
 				style={{
 
-					color:'#FFFFFF',
+					color:'#FC0000',
 					fontSize:14,
 					textAlign:'right',
-					marginTop:15,
+					marginTop:0,
 					marginRight:15,
 				}}
 				>X{rowData.ordernum}</Text>
 				<Text
 				style={{
 
-					color:'#FFFFFF',
+					color:'#FC0000',
 					fontSize:12,
 					marginRight:5,
 
@@ -210,17 +233,17 @@ import {
 
 				<View style={{
 					flex:0.8,
-					backgroundColor:'#2b2e2e',
+					backgroundColor:'#FBFAE6',
 				}}>
 				<View	style={{
-					marginTop:7,
+					marginTop:3,
 					position:'absolute',
 					right:10,
-					borderColor:'#d4442a',
+					borderColor:'#1F1F1F',
 					borderWidth:1,
-					height:30,
+					height:25,
 					width:80,
-					backgroundColor:'#d4442a',
+					
 
 
 				}}>
@@ -229,8 +252,9 @@ import {
 				onPress={goToPay}
 				style={{
 					fontSize:17,
-					color:'#FFFFFF',
+					color:'#222222',
 					textAlign:'center',
+					marginBottom:3,
 				}}>再来一单</Text>
 				</TouchableOpacity>
 				</View>
@@ -243,7 +267,7 @@ import {
 
 		render() {
 			if(this.props.num>=1){
-			Orderdata.orderinfo.unshift(
+			obj.orderinfo.unshift(
 				{
 						"shopname":this.props.shopname,
 						"orderstatus":"订单完成",

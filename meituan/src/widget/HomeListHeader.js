@@ -22,8 +22,8 @@ let scw=Dimensions.get('window').width;
 const styles=StyleSheet.create(
 	{
 		container:{
-			marginTop:10,
-			backgroundColor:'#EAEAEA',
+			
+			backgroundColor:'#2e2b2b',
 			height:35,
 			width:scw,
 		},
@@ -32,7 +32,7 @@ const styles=StyleSheet.create(
 			fontSize:25,
 			textAlign:'center',
 			color:'#DBD1D1',
-			backgroundColor:'#546474',
+			backgroundColor:'#2e2b2b',
 		
 			fontWeight:'bold',
 

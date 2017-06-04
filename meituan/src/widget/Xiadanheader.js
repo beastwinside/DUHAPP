@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	ListView,Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 import Swiper from 'react-native-swiper';
 
-export default class Homeheader extends Component{
+export default class Xiadanheader extends Component{
 	render(){
 	return(<Swiper  
 				showsButtons={false}
@@ -30,7 +30,7 @@ export default class Homeheader extends Component{
 				</Text>
 				</TouchableOpacity>
 				</View>
-				<Image source={require('../img/home/m1.png')}
+				<Image source={require('../img/zhifu/zhifu1.png')}
 
 				style={{
 					width:scw,
@@ -54,7 +54,7 @@ export default class Homeheader extends Component{
 				</Text>
 				</TouchableOpacity>
 				</View>
-				<Image source={require('../img/home/m2.png')}
+				<Image source={require('../img/zhifu/zhifu2.png')}
 
 				style={{
 					width:scw,
@@ -77,7 +77,7 @@ export default class Homeheader extends Component{
 				</Text>
 				</TouchableOpacity>
 				</View>
-				<Image source={require('../img/home/m3.png')}
+				<Image source={require('../img/zhifu/zhifu3.png')}
 				style={{
 					width:scw,
 					height:150,

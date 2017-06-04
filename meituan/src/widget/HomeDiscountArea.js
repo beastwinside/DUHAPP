@@ -7,7 +7,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		render(){
 			return(
 				<View style={styles.h_d_a_container}>
-				<Text style={styles.hdtext}>Discount</Text>
+				<Text style={styles.hdtext}>—优惠专区—</Text>
 				<View style={styles.leftview}>
 
 				<TouchableOpacity>
@@ -26,8 +26,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:100,
-					marginTop:40,
+					height:80,
+					marginTop:0,
 						borderWidth:2,
 					borderColor:'white',
 				}} source={require('../img/home/discountarea/r1.png')}/>
@@ -35,8 +35,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:100,
-					marginTop:40,
+					height:80,
+					marginTop:0,
 					borderWidth:2,
 					borderColor:'white',
 				}} source={require('../img/home/discountarea/r2.png')}/>
@@ -44,7 +44,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:100,
+					height:80,
 					marginTop:15,
 						borderWidth:2,
 					borderColor:'white',
@@ -53,7 +53,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:100,
+					height:80,
 					marginTop:15,
 						borderWidth:2,
 					borderColor:'white',
@@ -74,33 +74,34 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create(
 	{
 		h_d_a_container:{
-			height:315,
+			height:250,
 			backgroundColor:'#2e2b2b',
 
 
 		},
 		hdtext:{
 			color:'#282525',
-			fontSize:35,
+			fontSize:25,
 			textAlign:'center',
-			opacity:0.85,
-			backgroundColor:'#EC114F',
+			
+			backgroundColor:'#F1F4D7',
 			fontWeight:'bold'
 		},
 
 		leftview:{
 			width:scw*42,
-			
-			height:300,
+			backgroundColor:'#F1F4D7',
+			height:220,
 			justifyContent:'center',
 
 
 		},
 
 		rightview:{
+			marginTop:10,
 			width:scw*0.58,
-			
-			height:300,
+			backgroundColor:'#F1F4D7',
+			height:220,
 			position:'absolute',
 			right:0,
 			top:47,

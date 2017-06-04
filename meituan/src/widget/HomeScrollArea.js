@@ -8,7 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<ScrollView style={{
 					height:70,
-					backgroundColor:'#56a764',
+					backgroundColor:'#F1F4D7',
 					borderTopWidth:2,
 					borderColor:'white',
 				}}
