@@ -7,7 +7,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 	let scw=Dimensions.get('window').width;
-	class NOBACK extends Component{
+	class Xiadan extends Component{
 
 
 
@@ -28,13 +28,16 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 		render(){
+
 			const goHome= () => {
 			Actions.Allorder(
 				{
                shopname:this.props.shopname,
                foodname:this.props.foodname,
                num:this.props.num,
-               zongjia:this.props.zongjia
+               zongjia:this.props.zongjia,
+               dizhi:this.props.dizhi,
+               user:'王嘉铭'
                });
 };
 
@@ -363,7 +366,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		}
 	}
 
-	export default NOBACK;
+	export default Xiadan;
 
 
 

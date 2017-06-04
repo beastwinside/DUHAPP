@@ -12,6 +12,7 @@ import Mine from './scene/Mine';
 import Allorder from './scene/Allorder';
 import Pay from './scene/Pay';
 import Welcome from './scene/Welcome';
+import Editaddress from './scene/Editaddress';
 import TabBarItem from './widget/TabBarItem';
 import Xiadan from './widget/Xiadan';
 import Login from './scene/Login';
@@ -89,6 +90,8 @@ class RootScene extends Component {
       <Scene key='Welcome' component={Welcome} title='加载中' hideTabBar  hideNavBar  
       initial/>
       <Scene key='Login' component={Login} title='登陆界面' hideTabBar  hideNavBar  
+     />
+     <Scene key='Editaddress' component={Editaddress} title='编辑地址' hideTabBar  hideNavBar  
      />
       <Scene key='Shop'   component={Shop}  title='店铺' hideTabBar     />
       <Scene key='Shopdiancan' component={Shopdiancan} title='sd' hideTabBar  />

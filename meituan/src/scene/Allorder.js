@@ -3,7 +3,7 @@ import {
 	View, Text, StyleSheet, StatusBar, ListView,Alert,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import { Actions } from 'react-native-router-flux';
-	import Orderdata from '../data/orderdata.json';
+	// import Orderdata from '../data/orderdata.json';
 
 
 	var imgurl=new Array();
@@ -118,6 +118,7 @@ import {
 					foodname:rowData.ordername,
 					zongjiaa:rowData.ordernum*rowData.orderprice,
 					numa:rowData.ordernum,
+					dizhi:rowData.dizhi,
 
 				});
 			}
@@ -266,6 +267,8 @@ import {
 
 
 		render() {
+			if(this.props.dizhi)
+			{alert(this.props.dizhi);}
 			if(this.props.num>=1){
 			obj.orderinfo.unshift(
 				{
@@ -275,6 +278,7 @@ import {
 						"ordername":this.props.foodname,
 						"ordernum":this.props.num,
 						"orderprice":this.props.zongjia,
+						"dizhi":"123",
 					}
 
 				);}

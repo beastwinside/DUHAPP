@@ -33,7 +33,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
          shuliang:this.state.shuliang-1,
          zongprice:this.props.zongjiaa/this.props.numa*(this.state.shuliang-1),
          })}
-         else Alert.alert('???','你他妈是傻逼？');
+         else Alert.alert('???','你想买什么？');
  
    };
 
@@ -43,11 +43,12 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
           const goToAllorder= () => {
             if(this.state.shuliang>0)
             {
-            Actions.Xiandan({
+            Actions.Xiadan({
                shopname:this.props.shopname,
                foodname:this.props.foodname,
                num:this.state.shuliang,
                zongjia:this.state.zongprice,
+               dizhi:this.props.dizhi,
                });}
 
             else Alert.alert('???','您选了什么？');
@@ -62,36 +63,47 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
    		
    		return(
    			<View style={styles.contaniner}>
+        <View style={{
+          width:scw*0.96,
+          height:50,
+          left:scw*0.02,
+          marginTop:5,
+        }}>
    			<Text style={{
    				backgroundColor:'#efeff2',
-   				height:30,
+   				height:25,
    				fontSize:17,
    				color:'black',
-   				textAlign:'center',
+   				paddingLeft:30,
+          fontWeight:'bolder',
    				   			}}>
-   			浙江农林大学b3号杭州市临安市 > 
+   			浙江农林大学b3号> 
    			</Text>
    			<Text style={{
    				backgroundColor:'#efeff2',
-   				height:30,
+   				height:25,
    				fontSize:15,
-   				color:'black',
-   				textAlign:'center',
+   				color:'#505050',
+   				paddingLeft:30,
    				   			}}>
-   			惹不起（先生） 1586755885
+   			先生 1586755885
    			</Text>
 
+        </View>
+
    			<View style={{
-   				
-   				paddingLeft:30,
+   				width:scw*0.96,
+          backgroundColor:'#efeff2',
+          left:scw*0.02,
+   				paddingLeft:36,
    				borderBottomWidth:2,
    				borderColor:'#D7D7D7',
-   				height:40,
+   				height:36,
    				paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'white',
+   				color:'#0F0F0F',
    				fontSize:18,
    				
    			}}>	
@@ -101,16 +113,19 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
    			</View>
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+          borderBottomWidth:2,
+          borderColor:'#D7D7D7',
+          height:40,
+          paddingTop:10,
+          marginTop:5,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'white',
+   				color:'#0F0F0F',
    				fontSize:18,
    				
    			}}>
@@ -122,16 +137,21 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
+   				 width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+         
+          height:40,
+          paddingTop:10,
    				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:60,
-   				paddingTop:10,
+   			
+   			
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'#E3F407',
+
+   				color:'#100F0F',
    				fontSize:25,
    				
    			}}>
@@ -143,16 +163,17 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+         
+          height:40,
+          paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'#8FEA9C',
+   				color:'#100E0E',
    				fontSize:22,
    				
    			}}>
@@ -165,16 +186,17 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+       
+          height:40,
+          paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'#E4AFAF',
+   				color:'#111010',
    				fontSize:18,
    				
    			}}>
@@ -189,10 +211,12 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
                position:'absolute',
                right:10,
                top:0,
-               height:30,
+               height:25,
                width:30,
                backgroundColor:'#FF7100',
-                 borderRadius:10,
+               opacity:0.89,
+
+                 
                  fontSize:20,
                  textAlign:'center',
 
@@ -205,10 +229,11 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
                position:'absolute',
                right:45,
                top:0,
-               height:30,
+               height:25,
                width:30,
                backgroundColor:'#FF7100',
-                 borderRadius:10,
+               opacity:0.89,
+                 
                  fontSize:20,
                  textAlign:'center',
 
@@ -222,10 +247,11 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
                position:'absolute',
                right:80,
                top:0,
-               height:30,
+               height:25,
                width:30,
                backgroundColor:'#FF7100',
-               borderRadius:10,
+               opacity:0.89,
+               borderRadi4:10,
                fontSize:20,
                  textAlign:'center',
 
@@ -238,12 +264,14 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+        
+          height:40,
+          paddingTop:15,
+          marginTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
@@ -258,11 +286,12 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
              <Text style={{
                position:'absolute',
                right:15,
-               top:0,
-               height:30,
+               top:10,
+               height:25,
                width:80,
                backgroundColor:'#FF7100',
-                 borderRadius:10,
+               opacity:0.89,
+                 
                  fontSize:20,
                  textAlign:'center',
 
@@ -274,12 +303,14 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+          borderBottomWidth:2,
+          borderColor:'#D7D7D7',
+          height:40,
+          paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
@@ -296,16 +327,18 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    			<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+          borderBottomWidth:2,
+          borderColor:'#D7D7D7',
+          height:40,
+          paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'white',
+   				color:'#0F0F0F',
    				fontSize:18,
    				
    			}}>
@@ -316,16 +349,18 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
    				<View style={{
-   				
-   				paddingLeft:30,
-   				borderBottomWidth:2,
-   				borderColor:'#D7D7D7',
-   				height:40,
-   				paddingTop:10,
+   			  width:scw*0.96,
+          backgroundColor:'white',
+          left:scw*0.02,
+          paddingLeft:30,
+          borderBottomWidth:2,
+          borderColor:'#D7D7D7',
+          height:40,
+          paddingTop:10,
    			}}>
    			<TouchableOpacity>
    			<Text  style={{
-   				color:'white',
+   				color:'#0F0F0F',
    				fontSize:18,
    				
    			}}>
@@ -342,7 +377,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
    			<View style={styles.footer}> 
    			<Text style={{
    				paddingTop:5,
-   				color:'white',
+   				color:'#0F0F0F',
    				fontSize:13,
                paddingLeft:20,
    			}}>
@@ -395,7 +430,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
   		contaniner:{
   			height:sch,
   			width:scw,
-  			backgroundColor:'#0A61AF',
+  			backgroundColor:'#5B5B5B',
   			top:55,
 
   		},
@@ -404,7 +439,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
   			width:scw,
   			position:'absolute',
   			bottom:70,
-  			backgroundColor:'#333232',
+  			backgroundColor:'#F0E6E6',
   			opacity:0.9,
 
   		},
