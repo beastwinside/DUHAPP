@@ -157,6 +157,8 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 
 		render(){
+
+		
 			let shopinfo=this.props.shopinfo;
 			 const goToPay= () => {
 			 	if(this.state.num!=0)

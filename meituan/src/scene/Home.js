@@ -86,7 +86,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 				refreshControl={
 					<RefreshControl
 					refreshing={this.state.headLoading}
-					onRefresh={() => this._combineData()}
+					onRefresh={() => alert('刷新结束')}
 					tintColor="#F90C7A"
 					title="Loading..."
 					colors={['#ff0000','#00ff00','#0000ff']}

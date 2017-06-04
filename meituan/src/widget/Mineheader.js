@@ -29,8 +29,7 @@ export default class Mineheader extends Component{
 
 		}
 
-		test--;
-		alert(test);
+
 
 
 		return(<View style={{
