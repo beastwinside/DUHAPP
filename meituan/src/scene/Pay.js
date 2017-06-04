@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
+import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions, TextInput,
 	Image, TouchableOpacity, ScrollView, RefreshControl} from 'react-native';
 	import ScrollableTabView, {ScrollableTabBar } from 'react-native-scrollable-tab-view';
 	import { Actions } from 'react-native-router-flux';
@@ -13,6 +13,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
          this.state = {
            shuliang:this.props.numa,
            zongprice:this.props.zongjiaa,
+           text:'浙江农林大学'
          };
       }
 
@@ -39,6 +40,8 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
 
 
+     
+
 
           const goToAllorder= () => {
             if(this.state.shuliang>0)
@@ -48,7 +51,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
                foodname:this.props.foodname,
                num:this.state.shuliang,
                zongjia:this.state.zongprice,
-               dizhi:this.props.dizhi,
+               dizhi:this.state.text,
                });}
 
             else Alert.alert('???','您选了什么？');
@@ -69,16 +72,30 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
           left:scw*0.02,
           marginTop:5,
         }}>
-   			<Text style={{
-   				backgroundColor:'#efeff2',
-   				height:25,
-   				fontSize:17,
-   				color:'black',
-   				paddingLeft:30,
+
+
+        <TextInput style={{
+            backgroundColor:'#efeff2',
+          height:50,
+          fontSize:17,
+          color:'black',
+          paddingLeft:30,
           fontWeight:'bolder',
-   				   			}}>
-   			浙江农林大学b3号> 
-   			</Text>
+        }} 
+        underlineColorAndroid="transparent"
+        placeholder="浙江农林大学b3"
+        maxLength={10}
+        onChangeText={(text) => this.setState({text})}
+    
+        
+
+
+        />
+   		
+
+
+
+
    			<Text style={{
    				backgroundColor:'#efeff2',
    				height:25,
@@ -435,7 +452,7 @@ import {View, Text, Alert,StyleSheet, StatusBar, ListView,Dimensions,
 
   		},
   		footer:{
-  			height:40,
+  			height:50,
   			width:scw,
   			position:'absolute',
   			bottom:70,

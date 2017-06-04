@@ -7,7 +7,7 @@ export default class Xiadanheader extends Component{
 	render(){
 	return(<Swiper  
 				showsButtons={false}
-				height={130}
+				height={100}
 				width={scw}
 				autoplay={true}
 				dotColor='#E5EAE6'

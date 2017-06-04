@@ -24,12 +24,12 @@ const styles=StyleSheet.create(
 		container:{
 			
 			backgroundColor:'#2e2b2b',
-			height:35,
+			height:20,
 			width:scw,
 		},
 
 		text1:{
-			fontSize:25,
+			fontSize:18,
 			textAlign:'center',
 			color:'#DBD1D1',
 			backgroundColor:'#2e2b2b',

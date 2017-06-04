@@ -27,7 +27,7 @@ import {
 	
 	let test=1;
 	let temp=0;
-	var obj={};
+	var obj={orderinfo:[]};
 	
 
 
@@ -267,8 +267,7 @@ import {
 
 
 		render() {
-			if(this.props.dizhi)
-			{alert(this.props.dizhi);}
+		
 			if(this.props.num>=1){
 			obj.orderinfo.unshift(
 				{
@@ -278,7 +277,7 @@ import {
 						"ordername":this.props.foodname,
 						"ordernum":this.props.num,
 						"orderprice":this.props.zongjia,
-						"dizhi":"123",
+						"dizhi":"浙江农林大学",
 					}
 
 				);}

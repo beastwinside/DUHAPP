@@ -10,45 +10,24 @@ class Editaddress extends Component{
 
 	render(){
 
-		var request = new XMLHttpRequest();
-		request.onreadystatechange = (e) => {
-			if (request.readyState !== 4) {
-				return;
-			}
 
-			if (request.status === 200) {
-				{console.log('success', request.responseText);
-				   var obj =  JSON.parse(request.responseText); 
+        const goBACK=()=>{
+          Actions.Pay({
+          dizhi:this.props.dizhi?this.props.dizhi:"未选择地址",
+        });
+        }
 
-				
-			}
-
-			} else {
-				console.warn('error');
-				alert('shibai');
-			}
-		};
-
-		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/food.json');
-		request.send();
-
-
-		
-
-
-
-		const checked= () => {
-			Actions.pop();
-		};
-
+		alert(this.props.dizhi);
 		return(
-			<Text onPress={checked}
+			<Text 
+			onPress={goBACK}
+
 			style={{
 				top:300,
 				color:'red',
 				fontSize:30,
 			}}>
-			登陆界面
+			登陆dizhi界面
 			</Text>
 			);
 	}

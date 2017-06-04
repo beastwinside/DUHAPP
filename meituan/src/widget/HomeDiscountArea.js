@@ -12,8 +12,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				<TouchableOpacity>
 				<Image style={{
-					height:210,
-					width:scw*0.38,
+					height:120,
+					width:scw*0.3,
 					marginLeft:10,
 						borderWidth:2,
 					borderColor:'white',
@@ -26,7 +26,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:80,
+					height:60,
 					marginTop:0,
 						borderWidth:2,
 					borderColor:'white',
@@ -35,7 +35,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:80,
+					height:60,
 					marginTop:0,
 					borderWidth:2,
 					borderColor:'white',
@@ -44,7 +44,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:80,
+					height:60,
 					marginTop:15,
 						borderWidth:2,
 					borderColor:'white',
@@ -53,7 +53,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				<TouchableOpacity>
 				<Image style={{
 					width:scw*0.58*0.35,
-					height:80,
+					height:60,
 					marginTop:15,
 						borderWidth:2,
 					borderColor:'white',
@@ -74,14 +74,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	const styles=StyleSheet.create(
 	{
 		h_d_a_container:{
-			height:250,
+			height:160,
 			backgroundColor:'#2e2b2b',
 
 
 		},
 		hdtext:{
 			color:'#282525',
-			fontSize:25,
+			fontSize:18,
 			textAlign:'center',
 			
 			backgroundColor:'#F1F4D7',
@@ -91,20 +91,20 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		leftview:{
 			width:scw*42,
 			backgroundColor:'#F1F4D7',
-			height:220,
+			height:140,
 			justifyContent:'center',
 
 
 		},
 
 		rightview:{
-			marginTop:10,
+			
 			width:scw*0.58,
 			backgroundColor:'#F1F4D7',
-			height:220,
+			height:160,
 			position:'absolute',
 			right:0,
-			top:47,
+			top:30,
 			zIndex:3,
 			justifyContent:'space-around',
 			alignItems:'center',

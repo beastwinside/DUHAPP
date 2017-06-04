@@ -43,14 +43,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		{
 			qcontainer:{
 				
-				height:160,
+				height:140,
 				width:scw,
 				backgroundColor:'#D2D1D1',
 			},
 
 			headertext:{
 				width:scw,
-				fontSize:25,
+				fontSize:18,
 				textAlign:'center',
 				color:'#222020',
 				backgroundColor:'#018a9a',
@@ -84,7 +84,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			ptxt:{
 				textAlign:'center',
 				color:'black',
-				fontSize:20,
+				fontSize:16,
 
 			}
 		})

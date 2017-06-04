@@ -167,6 +167,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			 		foodname:this.state.foodinfo.name1,
 			 		zongjiaa:this.state.shopcart_price,
 			 		numa:this.state.num,
+			 		dizhi:'浙江农林大学b3'
 
 			 	});}
 			 else Alert.alert('抱歉','您的购物车为空')

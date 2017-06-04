@@ -138,7 +138,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 				tabBarBackgroundColor='#2b2e2e'
 				tabBarActiveTextColor='#D65606'
 				tabBarInactiveTextColor='#E6E4E6'
-				tabBarTextStyle={{fontSize: 18}}
+				tabBarTextStyle={{fontSize: 14}}
 				locked={true}
 				initialPage={0}
 				style={{

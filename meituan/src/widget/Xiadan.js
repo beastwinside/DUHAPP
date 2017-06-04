@@ -9,7 +9,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	let scw=Dimensions.get('window').width;
 	class Xiadan extends Component{
 
-
+		
 
 
       constructor(props) {
@@ -28,6 +28,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 		render(){
+
+
+			
 
 			const goHome= () => {
 			Actions.Allorder(
@@ -112,7 +115,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				<View style={{
 					backgroundColor:'#F6FFCD',
-					height:80,
+					height:60,
 					width:scw,
 				}}>
 
@@ -145,7 +148,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					position:'absolute',
 					left:80,
 					top:40,}}>
-					小夫妻（套餐，炒面）
+					{this.props.shopname}
 					</Text>
 
 					</View>
@@ -320,14 +323,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 
 
-					<Text onPress={goHome}
-					style={{
-						top:300,
-						color:'red',
-						fontSize:30,
-					}}>
-					草泥马下单成功了
-					</Text>
+					
 
 
 
@@ -335,6 +331,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					<Text 
 					onPress={goHome}
 					style={{
+						marginTop:10,
 						fontSize:25,
 						backgroundColor:'#EDB726',
 						color:'black',
@@ -384,7 +381,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		zhifucontainer:{
 			width:scw,
-			height:70,
+			height:55,
 			borderBottomWidth:1,
 			borderColor:'#1E1A1A',
 			marginTop:2,
