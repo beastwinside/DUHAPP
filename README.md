@@ -42,3 +42,10 @@
 #### 3. 首页添加商家搜索功能，优化购物车交互体验
 #### 4. 优化色彩搭配，以及真机布局显示
 #### 5. 历史订单实现下拉刷新数据
+![Alt text](./meituan/screenshot/21.png)
+![Alt text](./meituan/screenshot/22.png)
+![Alt text](./meituan/screenshot/23.png)
+![Alt text](./meituan/screenshot/24.png)
+![Alt text](./meituan/screenshot/25.png)
+![Alt text](./meituan/screenshot/26.png)
+
