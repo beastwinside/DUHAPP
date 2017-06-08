@@ -25,14 +25,6 @@
 ####   3 连接安卓模拟器或者安卓真机，执行react-native run-android，如果是安卓真机通过usb连接，执行命令后请关闭node开的服务器。
 ####    4 打开meituan app即可见效果。
 
-##     基本功能演示截图
-![Alt text](./meituan/screenshot/1.png)
-![Alt text](./meituan/screenshot/2.png)
-![Alt text](./meituan/screenshot/3.png)
-![Alt text](./meituan/screenshot/4.png)
-![Alt text](./meituan/screenshot/5.png)
-![Alt text](./meituan/screenshot/6.png)
-![Alt text](./meituan/screenshot/7.png)
 ###       本人qq 1584824430，欢迎同起步的新人来骚扰一起成长，大神就免了
 ###       如果本demo对你学习有帮助，请给个star~
 
@@ -42,10 +34,23 @@
 #### 3. 首页添加商家搜索功能，优化购物车交互体验
 #### 4. 优化色彩搭配，以及真机布局显示
 #### 5. 历史订单实现下拉刷新数据
-![Alt text](./meituan/screenshot/21.png)
-![Alt text](./meituan/screenshot/22.png)
-![Alt text](./meituan/screenshot/23.png)
-![Alt text](./meituan/screenshot/24.png)
-![Alt text](./meituan/screenshot/25.png)
-![Alt text](./meituan/screenshot/26.png)
 
+
+
+##6/8更新
+
+
+####配色修改更贴近美团外卖，后台数据不再只是单纯的放到对象服务器
+####找了个写php的小伙伴，让他提供了后台的数据接口。
+####近期不再更新该app，近期计划是使用redux和react开发一个该app对应的商家版#####增添删改，登录注册功能的spa页面，同时找找丢失好久的感觉。
+####待商家版web项目完成后，会继续添加该app与网络相关的登陆注册等功能
+###最新截图
+![Alt text](./meituan/screenshot/latest/1.png)
+![Alt text](./meituan/screenshot/latest/2.png)
+![Alt text](./meituan/screenshot/latest/3.png)
+![Alt text](./meituan/screenshot/latest/4.png)
+![Alt text](./meituan/screenshot/latest/5.png)
+![Alt text](./meituan/screenshot/latest/6.png)
+![Alt text](./meituan/screenshot/latest/7.png)
+![Alt text](./meituan/screenshot/latest/8.png)
+![Alt text](./meituan/screenshot/latest/9.png)
