@@ -126,7 +126,7 @@ import {
 			return(
 				<View style={{
 					height:120,
-					backgroundColor:'#FBFAE6',
+					backgroundColor:'white',
 					borderBottomWidth:1.5,
 					borderColor:'#ADABAB',
 				}}
@@ -134,7 +134,7 @@ import {
 				>
 				<View style={{
 					flex:0.8,
-					backgroundColor:'#FBFAE6',
+	
 					flexDirection:'row',
 					borderBottomWidth:1,
 					borderColor:'#D1D1D1',
@@ -154,7 +154,7 @@ import {
 				</TouchableOpacity>
 				<Text
 				style={{
-					color:'#CE046A',
+					color:'black',
 					fontSize:16,
 					marginTop:10,
 					marginLeft:10,
@@ -164,7 +164,7 @@ import {
 
 				<Text
 				style={{
-					color:'#F7104D',
+					color:'black',
 					fontSize:12,
 					marginTop:10,
 					position:'absolute',
@@ -179,7 +179,7 @@ import {
 
 				<View style={{
 					flex:1.1,
-					backgroundColor:'#FBFAE6',
+			
 
 
 				}}>
@@ -205,7 +205,7 @@ import {
 				<Text
 				style={{
 
-					color:'#FC0000',
+					color:'black',
 					fontSize:14,
 					textAlign:'right',
 					marginTop:0,
@@ -215,7 +215,7 @@ import {
 				<Text
 				style={{
 
-					color:'#FC0000',
+					color:'black',
 					fontSize:12,
 					marginRight:5,
 
@@ -234,7 +234,7 @@ import {
 
 				<View style={{
 					flex:0.8,
-					backgroundColor:'#FBFAE6',
+					
 				}}>
 				<View	style={{
 					marginTop:3,
@@ -253,7 +253,7 @@ import {
 				onPress={goToPay}
 				style={{
 					fontSize:17,
-					color:'#222222',
+					color:'grey',
 					textAlign:'center',
 					marginBottom:3,
 				}}>再来一单</Text>

@@ -109,7 +109,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			}
 		};
 
-		request.open('GET', 'http://duhapp-1253829861.costj.myqcloud.com/shopinfo.json');
+		request.open('GET', 'http://192.168.191.1/0meituan/shopinfo.json');
 		request.send();
 	}
 

@@ -23,7 +23,7 @@ export default class Mineinfo extends Component{
 	render(){
 		return(<View style={{
 	 				height:80,
-	 				backgroundColor:'#2b2e2e',
+	 				backgroundColor:'white',
 	 				flexDirection:'row',
 	 				justifyContent:'space-around',
 	 				alignItems:'center',
@@ -38,7 +38,7 @@ export default class Mineinfo extends Component{
 	 					fontSize:15,
 	 					alignSelf:'center',
 	 					marginTop:10,
-	 					color:'white',
+	 					color:'grey',
 	 				}}>{this.state.hongbao}
 	 				</Text>
 
@@ -57,7 +57,7 @@ export default class Mineinfo extends Component{
 	 				<Text style={{
 	 					fontSize:18,
 	 					alignSelf:'center',
-	 					color:'white',
+	 					color:'grey',
 	 				}}>美团红包
 	 				</Text>
 	 				</View>
@@ -69,7 +69,7 @@ export default class Mineinfo extends Component{
 	 						fontSize:15,
 	 						alignSelf:'center',
 	 						marginTop:10,
-	 						color:'white',
+	 						color:'grey',
 	 					}}>{this.state.yue}
 	 					</Text>
 
@@ -88,7 +88,7 @@ export default class Mineinfo extends Component{
 	 					<Text style={{
 	 						fontSize:18,
 	 						alignSelf:'center',
-	 						color:'white',
+	 						color:'grey',
 	 					}}>余额
 	 					</Text>
 	 					</View>
@@ -101,7 +101,7 @@ export default class Mineinfo extends Component{
 	 							fontSize:15,
 	 							alignSelf:'center',
 	 							marginTop:10,
-	 							color:'white',
+	 							color:'grey',
 	 						}}>{this.state.daijinquan}
 	 						</Text>	
 
@@ -120,7 +120,7 @@ export default class Mineinfo extends Component{
 	 						<Text style={{
 	 							fontSize:18,
 	 							alignSelf:'center',
-	 							color:'white',
+	 							color:'grey',
 	 						}}>代金券</Text>
 	 						</View>
 	 						</View>

@@ -172,7 +172,7 @@ import Minefooter from '../widget/Minefooter';
 	 			}
 
 	 			style={{ 
-	 				backgroundColor:'#2b2e2e',
+	 				backgroundColor:'white',
 	 				flex:1,
 	 			}}>
 
@@ -197,6 +197,7 @@ import Minefooter from '../widget/Minefooter';
 	 			<ListView
 	 			style={{ 
 	 				borderTopWidth:0.5,
+
 	 			}}
 	 			dataSource={ds3}
 	 			renderRow={this.renderRow3}
@@ -209,7 +210,7 @@ import Minefooter from '../widget/Minefooter';
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'#FFFFFF'}}>
+	 				color:'black'}}>
 	 				服务时间:9:00-23:00
 	 				</Text>
 	 				</View>
@@ -232,7 +233,7 @@ import Minefooter from '../widget/Minefooter';
 	 		flex:10,
 	 		marginLeft:10,
 	 		fontSize:20,
-	 		color:'#00DEE0',
+	 		color:'#323131',
 	 	},
 
 	 	listview_imagestyle:{
@@ -248,7 +249,7 @@ import Minefooter from '../widget/Minefooter';
 	 		flexDirection:'row',
 	 		borderBottomWidth:1,
 	 		borderColor:'#FFFFFF',
-	 		backgroundColor:'#2b2e2e',
+	 		backgroundColor:'white',
 
 	 	},
 

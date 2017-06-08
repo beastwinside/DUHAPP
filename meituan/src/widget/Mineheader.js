@@ -33,8 +33,8 @@ export default class Mineheader extends Component{
 
 
 		return(<View style={{
-	 				height:160,
-	 				backgroundColor:'#009b85',
+	 				height:130,
+	 				backgroundColor:'#FAD566',
 	 			}}>
 
 	 			<TouchableOpacity 
@@ -43,9 +43,9 @@ export default class Mineheader extends Component{
 	 			<Image
 	 		
 	 			 style={{
-	 				height:90,
-	 				width:90,
-	 				borderRadius:45,
+	 				height:60,
+	 				width:60,
+	 				borderRadius:30,
 	 				marginTop:20,
 	 				alignSelf:'center',
 	 			}}

@@ -44,9 +44,9 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 				tabBarPosition='overlayTop'
 				tabBarUnderlineStyle={{backgroundColor: '#F1F2F2'}}
-				tabBarBackgroundColor='#009b85'
-				tabBarActiveTextColor='#FCF9F9'
-				tabBarInactiveTextColor='#E6E4E6'
+				tabBarBackgroundColor='white'
+				tabBarActiveTextColor='#FAD354'
+				tabBarInactiveTextColor='grey'
 				tabBarTextStyle={{fontSize: 17}}
 				locked={false}
 				initialPage={0}
@@ -62,7 +62,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 					marginTop:100,
 					fontSize:30,
 					textAlign:'center',
-					color:'white',
+					color:'black',
 				}}>
 				<Text  >
 				暂无评价
@@ -82,8 +82,8 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		headview:{
 			height:60,
 			width:420,	
-			backgroundColor:'#009b85',
-			
+			backgroundColor:'#F9FBFB',
+			borderBottomWidth:0.5,
 			borderColor:'white',
 		},	
 

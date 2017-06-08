@@ -10,11 +10,11 @@ export default class Minefooter extends Component{
 	 				borderBottomWidth:3,
 	 				
 	 				height:60,
-	 				backgroundColor:'#2b2e2e',
+	 				backgroundColor:'white',
 	 			}}>
 	 			<Text style={{
 	 				alignSelf:'center',
-	 				color:'#F7A207',
+	 				color:'grey',
 	 				fontSize:25,
 	 			}}>
 	 			客服·电话：1010977
