@@ -61,11 +61,11 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				>
 				<View style={styles.container}  >
 				<View style={styles.listviewitem}>
-				<View style={{flex:1,backgroundColor:'#2E2b2b'}}>
+				<View style={{flex:1,backgroundColor:'white'}}>
 				<Image source={imgSource} style={{height:60,margin:5,width:scw/4.5}} />
 
 				</View>
-				<View style ={{flex:3,backgroundColor:'#2e2b2b'}}>
+				<View style ={{flex:3,backgroundColor:'white'}}>
 				<Text style={styles.listitemtext1}>{rowData.shopname}</Text>
 				<Text style={styles.listitemtext2}>★★★★★ 
 				<Text style={{color:'#CBC4C4'}}>月售{rowData.yuexiaoliang} {rowData.time}分钟 {rowData.discount}m</Text></Text>
@@ -113,6 +113,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		request.send();
 	}
 
+// request.open('GET', 'http://192.168.191.1/0meituan/shopinfo.json');
 
 	 componentWillMount()
 	 {this.setsource();}
@@ -147,7 +148,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			borderBottomWidth:2,
 			alignItems:'center',
 			justifyContent:'space-around',
-			backgroundColor:'#2e2b2b',
+			backgroundColor:'white',
 			borderColor:'#009b85',
 		},
 
@@ -161,7 +162,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 
 		listitemtext1:{
 			flex:1,fontSize:18,
-			color:'#F8F4F4',
+			color:'black',
 			paddingTop:5,
 			fontWeight:'bold',
 
@@ -175,7 +176,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		listitemtext3:{
 
 			flex:1,
-			color:'white',
+			color:'grey',
 
 		},
 		listitemtext4:{

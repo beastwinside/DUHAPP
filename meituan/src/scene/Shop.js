@@ -23,7 +23,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<Image  style={{height:20,width:30,}}
 				source={require('../img/back.png')}/>
 				</TouchableOpacity>
-				<Text style={{color:'white',}}>返回</Text>
+				<Text style={{color:'grey',}}>返回</Text>
 				</View>
 				);
 		}
@@ -84,10 +84,10 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 				<ScrollableTabView 
 
 				tabBarPosition='overlayTop'
-				tabBarUnderlineStyle={{backgroundColor: '#2b2e2e'}}
-				tabBarBackgroundColor='#2b2e2e'
-				tabBarActiveTextColor='#FEFEFE'
-				tabBarInactiveTextColor='#9D9D9D'
+				tabBarUnderlineStyle={{backgroundColor: 'white'}}
+				tabBarBackgroundColor='white'
+				tabBarActiveTextColor='#FAC349'
+				tabBarInactiveTextColor='grey'
 				tabBarTextStyle={{fontSize: 18}}
 				locked={true}
 				initialPage={0}
@@ -133,7 +133,7 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 	let sch=Dimensions.get('window').height;
 	const styles=StyleSheet.create({
 		headercontainer:{
-			backgroundColor:'#B92323',
+			backgroundColor:'white',
 			height:60,
 			justifyContent:'center',
 			
@@ -152,12 +152,14 @@ import {View, Text, StyleSheet, StatusBar, ListView,Dimensions,
 		headertext:{
 			fontSize:20,
 			textAlign:'right',
-			backgroundColor:'#FF8304',
+			backgroundColor:'white',
+			borderWidth:0.5,
+			borderColor:'grey',
 			color:'#0B0B0B',
 		},
 		header2:{
 			height:60,
-			backgroundColor:'#FF7201',
+			backgroundColor:'#F9BA3B',
 		},
 
 		header2img:{

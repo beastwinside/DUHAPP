@@ -45,7 +45,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				
 				height:140,
 				width:scw,
-				backgroundColor:'#D2D1D1',
+				backgroundColor:'white',
 			},
 
 			headertext:{
@@ -53,14 +53,14 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 				fontSize:18,
 				textAlign:'center',
 				color:'#222020',
-				backgroundColor:'#018a9a',
+				backgroundColor:'white',
 				fontWeight:'bold',
 			},
 
 			imagecontainer:{
 				width:scw,
 				height:130,
-				backgroundColor:'#018a9a',
+				backgroundColor:'white',
 				flexDirection:'row',
 				justifyContent:'space-around',
 				alignItems:'center',

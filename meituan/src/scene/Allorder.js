@@ -186,7 +186,7 @@ import {
 				<TouchableOpacity activeOpacity={0.6}>
 				<Text
 				style={{
-					color:'#222222',
+					color:'grey',
 					fontSize:13,
 					marginTop:15,
 					marginLeft:60,
@@ -205,7 +205,7 @@ import {
 				<Text
 				style={{
 
-					color:'black',
+					color:'grey',
 					fontSize:14,
 					textAlign:'right',
 					marginTop:0,
@@ -215,7 +215,7 @@ import {
 				<Text
 				style={{
 
-					color:'black',
+					color:'grey',
 					fontSize:12,
 					marginRight:5,
 
@@ -253,7 +253,9 @@ import {
 				onPress={goToPay}
 				style={{
 					fontSize:17,
-					color:'grey',
+					borderColor:'grey',
+					backgroundColor:'#FCC64E',
+					color:'black',
 					textAlign:'center',
 					marginBottom:3,
 				}}>再来一单</Text>

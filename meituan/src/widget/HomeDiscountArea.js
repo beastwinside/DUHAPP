@@ -75,7 +75,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 	{
 		h_d_a_container:{
 			height:160,
-			backgroundColor:'#2e2b2b',
+			backgroundColor:'white',
 
 
 		},
@@ -84,13 +84,13 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			fontSize:18,
 			textAlign:'center',
 			
-			backgroundColor:'#F1F4D7',
+			
 			fontWeight:'bold'
 		},
 
 		leftview:{
 			width:scw*42,
-			backgroundColor:'#F1F4D7',
+		
 			height:140,
 			justifyContent:'center',
 
@@ -100,7 +100,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 		rightview:{
 			
 			width:scw*0.58,
-			backgroundColor:'#F1F4D7',
+			
 			height:160,
 			position:'absolute',
 			right:0,

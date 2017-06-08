@@ -8,7 +8,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			return (
 				<ScrollView style={{
 					height:40,
-					backgroundColor:'#F1F4D7',
+					backgroundColor:'white',
 					borderTopWidth:2,
 					borderColor:'white',
 				}}
@@ -32,7 +32,7 @@ import {View, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio,
 			scrollitem:{
 				height:36,
 				width:100,
-				backgroundColor:'#1FE20E',
+				backgroundColor:'grey',
 				marginLeft:10,
 
 

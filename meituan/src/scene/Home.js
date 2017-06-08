@@ -96,14 +96,15 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 				<TextInput style={{
 					height:40,
-					borderWidth: 1,
+					
 					position:'absolute',
 					backgroundColor:'#FFFFFF',
-					top:50,
+					top:20,
 					width:scw*0.45,
-					left:20,
+					right:5,
 					zIndex:10,
 					opacity:0.8,
+					borderRadius:20
 				}} 
 				underlineColorAndroid="transparent"
 				placeholder="搜索商家"
@@ -124,10 +125,27 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 				<Homeheader/>
 				<Homemenu/>
+				<View  style={{
+					height:5,
+					backgroundColor:'#CCCCCC' 
+				}} ></View>
 				<HomeDiscountArea/>
+				<View  style={{
+					height:5,
+					backgroundColor:'#CCCCCC' 
+				}} ></View>
 				<HomeScrollArea/>
+				<View  style={{
+					height:5,
+					backgroundColor:'#CCCCCC' 
+				}} ></View>
 				<HomeQualityArea/>
+				<View  style={{
+					height:5,
+					backgroundColor:'#CCCCCC' 
+				}} ></View>
 				<HomeListHeader/>
+
 
 
 
@@ -135,15 +153,15 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 
 				tabBarUnderlineStyle={{backgroundColor: '#FFA500'}}
-				tabBarBackgroundColor='#2b2e2e'
+				tabBarBackgroundColor='white'
 				tabBarActiveTextColor='#D65606'
-				tabBarInactiveTextColor='#E6E4E6'
+				tabBarInactiveTextColor='grey'
 				tabBarTextStyle={{fontSize: 14}}
 				locked={true}
 				initialPage={0}
 				style={{
 					
-					backgroundColor:"#FFF6F6",
+					backgroundColor:"white",
 					borderColor:'#009b85',
 					height:2930,
 
@@ -157,7 +175,7 @@ import {View,Alert, Text, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 
 				<View style={{
 					height:50,
-					backgroundColor:'#F9F6F6',
+					backgroundColor:'white',
 				}}></View>
 				</ScrollView>				
 

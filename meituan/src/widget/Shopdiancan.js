@@ -187,7 +187,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					position:'absolute',
 					zIndex:6,
 					bottom:0,
-					backgroundColor:'#ff7210',
+					backgroundColor:'grey',
 					
 
 				}}>
@@ -199,10 +199,10 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					paddingLeft:20,
 
 				}}>
-				<Text style={{fontSize:18,color:'#000000',fontWeight:'bolder'}}>购物车</Text>：总计<Text style={{color:'#1E1E1D',fontSize:16,}}>
+				<Text style={{fontSize:18,color:'black',fontWeight:'bolder'}}>购物车</Text>：总计<Text style={{color:'#1E1E1D',fontSize:16,}}>
 				{this.state.shopcart_price}</Text>元,
 				{this.state.foodinfo.name1}*
-				<Text style={{color:'#1E1E1D',fontSize:16,}}>{this.state.num}
+				<Text style={{color:'black',fontSize:16,}}>{this.state.num}
 				</Text>份
 				</Text>
 
@@ -213,7 +213,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 					right:0,
 					height:48,
 					width:70,
-					backgroundColor:'#02B8E9',
+					backgroundColor:'#FEBD3B',
 					opacity:1,
 					
 				}}>
@@ -261,7 +261,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 		listitmcontainer:{
 			height:90,
 			width:scw,
-			backgroundColor:'#2b2e2e',
+			backgroundColor:'white',
 			marginBottom:2,
 
 		},
@@ -278,7 +278,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			position:'absolute',
 			left:100,
 			fontSize:20,
-			color:'#0ADFE6',
+			color:'black',
 			top:10,
 		},
 
@@ -287,7 +287,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			position:'absolute',
 			left:100,
 			fontSize:10,
-			color:'white',
+			color:'grey',
 			top:40,
 		},
 		listfoodprice:{
@@ -304,7 +304,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			position:'absolute',
 			bottom:40,
 			right:10,
-			backgroundColor:'#FB8B04',
+			backgroundColor:'#F9BA3B',
 			borderRadius:5,
 		},
 		subtractbut:{
@@ -313,7 +313,7 @@ import {View, Text,Alert, StyleSheet, StatusBar,Dimensions, Platform, PixelRatio
 			position:'absolute',
 			bottom:40,
 			right:80,
-			backgroundColor:'#FB8B04',
+			backgroundColor:'#F9BA3B',
 			borderRadius:5,
 		},
 
