@@ -7,7 +7,6 @@
 +   react-native-swiper 滑动切换第三方库
   
 
-###    DEMO演示: <http://htmlpreview.github.io/?https://github.com/beastwinside/APP/blob/master/index.html> 
 
 
 
